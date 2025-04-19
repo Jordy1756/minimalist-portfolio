@@ -1,0 +1,35 @@
+---
+type Props = {
+	name: string;
+	position: string;
+	startDate: string;
+	endDate: string | null;
+	summary: string;
+	highlights: string[];
+};
+
+const { name, position, startDate, endDate, summary, highlights } = Astro.props;
+
+const startYear = new Date(startDate).getFullYear();
+const endYear = endDate !== null ? new Date(endDate).getFullYear() : "Actual";
+---
+
+<article class="flex flex-col gap-1">
+	<header class="flex justify-between gap-4">
+		<div class="flex flex-col">
+			<h3 class="text-lg font-semibold">{name}</h3>
+			<h4 class="text-base font-medium">{position}</h4>
+		</div>
+		<div class="text-neutral-600 text-sm">
+			<time datetime={startDate}>{startYear}</time>
+			<span>-</span>
+			<time datetime={endDate}>{endYear}</time>
+		</div>
+	</header>
+	<main class="flex flex-col gap-2">
+		<p class="text-sm">{summary}</p>
+		<ul class="flex list-inside list-disc flex-col gap-1 pl-4">
+			{highlights.map((highlight) => <li class="text-sm">{highlight}</li>)}
+		</ul>
+	</main>
+</article>

@@ -1,0 +1,54 @@
+---
+import EmailIcon from "@/assets/icons/EmailIcon.astro";
+import GithubIcon from "@/assets/icons/GithubIcon.astro";
+import LinkedInIcon from "@/assets/icons/LinkedInIcon.astro";
+import WorldIcon from "@/assets/icons/WorldIcon.astro";
+import { basics } from "@cv";
+
+const { name, label, email, location, profiles } = basics;
+
+const SOCIAL_ICONS = {
+	GitHub: GithubIcon,
+	LinkedIn: LinkedInIcon
+};
+---
+
+<header class="mr-auto ml-auto flex w-full max-w-[var(--max-width)] flex-col gap-4 p-4">
+	<div class="flex flex-col gap-2">
+		<h1 class="text-3xl font-medium">{name}</h1>
+		<h2 class="text-lg font-normal">{label}</h2>
+		<address class="flex items-center gap-2 not-italic">
+			<WorldIcon width={20} height={20} color="var(--neutral-900)" />
+			<p class="font-light">{`${location.city}, ${location.region}`}</p>
+		</address>
+	</div>
+	<ul class="flex items-center gap-2">
+		<li class="rounded-sm border border-neutral-900 p-1">
+			<a
+				href={`mailto:${email}`}
+				title={`Enviar un correo electrónico a ${name} al correo ${email}`}
+				target="_blank"
+				rel="noopener noreferrer"
+			>
+				<EmailIcon width={20} height={20} color="var(--neutral-900)" />
+			</a>
+		</li>
+		{
+			profiles.map(({ network, url }) => {
+				const Icon = SOCIAL_ICONS[network as keyof typeof SOCIAL_ICONS];
+				return (
+					<li class="rounded-sm border border-neutral-900 p-1">
+						<a
+							href={url}
+							title={`Visitar el perfil de ${name} en ${network}`}
+							target="_blank"
+							rel="noopener noreferrer"
+						>
+							<Icon width={20} height={20} color="var(--neutral-900)" />
+						</a>
+					</li>
+				);
+			})
+		}
+	</ul>
+</header>

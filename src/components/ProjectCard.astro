@@ -1,0 +1,43 @@
+---
+import ExternalIcon from "@/assets/icons/ExternalIcon.astro";
+import GithubIcon from "@/assets/icons/GithubIcon.astro";
+
+type Props = {
+	name: string;
+	description: string;
+	highlights: string[];
+	url: string;
+	github: string;
+};
+
+const { name, description, highlights, url, github } = Astro.props;
+---
+
+<article class="flex flex-col gap-1.5 rounded-lg border border-neutral-200 p-4">
+	<header>
+		<h3 class="text-lg font-semibold">{name}</h3>
+	</header>
+	<main class="flex flex-col gap-1.5">
+		<p class="text-sm">{description}</p>
+		<ul class="flex flex-wrap gap-1 text-xs text-neutral-500">
+			{
+				highlights.map((highlight, index) => (
+					<li class="flex gap-1">
+						<span>{index > 0 && "·"}</span>
+						<span>{highlight}</span>
+					</li>
+				))
+			}
+		</ul>
+	</main>
+	<footer class="flex flex-1 items-end gap-4">
+		<a class="flex items-center gap-2" href={github} target="_blank" rel="noopener noreferrer">
+			<GithubIcon width={20} height={20} color="var(--neutral-900)" />
+			<span>Código</span>
+		</a>
+		<a class="flex items-center gap-2" href={url} target="_blank" rel="noopener noreferrer">
+			<ExternalIcon width={20} height={20} color="var(--neutral-900)" />
+			<span>Demo</span>
+		</a>
+	</footer>
+</article>

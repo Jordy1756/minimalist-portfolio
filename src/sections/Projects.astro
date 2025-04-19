@@ -1,0 +1,21 @@
+---
+import { projects } from "@cv";
+import Section from "@/components/Section.astro";
+import ProjectCard from "@/components/ProjectCard.astro";
+---
+
+<Section title="Proyectos">
+	<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+		{
+			projects.map(({ name, description, highlights, url, github }) => (
+				<ProjectCard
+					name={name}
+					description={description}
+					highlights={highlights}
+					url={url}
+					github={github}
+				/>
+			))
+		}
+	</div>
+</Section>
