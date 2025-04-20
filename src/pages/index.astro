@@ -7,9 +7,12 @@ import Education from "@/sections/Education.astro";
 import Projects from "@/sections/Projects.astro";
 import Skills from "@/sections/Skills.astro";
 import Certificates from "@/sections/Certificates.astro";
+import { basics } from "@cv";
+
+const { name, label } = basics;
 ---
 
-<Layout>
+<Layout title={`Portafolio de ${name} - ${label}`}>
 	<Hero />
 	<About />
 	<Experience />

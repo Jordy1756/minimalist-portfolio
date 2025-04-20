@@ -6,7 +6,6 @@
 		"url": "https://midu.dev",
 		"summary": "+15 años de experiencia como Desarrollador Web. Actualmente soy Creador de Contenido y Divulgador sobre Programación. Vivo en Barcelona, España. He trabajado en diferentes entornos: desde acelerar el desarrollo de start-ups hasta liderando equipos de empresas multinacionales.",
 		"location": {
-			"address": "",
 			"city": "Turrialba, Cartago",
 			"countryCode": "CR",
 			"region": "Costa Rica"
@@ -59,14 +58,10 @@
 	],
 	"education": [
 		{
-			"institution": "Universitat Oberta de Catalunya",
-			"url": "https://www.uoc.edu/portal/es/index.html",
-			"area": "Ingeniero de Software",
-			"studyType": "Bachelor",
-			"startDate": "2003-01-01",
-			"endDate": "2009-01-01",
-			"score": "4.0",
-			"courses": ["DB1101 - Basic SQL"]
+			"institution": "Universidad de Costa Rica, Turrialba",
+			"area": "Informatica Empresarial",
+			"startDate": "2020-03-10",
+			"endDate": null
 		}
 	],
 	"certificates": [
@@ -102,159 +97,49 @@
 		}
 	],
 	"skills": [
-		{
-			"name": "HTML",
-			"level": "",
-			"keywords": ["Desarrollo Web", "Frontend"]
-		},
-		{
-			"name": "CSS",
-			"level": "",
-			"keywords": ["Desarrollo Web", "Frontend", "Diseño Responsive"]
-		},
-		{
-			"name": "JavaScript",
-			"level": "",
-			"keywords": ["Desarrollo Web", "Frontend", "Backend", "Fullstack"]
-		},
-		{
-			"name": "Tailwind CSS",
-			"level": "",
-			"keywords": ["Desarrollo Web", "Frontend", "CSS Framework", "Diseño Responsive"]
-		},
-		{
-			"name": "TypeScript",
-			"level": "",
-			"keywords": ["Desarrollo Web", "Frontend", "Backend", "JavaScript Superset"]
-		},
-		{
-			"name": "Node",
-			"level": "",
-			"keywords": ["Desarrollo Web", "Backend", "JavaScript", "Servidor"]
-		},
-		{
-			"name": "Express",
-			"level": "",
-			"keywords": ["Desarrollo Web", "Backend", "Node JS", "Servidor"]
-		},
-		{
-			"name": "C#",
-			"level": "",
-			"keywords": ["Desarrollo Web", "Backend", "Lenguaje de Programación"]
-		},
-		{
-			"name": "MySQL",
-			"level": "",
-			"keywords": ["Bases de Datos", "SQL", "Almacenamiento de Datos", "Backend"]
-		},
-		{
-			"name": "SQL Server",
-			"level": "",
-			"keywords": ["Bases de Datos", "SQL", "Almacenamiento de Datos", "Backend"]
-		},
-		{
-			"name": "Mongo DB",
-			"level": "",
-			"keywords": ["Bases de Datos", "NoSQL", "Almacenamiento de Datos", "Backend"]
-		},
-		{
-			"name": "Git",
-			"level": "",
-			"keywords": ["Control de Versiones", "Colaboración", "Código Fuente"]
-		},
-		{
-			"name": "GitHub",
-			"level": "",
-			"keywords": ["Control de Versiones", "Colaboración", "Código Fuente", "Git"]
-		},
-		{
-			"name": "React",
-			"level": "",
-			"keywords": ["Desarrollo Web", "Frontend", "JavaScript Library", "UI"]
-		},
-		{
-			"name": "Astro",
-			"level": "",
-			"keywords": ["Desarrollo Web", "Frontend", "JavaScript Framework", "UI"]
-		},
-		{
-			"name": "Figma",
-			"level": "",
-			"keywords": ["Diseño", "Prototipado", "UI/UX"]
-		},
-		{
-			"name": "Arquitectura limpia",
-			"level": "",
-			"keywords": ["Desarrollo Web", "Backend", "Arquitectura de Software"]
-		},
-		{
-			"name": "Microservicios",
-			"level": "",
-			"keywords": ["Desarrollo Web", "Backend", "Arquitectura de Software"]
-		},
-		{
-			"name": "Principios SOLID",
-			"level": "",
-			"keywords": ["Desarrollo Web", "Backend", "Arquitectura de Software"]
-		},
-		{
-			"name": "Scrum",
-			"level": "",
-			"keywords": ["Metodología Ágil", "Gestión de Proyectos", "Colaboración"]
-		}
-	],
-	"languages": [
-		{
-			"language": "Spanish",
-			"fluency": "Native speaker"
-		},
-		{
-			"language": "English",
-			"fluency": "Advanced"
-		}
+		"HTML",
+		"CSS",
+		"JavaScript",
+		"TypeScript",
+		"Node JS",
+		"Express",
+		"C#",
+		"MySQL",
+		"SQL Server",
+		"Mongo DB",
+		"Git",
+		"GitHub",
+		"React",
+		"Astro",
+		"Figma",
+		"Arquitectura limpia",
+		"Microservicios",
+		"Principios SOLID",
+		"Scrum",
+		"Design Systems",
+		"Responsive Design"
 	],
 	"projects": [
 		{
-			"name": "mars.codes",
+			"name": "Silk Tree",
 			"description": "Historia interactiva con retos de programación para viajar a Marte",
-			"highlights": ["Elige tu propia aventura", "En desarrollo"],
+			"highlights": ["React", "Screaming Architecture", "TypeScript"],
 			"url": "https://mars.codes",
-			"github": "https://github.com/midudev/codi.link"
+			"github": "https://github.com/Jordy1756/silk-tree"
 		},
 		{
-			"name": "AdventJS",
+			"name": "Silk Tree REST API",
 			"description": "Retos de programación en JavaScript para cada día de diciembre hasta Navidad",
-			"highlights": ["Next.js", "Tailwind CSS", "Responsive"],
+			"highlights": ["Node JS", "Express", "JWT", "MySQL"],
 			"url": "https://adventjs.dev",
-			"github": "https://github.com/midudev/codi.link"
+			"github": "https://github.com/Jordy1756/silk-tree-api.git"
 		},
 		{
-			"name": "Codember",
+			"name": "Hi Cupon REST API",
 			"description": "Juego interactivo de programación con retos y secretos",
-			"highlights": ["Next.js", "Tailwind CSS", "Responsive"],
+			"highlights": ["#C", "Clean Architecture", "SQL Server"],
 			"url": "https://codember.dev",
-			"github": "https://github.com/midudev/codi.link"
-		},
-		{
-			"name": "codi.link",
-			"description": "Playground de código HTML, CSS y JavaScript para compartir",
-			"highlights": ["Next.js", "Tailwind CSS", "Responsive"],
-			"url": "https://codi.link",
-			"github": "https://github.com/midudev/codi.link"
-		},
-		{
-			"name": "Pruebas Técnicas",
-			"description": "Lista de pruebas técnicas de empresas para practicar programación",
-			"highlights": ["Next.js", "Tailwind CSS", "Responsive"],
-			"url": "https://pruebastecnicas.com",
-			"github": "https://github.com/midudev/pruebas-tecnicas"
-		},
-		{
-			"name": "miduConf",
-			"description": "Conferencia de programación en streaming para la comunidad hispanohablante con charlas top",
-			"highlights": ["Next.js", "Tailwind CSS", "Responsive"],
-			"url": "https://miduconf.com",
-			"github": "https://github.com/midudev/codi.link"
+			"github": "https://github.com/Jordy1756/HiCupon_API_NET.git"
 		}
 	]
 }
