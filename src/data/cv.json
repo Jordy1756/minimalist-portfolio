@@ -1,10 +1,10 @@
 {
 	"basics": {
 		"name": "Yordi Castro Rojas",
-		"label": "Full Stack Developer con más de 15 años de experiencia & Creador de Contenido de Programación",
+		"label": "Ingeniero de Software Full Stack | Arquitecturas Limpias | Experiencia en Desarrollo Web",
 		"email": "jordycastro1756@gmail.com",
 		"url": "https://midu.dev",
-		"summary": "+15 años de experiencia como Desarrollador Web. Actualmente soy Creador de Contenido y Divulgador sobre Programación. Vivo en Barcelona, España. He trabajado en diferentes entornos: desde acelerar el desarrollo de start-ups hasta liderando equipos de empresas multinacionales.",
+		"summary": "Desarrollador Full Stack con enfoque en tecnologías web modernas y 4 años de experiencia en proyectos académicos y profesionales. Especializado en el desarrollo de aplicaciones con arquitecturas limpias, microservicios y principios SOLID. Soy un apasionado del aprendizaje continuo y autodidacta, adaptándome rápidamente a nuevas tecnologías. Destaco por mi capacidad para trabajar en equipo en entornos ágiles, comunicar ideas técnicas de forma efectiva y entregar soluciones eficientes que cumplen tanto requisitos técnicos como necesidades de usuario final.",
 		"location": {
 			"city": "Turrialba, Cartago",
 			"countryCode": "CR",
@@ -25,35 +25,58 @@
 	},
 	"works": [
 		{
-			"name": "midudev",
-			"position": "Divulgador sobre Programación Web",
-			"url": "https://twitch.tv/midudev",
-			"startDate": "2021-01-01",
+			"name": "Universidad de Costa Rica",
+			"position": "Estudiante de Informática Empresarial FullStack",
+			"startDate": "2020-03-10",
 			"endDate": null,
-			"summary": "Streamer de programación más visto en Español en Twitch. +1 millón de seguidores entre todas mis redes sociales. Reconocido por Google, Microsoft y GitHub por mi impacto en la comunidad de desarrolladores.",
+			"summary": "Estudiante de Informática Empresarial enfocado en desarrollo web FullStack, aplicando arquitecturas avanzadas, bases de datos y diseño de interfaces en múltiples proyectos académicos.",
 			"highlights": [
-				"Started the company",
-				"Started the company",
-				"Started the company",
-				"Started the company"
+				"Diseñé una plataforma bancaria implementando arquitectura limpia con microservicios y principios SOLID.",
+				"Implementé sistemas de autenticación y autorización utilizando JWT para gestión de usuarios y roles.",
+				"Desarrollé APIs RESTful para integración con servicios externos y gestión eficiente de datos.",
+				"Administré bases de datos SQL y NoSQL optimizando consultas y estructura para alto rendimiento.",
+				"Implementé metodologías ágiles como Scrum en equipos de desarrollo colaborativo.",
+				"Creé sistemas de diseño unificados para garantizar consistencia en interfaces de usuario.",
+				"Desarrollé aplicaciones web responsivas con HTML, CSS y JavaScript optimizadas para diferentes dispositivos.",
+				"Construí aplicaciones móviles con Ionic y Angular integrando funcionalidades nativas.",
+				"Implementé ORMs como Entity Framework y Sequelize para optimizar la interacción con bases de datos.",
+				"Creé una API que permite realizar operaciones CRUD mediante comandos de voz usando Alexa.",
+				"Desarrollé aplicaciones de escritorio y juegos utilizando Java Swing y Graphics."
 			]
 		},
 		{
-			"name": "Adevinta",
-			"position": "Lead Frontend Architect",
-			"url": "https://twitch.tv/midudev",
-			"startDate": "2016-06-01",
-			"endDate": "2022-09-01",
-			"summary": "Lideré una convergencia técnica entre diferentes productos y migramos una arquitectura monolítica a otra más flexible y optimizada. Fomenté buenas prácticas y mejoras en la cultura de rendimiento, además de la entrega rápida de valor a los usuarios.",
-			"highlights": ["Started the company"]
+			"name": "INTA Costa Rica",
+			"position": "Programador FullStack",
+			"startDate": "2023-07-10",
+			"endDate": "2023-12-01",
+			"summary": "Desarrollé un sistema integral de gestión de inventario para el Instituto Nacional de Innovación y Transferencia en Tecnología Agropecuaria, cubriendo todas las etapas desde requisitos hasta implementación.",
+			"highlights": [
+				"Colabore en sesiones de levantamiento de requisitos con stakeholders para definir alcance y funcionalidades.",
+				"Diseñé la arquitectura del sistema garantizando escalabilidad, mantenibilidad y seguridad.",
+				"Desarrollé módulos frontend y backend utilizando Blazor y C#.",
+				"Implementé y optimicé la estructura de base de datos en SQL Server con enfoque en integridad y rendimiento.",
+				"Creé un sistema de gestión de usuarios con múltiples niveles de acceso y permisos granulares.",
+				"Implementé pruebas unitarias y de integración automatizadas para garantizar calidad de código.",
+				"Diseñé interfaz de usuario intuitiva y accesible siguiendo principios de UX/UI modernos.",
+				"Configuré un sistema robusto de registro y monitoreo para facilitar resolución de incidencias.",
+				"Elaboré documentación técnica y guías de usuario para facilitar adopción y soporte.",
+				"Ejecuté el despliegue en producción asegurando migración sin pérdida de datos y mínimo tiempo de inactividad."
+			]
 		},
 		{
-			"name": "Hubii",
-			"position": "Senior FrontEnd Developer",
-			"startDate": "2011-03-01",
-			"endDate": "2016-05-01",
-			"summary": "Desarrollé una plataforma de noticias geolocalizadas y una API para consumir la información. Escalé los servicios para soportar la carga de más de cientos de miles de peticiones al día. Recorté los tiempos de entrega y despliegues a producción a la mitad. Colaboré con Mozilla y Telefónica para desarrollar la primera app para televisores con FirefoxOS.",
-			"highlights": ["Started the company"]
+			"name": "Lácteos El Torito",
+			"position": "Diseñador Web y Desarrollador",
+			"startDate": "2024-01-01",
+			"endDate": "2024-03-01",
+			"summary": "Creé una landing page profesional para aumentar la presencia digital de la empresa, mejorar su visibilidad online y presentar su catálogo de productos lácteos de manera atractiva.",
+			"highlights": [
+				"Conduje entrevistas con el cliente para capturar los valores de marca y objetivos comerciales.",
+				"Diseñé un sistema visual completo incluyendo paleta de colores, tipografías y componentes UI coherentes con la identidad de marca.",
+				"Desarrollé un sitio web de alto rendimiento utilizando Astro, CSS modular y JavaScript optimizado.",
+				"Optimicé el rendimiento web logrando puntuaciones superiores a 90 en Google Lighthouse.",
+				"Integré sistema de formularios con validación y conexión a servicios de email marketing.",
+				"Desarrollé diseño responsive garantizando experiencia óptima en todos los dispositivos."
+			]
 		}
 	],
 	"education": [
@@ -66,34 +89,22 @@
 	],
 	"certificates": [
 		{
-			"name": "Full Stack Web Development",
-			"date": "2023-05-15",
-			"issuer": "Platzi",
-			"url": "https://platzi.com/certificados/123456"
+			"name": "Oracle Next Education F2 T5 Front-end",
+			"date": "2023-09-23",
+			"issuer": "Oracle + Alura Latam",
+			"url": "https://app.aluracursos.com/user/jordycastro1756/program/7/certificate"
 		},
 		{
-			"name": "React Advanced Patterns",
-			"date": "2022-11-07",
-			"issuer": "Frontend Masters",
-			"url": "https://frontendmasters.com/certificates/123456"
+			"name": "Oracle Next Education Completo",
+			"date": "2024-02-12",
+			"issuer": "Oracle + Alura Latam",
+			"url": "https://app.aluracursos.com/user/jordycastro1756/fullCertificate/fb6c4059144a90dd07315ca00c5512cb"
 		},
 		{
-			"name": "AWS Certified Developer",
-			"date": "2021-08-22",
-			"issuer": "Amazon Web Services",
-			"url": "https://aws.amazon.com/verification/123456"
-		},
-		{
-			"name": "JavaScript Algorithms and Data Structures",
-			"date": "2021-03-10",
-			"issuer": "freeCodeCamp",
-			"url": "https://freecodecamp.org/certification/123456"
-		},
-		{
-			"name": "Responsive Web Design",
-			"date": "2020-11-25",
-			"issuer": "freeCodeCamp",
-			"url": "https://freecodecamp.org/certification/123456"
+			"name": "Scrum Fundamentals Certified (SFC)",
+			"date": "2023-10-31",
+			"issuer": "SCRUMstudy - Accreditation Body for Scrum and Agile",
+			"url": "https://www.scrumstudy.com/certification/verify?type=SFC&number=1003121"
 		}
 	],
 	"skills": [
@@ -117,7 +128,11 @@
 		"Principios SOLID",
 		"Scrum",
 		"Design Systems",
-		"Responsive Design"
+		"Responsive Design",
+		"Gateway API",
+		"Middleware",
+		"OAuth",
+		"JWT"
 	],
 	"projects": [
 		{

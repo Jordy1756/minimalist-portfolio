@@ -29,7 +29,7 @@ const endYear = endDate !== null ? new Date(endDate).getFullYear() : "Actual";
 	<main class="flex flex-col gap-2">
 		<p class="text-sm">{summary}</p>
 		<ul class="flex list-inside list-disc flex-col gap-1 pl-4">
-			{highlights.map((highlight) => <li class="text-sm">{highlight}</li>)}
+			{highlights.map((highlight) => <li class="text-sm -indent-5 pl-4">{highlight}</li>)}
 		</ul>
 	</main>
 </article>
