@@ -51,7 +51,7 @@
 			"endDate": "2023-12-01",
 			"summary": "Desarrollé un sistema integral de gestión de inventario para el Instituto Nacional de Innovación y Transferencia en Tecnología Agropecuaria, cubriendo todas las etapas desde requisitos hasta implementación.",
 			"highlights": [
-				"Colabore en sesiones de levantamiento de requisitos con stakeholders para definir alcance y funcionalidades.",
+				"Colaboré en sesiones de levantamiento de requisitos con stakeholders para definir alcance y funcionalidades.",
 				"Diseñé la arquitectura del sistema garantizando escalabilidad, mantenibilidad y seguridad.",
 				"Desarrollé módulos frontend y backend utilizando Blazor y C#.",
 				"Implementé y optimicé la estructura de base de datos en SQL Server con enfoque en integridad y rendimiento.",
@@ -123,9 +123,9 @@
 		"React",
 		"Astro",
 		"Figma",
-		"Arquitectura limpia",
+		"Clean Architecture",
 		"Microservicios",
-		"Principios SOLID",
+		"SOLID",
 		"Scrum",
 		"Design Systems",
 		"Responsive Design",
@@ -137,21 +137,21 @@
 	"projects": [
 		{
 			"name": "Silk Tree",
-			"description": "Historia interactiva con retos de programación para viajar a Marte",
+			"description": "Aplicación web para la gestión de citas médicas, usuarios y servicios del hospital.",
 			"highlights": ["React", "Screaming Architecture", "TypeScript"],
 			"url": "https://mars.codes",
 			"github": "https://github.com/Jordy1756/silk-tree"
 		},
 		{
 			"name": "Silk Tree REST API",
-			"description": "Retos de programación en JavaScript para cada día de diciembre hasta Navidad",
+			"description": "API REST para la gestión de citas médicas, usuarios y servicios del hospital",
 			"highlights": ["Node JS", "Express", "JWT", "MySQL"],
 			"url": "https://adventjs.dev",
 			"github": "https://github.com/Jordy1756/silk-tree-api.git"
 		},
 		{
 			"name": "Hi Cupon REST API",
-			"description": "Juego interactivo de programación con retos y secretos",
+			"description": "API REST para la gestión de cupones y promociones, permitiendo a los usuarios obtener descuentos en productos y servicios.",
 			"highlights": ["#C", "Clean Architecture", "SQL Server"],
 			"url": "https://codember.dev",
 			"github": "https://github.com/Jordy1756/HiCupon_API_NET.git"
