@@ -7,7 +7,9 @@ import Section from "@/components/Section.astro";
 	<ul class="flex flex-wrap gap-2">
 		{
 			skills.map(({ name }) => (
-				<li class="rounded-sm bg-neutral-800 text-neutral-50 px-1.5 py-1 text-center leading-none">{name}</li>
+				<li class="rounded-sm bg-neutral-900 px-2 py-1.5 text-center text-sm leading-none font-semibold text-neutral-50 opacity-85">
+					{name}
+				</li>
 			))
 		}
 	</ul>

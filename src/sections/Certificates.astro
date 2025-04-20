@@ -1,22 +1,44 @@
 ---
+import { certificates } from "@cv";
 import Section from "@/components/Section.astro";
+import CertificateCard from "@/components/CertificateCard.astro";
+
+type Certificate = {
+	date: string;
+	name: string;
+	issuer: string;
+	url?: string;
+};
+
+const certificatesByYear = certificates.reduce(
+	(acc, cert) => {
+		const year = new Date(cert.date).getFullYear();
+		(acc[year] = acc[year] || []).push(cert);
+		return acc;
+	},
+	{} as Record<number, Certificate[]>
+);
+
+const sortedYears = Object.keys(certificatesByYear)
+	.map(Number)
+	.sort((a, b) => b - a);
 ---
 
 <Section title="Certificados">
-	<ul class="list-disc pl-5">
-		<li>
-			<a
-				href="https://www.coursera.org/account/accomplishments/certificate/2QZ3X8K7F9G4"
-				target="_blank"
-				rel="noopener noreferrer">Google Data Analytics Professional Certificate</a
-			>
-		</li>
-		<li>
-			<a
-				href="https://www.coursera.org/account/accomplishments/certificate/2QZ3X8K7F9G4"
-				target="_blank"
-				rel="noopener noreferrer">Google Data Analytics Professional Certificate</a
-			>
-		</li>
-	</ul>
+	<div class="flex flex-col gap-8 px-5">
+		{
+			sortedYears.map((year) => (
+				<div class="flex flex-col gap-1">
+					<span class="text-sm font-medium text-neutral-600 -translate-x-3.5">{year}</span>
+					<ul class="flex flex-col gap-4 border-l border-neutral-200">
+						{certificatesByYear[year].map(({ name, date, issuer, url }) => (
+							<li>
+								<CertificateCard name={name} date={date} issuer={issuer} url={url} />
+							</li>
+						))}
+					</ul>
+				</div>
+			))
+		}
+	</div>
 </Section>

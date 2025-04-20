@@ -1,0 +1,23 @@
+---
+type Props = {
+	name: string;
+	date: string;
+	issuer: string;
+	url: string | undefined;
+};
+
+const { name, date, issuer, url } = Astro.props;
+
+const month = new Date(date).toLocaleDateString("es-ES", { month: "short" });
+---
+
+<article class="relative flex flex-col gap-1 px-3">
+	<span class="absolute top-1.5 right-[calc(100%+12px)] h-2 w-2 rounded-full bg-neutral-200"></span>
+	<header class="flex items-baseline gap-2">
+		<time class="text-xs text-neutral-400 uppercase" datetime={date}>{month}</time>
+		<h3 class="text-base font-medium">{name}</h3>
+	</header>
+	<main class="">
+		<p class="text-sm text-neutral-500">{issuer}</p>
+	</main>
+</article>
