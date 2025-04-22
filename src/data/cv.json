@@ -1,10 +1,10 @@
 {
 	"basics": {
 		"name": "Yordi Castro Rojas",
-		"label": "Ingeniero de Software Full Stack | Arquitecturas Limpias | Experiencia en Desarrollo Web",
+		"label": "Informático Empresarial | FullStack | Experiencia en Desarrollo Web",
 		"email": "jordycastro1756@gmail.com",
 		"url": "https://jordy756-minimalist-portfolio.vercel.app/",
-		"summary": "Desarrollador Full Stack con enfoque en tecnologías web modernas y 4 años de experiencia en proyectos académicos y profesionales. Especializado en el desarrollo de aplicaciones con arquitecturas limpias, microservicios y principios SOLID. Soy un apasionado del aprendizaje continuo y autodidacta, adaptándome rápidamente a nuevas tecnologías. Destaco por mi capacidad para trabajar en equipo en entornos ágiles, comunicar ideas técnicas de forma efectiva y entregar soluciones eficientes que cumplen tanto requisitos técnicos como necesidades de usuario final.",
+		"summary": "Desarrollador Full Stack con enfoque en tecnologías web modernas y 4 años de experiencia en proyectos académicos y profesionales. Especializado en el desarrollo de aplicaciones con arquitecturas limpias, microservicios y principios SOLID. Soy un apasionado del aprendizaje continuo y autodidacta, adaptándome rápidamente a nuevas tecnologías. Destaco por mi capacidad para trabajar en equipo en entornos ágiles, comunicar ideas técnicas de forma efectiva y entregar soluciones eficientes que cumplen tanto requisitos técnicos como necesidades del usuario final.",
 		"location": {
 			"city": "Turrialba, Cartago",
 			"countryCode": "CR",
@@ -26,10 +26,10 @@
 	"works": [
 		{
 			"name": "Universidad de Costa Rica",
-			"position": "Estudiante de Informática Empresarial FullStack",
+			"position": "Estudiante de Informática Empresarial Full Stack",
 			"startDate": "2020-03-10",
 			"endDate": null,
-			"summary": "Estudiante de Informática Empresarial enfocado en desarrollo web FullStack, aplicando arquitecturas avanzadas, bases de datos y diseño de interfaces en múltiples proyectos académicos.",
+			"summary": "Estudiante de Informática Empresarial enfocado en desarrollo web Full Stack, aplicando arquitecturas avanzadas, bases de datos y diseño de interfaces en múltiples proyectos académicos.",
 			"highlights": [
 				"Diseñé una plataforma bancaria implementando arquitectura limpia con microservicios y principios SOLID.",
 				"Implementé sistemas de autenticación y autorización utilizando JWT para gestión de usuarios y roles.",
@@ -46,19 +46,19 @@
 		},
 		{
 			"name": "INTA Costa Rica",
-			"position": "Programador FullStack",
+			"position": "Programador Full Stack",
 			"startDate": "2023-07-10",
 			"endDate": "2023-12-01",
 			"summary": "Desarrollé un sistema integral de gestión de inventario para el Instituto Nacional de Innovación y Transferencia en Tecnología Agropecuaria, cubriendo todas las etapas desde requisitos hasta implementación.",
 			"highlights": [
 				"Colaboré en sesiones de levantamiento de requisitos con stakeholders para definir alcance y funcionalidades.",
-				"Diseñé la arquitectura del sistema garantizando escalabilidad, mantenibilidad y seguridad.",
+				"Diseñé la arquitectura del sistema, garantizando escalabilidad, mantenibilidad y seguridad.",
 				"Desarrollé módulos frontend y backend utilizando Blazor y C#.",
 				"Implementé y optimicé la estructura de base de datos en SQL Server con enfoque en integridad y rendimiento.",
 				"Creé un sistema de gestión de usuarios con múltiples niveles de acceso y permisos granulares.",
 				"Implementé pruebas unitarias y de integración automatizadas para garantizar calidad de código.",
 				"Diseñé interfaz de usuario intuitiva y accesible siguiendo principios de UX/UI modernos.",
-				"Configuré un sistema robusto de registro y monitoreo para facilitar resolución de incidencias.",
+				"Configuré un sistema robusto de registro y monitoreo para facilitar la resolución de incidencias.",
 				"Elaboré documentación técnica y guías de usuario para facilitar adopción y soporte.",
 				"Ejecuté el despliegue en producción asegurando migración sin pérdida de datos y mínimo tiempo de inactividad."
 			]
@@ -71,18 +71,18 @@
 			"summary": "Creé una landing page profesional para aumentar la presencia digital de la empresa, mejorar su visibilidad online y presentar su catálogo de productos lácteos de manera atractiva.",
 			"highlights": [
 				"Conduje entrevistas con el cliente para capturar los valores de marca y objetivos comerciales.",
-				"Diseñé un sistema visual completo incluyendo paleta de colores, tipografías y componentes UI coherentes con la identidad de marca.",
+				"Diseñé un sistema visual completo, incluyendo paleta de colores, tipografías y componentes UI coherentes con la identidad de marca.",
 				"Desarrollé un sitio web de alto rendimiento utilizando Astro, CSS modular y JavaScript optimizado.",
 				"Optimicé el rendimiento web logrando puntuaciones superiores a 90 en Google Lighthouse.",
 				"Integré sistema de formularios con validación y conexión a servicios de email marketing.",
-				"Desarrollé diseño responsive garantizando experiencia óptima en todos los dispositivos."
+				"Desarrollé diseño responsivo garantizando experiencia óptima en todos los dispositivos."
 			]
 		}
 	],
 	"education": [
 		{
 			"institution": "Universidad de Costa Rica, Turrialba",
-			"area": "Informatica Empresarial",
+			"area": "Informática Empresarial",
 			"startDate": "2020-03-10",
 			"endDate": null
 		}
@@ -117,7 +117,7 @@
 		"C#",
 		"MySQL",
 		"SQL Server",
-		"Mongo DB",
+		"MongoDB",
 		"Git",
 		"GitHub",
 		"React",
@@ -144,14 +144,14 @@
 		},
 		{
 			"name": "Silk Tree REST API",
-			"description": "API REST para la gestión de citas médicas, usuarios y servicios del hospital",
+			"description": "API REST para la gestión de citas médicas, usuarios y servicios del hospital.",
 			"highlights": ["Node JS", "Express", "JWT", "MySQL"],
 			"github": "https://github.com/Jordy1756/silk-tree-api.git"
 		},
 		{
 			"name": "Hi Cupon REST API",
 			"description": "API REST para la gestión de cupones y promociones, permitiendo a los usuarios obtener descuentos en productos y servicios.",
-			"highlights": ["#C", "Clean Architecture", "SQL Server"],
+			"highlights": ["C#", "Clean Architecture", "SQL Server"],
 			"github": "https://github.com/Jordy1756/HiCupon_API_NET.git"
 		}
 	]
