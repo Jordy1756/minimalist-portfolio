@@ -3,7 +3,7 @@
 		"name": "Yordi Castro Rojas",
 		"label": "Ingeniero de Software Full Stack | Arquitecturas Limpias | Experiencia en Desarrollo Web",
 		"email": "jordycastro1756@gmail.com",
-		"url": "https://midu.dev",
+		"url": "https://jordy756-minimalist-portfolio.vercel.app/",
 		"summary": "Desarrollador Full Stack con enfoque en tecnologías web modernas y 4 años de experiencia en proyectos académicos y profesionales. Especializado en el desarrollo de aplicaciones con arquitecturas limpias, microservicios y principios SOLID. Soy un apasionado del aprendizaje continuo y autodidacta, adaptándome rápidamente a nuevas tecnologías. Destaco por mi capacidad para trabajar en equipo en entornos ágiles, comunicar ideas técnicas de forma efectiva y entregar soluciones eficientes que cumplen tanto requisitos técnicos como necesidades de usuario final.",
 		"location": {
 			"city": "Turrialba, Cartago",
@@ -139,21 +139,19 @@
 			"name": "Silk Tree",
 			"description": "Aplicación web para la gestión de citas médicas, usuarios y servicios del hospital.",
 			"highlights": ["React", "Screaming Architecture", "TypeScript"],
-			"url": "https://mars.codes",
+			"url": "https://silk-tree.vercel.app/",
 			"github": "https://github.com/Jordy1756/silk-tree"
 		},
 		{
 			"name": "Silk Tree REST API",
 			"description": "API REST para la gestión de citas médicas, usuarios y servicios del hospital",
 			"highlights": ["Node JS", "Express", "JWT", "MySQL"],
-			"url": "https://adventjs.dev",
 			"github": "https://github.com/Jordy1756/silk-tree-api.git"
 		},
 		{
 			"name": "Hi Cupon REST API",
 			"description": "API REST para la gestión de cupones y promociones, permitiendo a los usuarios obtener descuentos en productos y servicios.",
 			"highlights": ["#C", "Clean Architecture", "SQL Server"],
-			"url": "https://codember.dev",
 			"github": "https://github.com/Jordy1756/HiCupon_API_NET.git"
 		}
 	]
