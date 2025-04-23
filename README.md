@@ -1,48 +1,95 @@
-# Astro Starter Kit: Basics
+# Minimalist Portfolio
 
-```sh
-npm create astro@latest -- --template basics
+[![Astro Badge](https://img.shields.io/badge/Astro-BC52EE?logo=astro&logoColor=fff&style=flat)](https://astro.build/)
+[![TypeScript Badge](https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=fff&style=flat)](https://www.typescriptlang.org/)
+[![Tailwind CSS Badge](https://img.shields.io/badge/Tailwind_CSS-06B6D4?logo=tailwindcss&logoColor=fff&style=flat)](https://tailwindcss.com/)
+
+A minimalist portfolio website built with Astro, TypeScript, and Tailwind CSS. This project showcases professional experience, skills, and projects in a clean, performant, and accessible way.
+
+## 🚀 Features
+
+- 📱 Responsive design
+- ⚡ High performance with Astro
+- 🎨 Clean and minimalist UI
+- 📊 SEO optimized
+- 🌐 JSON-based content management
+- 🎯 TypeScript for type safety
+
+## 🛠️ Tech Stack
+
+- [Astro](https://astro.build/) - Static Site Generator
+- [TypeScript](https://www.typescriptlang.org/) - Programming Language
+- [Tailwind CSS](https://tailwindcss.com/) - CSS Framework
+- [Prettier](https://prettier.io/) - Code Formatter
+
+## 📦 Project Structure
+
 ```
-
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/basics)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/basics/devcontainer.json)
-
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
-
-![just-the-basics](https://github.com/withastro/astro/assets/2244813/a0a5533c-a856-4198-8470-2d67b1d7c554)
-
-## 🚀 Project Structure
-
-Inside of your Astro project, you'll see the following folders and files:
-
-```text
 /
-├── public/
-│   └── favicon.svg
 ├── src/
-│   ├── layouts/
-│   │   └── Layout.astro
-│   └── pages/
-│       └── index.astro
+│   ├── assets/
+│   │   └── icons/      # SVG icons
+│   ├── components/     # Reusable Astro components
+│   ├── data/
+│   │   └── cv.json     # Content data
+│   ├── layouts/        # Page layouts
+│   ├── pages/         # Routes
+│   ├── sections/      # Page sections
+│   ├── styles/        # Global styles
+│   └── types/         # TypeScript types
 └── package.json
 ```
 
-To learn more about the folder structure of an Astro project, refer to [our guide on project structure](https://docs.astro.build/en/basics/project-structure/).
+## 🚀 Getting Started
 
-## 🧞 Commands
+1. Clone the repository:
+```bash
+git clone https://github.com/yourusername/minimalist-portfolio.git
+```
 
-All commands are run from the root of the project, from a terminal:
+2. Install dependencies:
+```bash
+npm install
+```
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+3. Start development server:
+```bash
+npm run dev
+```
 
-## 👀 Want to learn more?
+4. Build for production:
+```bash
+npm run build
+```
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+## 📝 Content Management
+
+All content is managed through the `cv.json` file located in `src/data/`. Update this file to modify:
+
+- Personal information
+- Work experience
+- Education
+- Skills
+- Projects
+- Certificates
+
+## 🎨 Customization
+
+- Colors: Edit Tailwind configuration
+- Typography: Modify global.css
+- Layout: Adjust components in src/components/
+- Content: Update cv.json
+
+## 📄 License
+
+This project is open source and available under the [MIT License](LICENSE).
+
+## 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome!
+
+## 📞 Contact
+
+For questions or feedback, please reach out through:
+- [LinkedIn](https://linkedin.com/in/yordicastro)
+- [GitHub](https://github.com/Jordy1756)

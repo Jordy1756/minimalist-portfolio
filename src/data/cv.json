@@ -136,6 +136,13 @@
 	],
 	"projects": [
 		{
+			"name": "Lácteos El Torito",
+			"highlights": ["Astro", "TypeScript", "CSS", "Figma"],
+			"description": "Landing page para empresa de productos lácteos.",
+			"url": "https://lacteos-el-torito.vercel.app/",
+			"github": "https://github.com/Jordy1756/el-torito-dairy-products.git"
+		},
+		{
 			"name": "Silk Tree",
 			"description": "Aplicación web para la gestión de citas médicas, usuarios y servicios del hospital.",
 			"highlights": ["React", "Screaming Architecture", "TypeScript"],
