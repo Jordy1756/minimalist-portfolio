@@ -10,6 +10,7 @@
 			"countryCode": "CR",
 			"region": "Costa Rica"
 		},
+		"resume": "https://drive.google.com/file/d/1nRfnAhz-BAXhDeiIxsjRQDMQ9Y9mF4dj/view?usp=sharing",
 		"profiles": [
 			{
 				"network": "LinkedIn",
@@ -92,7 +93,7 @@
 			"name": "Oracle Next Education F2 T5 Front-end",
 			"date": "2023-09-23",
 			"issuer": "Oracle + Alura Latam",
-			"url": "https://app.aluracursos.com/user/jordycastro1756/program/7/certificate"
+			"url": "https://app.aluracursos.com/program/certificate/aa6f522d-96a0-4dc3-bffa-a141704bc450?lang"
 		},
 		{
 			"name": "Oracle Next Education Completo",
@@ -132,7 +133,8 @@
 		"Gateway API",
 		"Middleware",
 		"OAuth",
-		"JWT"
+		"JWT",
+		"Trello"
 	],
 	"projects": [
 		{
@@ -154,6 +156,20 @@
 			"description": "API REST para la gestión de citas médicas, usuarios y servicios del hospital.",
 			"highlights": ["Node JS", "Express", "JWT", "MySQL"],
 			"github": "https://github.com/Jordy1756/silk-tree-api.git"
+		},
+		{
+			"name": "Alura Geek",
+			"description": "Challenge ONE Alura Geek Latam Grupo 05",
+			"highlights": ["HTML", "CSS", "Vanilla JS"],
+			"url": "https://jordy1756.github.io/alura-geek/",
+			"github": "https://github.com/Jordy1756/alura-geek.git"
+		},
+		{
+			"name": "Alura Geek REST API",
+			"description": "API REST para la gestión de artículos, usuarios y comentarios.",
+			"highlights": ["Node JS", "Express", "JWT", "Mongo DB"],
+			"url": "https://alura-geek-api-one.vercel.app/",
+			"github": "https://github.com/Jordy1756/alura-geek-api.git"
 		},
 		{
 			"name": "Hi Cupon REST API",

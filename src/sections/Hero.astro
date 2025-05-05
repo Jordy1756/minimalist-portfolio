@@ -2,10 +2,11 @@
 import EmailIcon from "@/assets/icons/EmailIcon.astro";
 import GithubIcon from "@/assets/icons/GithubIcon.astro";
 import LinkedInIcon from "@/assets/icons/LinkedInIcon.astro";
+import ResumeIcon from "@/assets/icons/ResumeIcon.astro";
 import WorldIcon from "@/assets/icons/WorldIcon.astro";
 import { basics } from "@cv";
 
-const { name, label, email, location, profiles } = basics;
+const { name, label, email, location, profiles, resume } = basics;
 
 const SOCIAL_ICONS = {
 	GitHub: GithubIcon,
@@ -50,5 +51,15 @@ const SOCIAL_ICONS = {
 				);
 			})
 		}
+		<li class="rounded-sm border border-neutral-200 p-1">
+			<a
+				href={resume}
+				title={`Ver el currículum de ${name} en PDF`}
+				target="_blank"
+				rel="noopener noreferrer"
+			>
+				<ResumeIcon width={20} height={20} color="var(--neutral-800)" />
+			</a>
+		</li>
 	</ul>
 </header>
