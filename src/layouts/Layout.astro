@@ -37,3 +37,39 @@ const { summary, url } = basics;
 		<slot />
 	</body>
 </html>
+
+<style is:global>
+	html {
+		scrollbar-width: thin;
+	}
+
+	:is(h1, h2, h3, h4, h5, h6) {
+		line-height: 1.25;
+		text-wrap: balance;
+		letter-spacing: -0.025em;
+		break-after: avoid-page;
+		word-wrap: break-word;
+		overflow-wrap: break-word;
+		font-kerning: normal;
+		font-feature-settings:
+			"liga" 1,
+			"dlig" 1,
+			"kern" 1;
+	}
+
+	p,
+	li,
+	span,
+	time {
+		line-height: 1.75;
+		word-spacing: 0.05em;
+		text-wrap: pretty;
+		font-kerning: normal;
+		font-feature-settings:
+			"kern" 1,
+			"liga" 1,
+			"calt" 1;
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+	}
+</style>
