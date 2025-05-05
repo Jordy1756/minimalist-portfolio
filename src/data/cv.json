@@ -90,22 +90,88 @@
 	],
 	"certificates": [
 		{
-			"name": "Oracle Next Education F2 T5 Front-end",
-			"date": "2023-09-23",
-			"issuer": "Oracle + Alura Latam",
-			"url": "https://app.aluracursos.com/program/certificate/aa6f522d-96a0-4dc3-bffa-a141704bc450?lang"
-		},
-		{
 			"name": "Oracle Next Education Completo",
 			"date": "2024-02-12",
 			"issuer": "Oracle + Alura Latam",
 			"url": "https://app.aluracursos.com/user/jordycastro1756/fullCertificate/fb6c4059144a90dd07315ca00c5512cb"
 		},
 		{
+			"name": "Formación Oracle Cloud Infrastructure - ONE",
+			"date": "2024-02-12",
+			"issuer": "Oracle + Alura Latam",
+			"url": "https://app.aluracursos.com/degree/certificate/ea298e54-1895-4417-8584-d2c5427d00a1?lang"
+		},
+		{
+			"name": "Formación Python, Data Science en OCI y Oracle Analytics - ONE",
+			"date": "2024-02-11",
+			"issuer": "Oracle + Alura Latam",
+			"url": "https://app.aluracursos.com/degree/certificate/04a9391f-9659-4e90-957f-bb92590932b1?lang"
+		},
+		{
+			"name": "Formación Mi carrera - ONE",
+			"date": "2024-01-28",
+			"issuer": "Oracle + Alura Latam",
+			"url": "https://app.aluracursos.com/degree/certificate/eadefe33-7bc7-448a-ab08-52940c46a340?lang"
+		},
+		{
+			"name": "Formación SQL con MySQL Server de Oracle - ONE",
+			"date": "2024-01-28",
+			"issuer": "Oracle + Alura Latam",
+			"url": "https://app.aluracursos.com/degree/certificate/64022822-52a8-4650-a452-dbdba2a1974d?lang"
+		},
+		{
 			"name": "Scrum Fundamentals Certified (SFC)",
 			"date": "2023-10-31",
 			"issuer": "SCRUMstudy - Accreditation Body for Scrum and Agile",
 			"url": "https://www.scrumstudy.com/certification/verify?type=SFC&number=1003121"
+		},
+		{
+			"name": "Oracle Next Education F2 T5 Front-end",
+			"date": "2023-09-23",
+			"issuer": "Oracle + Alura Latam",
+			"url": "https://app.aluracursos.com/program/certificate/aa6f522d-96a0-4dc3-bffa-a141704bc450?lang"
+		},
+		{
+			"name": "Formación Emprendimiento G5 - ONE",
+			"date": "2023-09-21",
+			"issuer": "Oracle + Alura Latam",
+			"url": "https://app.aluracursos.com/degree/certificate/6133f90d-70b9-4d00-b882-801095e4be21?lang"
+		},
+		{
+			"name": "Formación Business Agility G5 - ONE",
+			"date": "2023-09-18",
+			"issuer": "Oracle + Alura Latam",
+			"url": "https://app.aluracursos.com/degree/certificate/1d84630a-49b9-449c-bcfb-9ddde23445e0?lang"
+		},
+		{
+			"name": "Formación React G5 - ONE",
+			"date": "2023-08-13",
+			"issuer": "Oracle + Alura Latam",
+			"url": "https://app.aluracursos.com/degree/certificate/49c0491b-db89-4608-aabf-afa4abf7e4db?lang"
+		},
+		{
+			"name": "Formación Front End G5 - ONE",
+			"date": "2023-07-21",
+			"issuer": "Oracle + Alura Latam",
+			"url": "https://app.aluracursos.com/degree/certificate/5a11a5fa-18d3-4798-bec5-2362bc471acd?lang"
+		},
+		{
+			"name": "Formación HTML & CSS",
+			"date": "2023-07-17",
+			"issuer": "Oracle + Alura Latam",
+			"url": "https://app.aluracursos.com/degree/certificate/26863581-ab8c-4bf6-bf67-87645f598c44?lang"
+		},
+		{
+			"name": "Formación Desarrollo Personal G5 - ONE",
+			"date": "2023-05-27",
+			"issuer": "Oracle + Alura Latam",
+			"url": "https://app.aluracursos.com/degree/certificate/a69c6240-19c9-4be7-a5de-5e3a1a0bdfd7?lang"
+		},
+		{
+			"name": "Formación Principiante en Programación G5 - ONE",
+			"date": "2023-04-17",
+			"issuer": "Oracle + Alura Latam",
+			"url": "https://app.aluracursos.com/degree/certificate/e55e6770-5e3c-472e-b079-145720c43ee4?lang"
 		}
 	],
 	"skills": [
