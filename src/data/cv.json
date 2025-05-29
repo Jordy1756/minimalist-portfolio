@@ -218,17 +218,24 @@
 			"github": "https://github.com/Jordy1756/silk-tree"
 		},
 		{
-			"name": "Silk Tree REST API",
-			"description": "API REST para la gestión de citas médicas, usuarios y servicios del hospital.",
-			"highlights": ["Node JS", "Express", "JWT", "MySQL"],
-			"github": "https://github.com/Jordy1756/silk-tree-api.git"
-		},
-		{
 			"name": "Alura Geek",
 			"description": "Challenge ONE Alura Geek Latam Grupo 05",
 			"highlights": ["HTML", "CSS", "Vanilla JS"],
 			"url": "https://jordy1756.github.io/alura-geek/",
 			"github": "https://github.com/Jordy1756/alura-geek.git"
+		},
+		{
+			"name": "Turríka",
+			"description": "Sitio web interactivo que presenta la historia y preparación de los chicharrones de queso, receta típica de Turrialba.",
+			"highlights": ["Astro JS", "GSAP", "Lenis"],
+			"url": "https://turrika.vercel.app/",
+			"github": "https://github.com/Jordy1756/turrika.git"
+		},
+		{
+			"name": "Silk Tree REST API",
+			"description": "API REST para la gestión de citas médicas, usuarios y servicios del hospital.",
+			"highlights": ["Node JS", "Express", "JWT", "MySQL"],
+			"github": "https://github.com/Jordy1756/silk-tree-api.git"
 		},
 		{
 			"name": "Alura Geek REST API",
