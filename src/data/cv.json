@@ -206,7 +206,7 @@
 		{
 			"name": "Lácteos El Torito",
 			"highlights": ["Astro", "TypeScript", "CSS", "Figma"],
-			"description": "Landing page para empresa de productos lácteos.",
+			"description": "Sitio web para una empresa de productos lácteos.",
 			"url": "https://lacteos-el-torito.vercel.app/",
 			"github": "https://github.com/Jordy1756/el-torito-dairy-products.git"
 		},
@@ -226,27 +226,27 @@
 		},
 		{
 			"name": "Turríka",
-			"description": "Sitio web interactivo que presenta la historia y preparación de los chicharrones de queso, receta típica de Turrialba.",
+			"description": "Landing page interactiva que presenta la historia y preparación de los chicharrones de queso, receta típica de Turrialba.",
 			"highlights": ["Astro JS", "GSAP", "Lenis"],
 			"url": "https://turrika.vercel.app/",
 			"github": "https://github.com/Jordy1756/turrika.git"
 		},
 		{
-			"name": "Silk Tree REST API",
-			"description": "API REST para la gestión de citas médicas, usuarios y servicios del hospital.",
+			"name": "Silk Tree RESTful API",
+			"description": "RESTful API para la gestión de citas médicas, usuarios y servicios del hospital.",
 			"highlights": ["Node JS", "Express", "JWT", "MySQL"],
 			"github": "https://github.com/Jordy1756/silk-tree-api.git"
 		},
 		{
-			"name": "Alura Geek REST API",
-			"description": "API REST para la gestión de artículos, usuarios y comentarios.",
+			"name": "Alura Geek RESTful API",
+			"description": "RESTful API para la gestión de artículos, usuarios y comentarios.",
 			"highlights": ["Node JS", "Express", "JWT", "Mongo DB"],
 			"url": "https://alura-geek-api-one.vercel.app/",
 			"github": "https://github.com/Jordy1756/alura-geek-api.git"
 		},
 		{
-			"name": "Hi Cupon REST API",
-			"description": "API REST para la gestión de cupones y promociones, permitiendo a los usuarios obtener descuentos en productos y servicios.",
+			"name": "Hi Cupon RESTful API",
+			"description": "RESTful API para la gestión de cupones y promociones, permitiendo a los usuarios obtener descuentos en productos y servicios.",
 			"highlights": ["C#", "Clean Architecture", "SQL Server"],
 			"github": "https://github.com/Jordy1756/HiCupon_API_NET.git"
 		}
