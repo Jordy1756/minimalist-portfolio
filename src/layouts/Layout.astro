@@ -24,14 +24,14 @@ const { summary, url } = basics;
 		<meta property="og:type" content="website" />
 		<meta property="og:title" content={title} />
 		<meta property="og:description" content={summary} />
-		<meta property="og:image" content="" />
+		<!-- <meta property="og:image" content="" /> -->
 
 		<meta name="twitter:card" content="summary_large_image" />
 		<meta property="twitter:domain" content={url.split("//")[1] ?? ""} />
 		<meta property="twitter:url" content={url} />
 		<meta name="twitter:title" content={title} />
 		<meta name="twitter:description" content={summary} />
-		<meta name="twitter:image" content="" />
+		<!-- <meta name="twitter:image" content="" /> -->
 	</head>
 	<body class="font-nunito-sans bg-neutral-50 text-neutral-900">
 		<slot />
@@ -46,14 +46,6 @@ const { summary, url } = basics;
 	:is(h1, h2, h3, h4, h5, h6) {
 		line-height: 1.25;
 		text-wrap: balance;
-		break-after: avoid-page;
-		word-wrap: break-word;
-		overflow-wrap: break-word;
-		font-kerning: normal;
-		font-feature-settings:
-			"liga" 1,
-			"dlig" 1,
-			"kern" 1;
 	}
 
 	p,
@@ -62,12 +54,5 @@ const { summary, url } = basics;
 	time {
 		line-height: 1.75;
 		text-wrap: pretty;
-		font-kerning: normal;
-		font-feature-settings:
-			"kern" 1,
-			"liga" 1,
-			"calt" 1;
-		-webkit-font-smoothing: antialiased;
-		-moz-osx-font-smoothing: grayscale;
 	}
 </style>

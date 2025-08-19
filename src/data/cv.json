@@ -10,7 +10,7 @@
 			"countryCode": "CR",
 			"region": "Costa Rica"
 		},
-		"resume": "https://drive.google.com/file/d/1nRfnAhz-BAXhDeiIxsjRQDMQ9Y9mF4dj/view?usp=sharing",
+		"resume": "https://drive.google.com/file/d/1u2kjO_Nvzw0JnhnO-CvGASu4W9qmAkaZ/view?usp=sharing",
 		"profiles": [
 			{
 				"network": "LinkedIn",
@@ -26,23 +26,17 @@
 	},
 	"works": [
 		{
-			"name": "Universidad de Costa Rica",
-			"position": "Estudiante de Informática Empresarial Full Stack",
+			"name": "4Geeks",
+			"position": "Pasante Desarrollador Full Stack",
 			"startDate": "2020-03-10",
 			"endDate": null,
-			"summary": "Estudiante de Informática Empresarial enfocado en desarrollo web Full Stack, aplicando arquitecturas avanzadas, bases de datos y diseño de interfaces en múltiples proyectos académicos.",
+			"summary": "Desarrollo de proyectos de software para diversos clientes de la empresa, trabajando con tecnologías variadas según los requerimientos de cada proyecto.",
 			"highlights": [
-				"Diseñé una plataforma bancaria implementando arquitectura limpia con microservicios y principios SOLID.",
-				"Implementé sistemas de autenticación y autorización utilizando JWT para gestión de usuarios y roles.",
-				"Desarrollé APIs RESTful para integración con servicios externos y gestión eficiente de datos.",
-				"Administré bases de datos SQL y NoSQL optimizando consultas y estructura para alto rendimiento.",
-				"Implementé metodologías ágiles como Scrum en equipos de desarrollo colaborativo.",
-				"Creé sistemas de diseño unificados para garantizar consistencia en interfaces de usuario.",
-				"Desarrollé aplicaciones web responsivas con HTML, CSS y JavaScript optimizadas para diferentes dispositivos.",
-				"Construí aplicaciones móviles con Ionic y Angular integrando funcionalidades nativas.",
-				"Implementé ORMs como Entity Framework y Sequelize para optimizar la interacción con bases de datos.",
-				"Creé una API que permite realizar operaciones CRUD mediante comandos de voz usando Alexa.",
-				"Desarrollé aplicaciones de escritorio y juegos utilizando Java Swing y Graphics."
+				"Desarrollé una aplicación de escritorio para autoservicio usando React con Electron y consumiendo una API de Django.",
+				"Identifiqué y solucioné problemas críticos de UX y lógica en el proceso de pago y localización de la app.",
+				"Implementé mensajes de error claros y validaciones que mejoran la experiencia de usuario.",
+				"Programé almacenamiento condicional de imágenes para ambiente local y producción en Azure.",
+				"Creé un módulo en Angular 12 que muestra agentes de IA consumiendo datos desde Google Sheets."
 			]
 		},
 		{
@@ -50,7 +44,7 @@
 			"position": "Programador Full Stack",
 			"startDate": "2023-07-10",
 			"endDate": "2023-12-01",
-			"summary": "Desarrollé un sistema integral de gestión de inventario para el Instituto Nacional de Innovación y Transferencia en Tecnología Agropecuaria, cubriendo todas las etapas desde requisitos hasta implementación.",
+			"summary": "Desarrollo de un sistema integral de gestión de inventario para el Instituto Nacional de Innovación y Transferencia en Tecnología Agropecuaria, cubriendo todas las etapas desde requisitos hasta implementación.",
 			"highlights": [
 				"Colaboré en sesiones de levantamiento de requisitos con stakeholders para definir alcance y funcionalidades.",
 				"Diseñé la arquitectura del sistema, garantizando escalabilidad, mantenibilidad y seguridad.",
@@ -69,7 +63,7 @@
 			"position": "Diseñador Web y Desarrollador",
 			"startDate": "2025-01-01",
 			"endDate": "2025-03-01",
-			"summary": "Creé una landing page profesional para aumentar la presencia digital de la empresa, mejorar su visibilidad online y presentar su catálogo de productos lácteos de manera atractiva.",
+			"summary": "Sitio web profesional para aumentar la presencia digital de la empresa, mejorar su visibilidad online y presentar su catálogo de productos lácteos de manera atractiva.",
 			"highlights": [
 				"Conduje entrevistas con el cliente para capturar los valores de marca y objetivos comerciales.",
 				"Diseñé un sistema visual completo, incluyendo paleta de colores, tipografías y componentes UI coherentes con la identidad de marca.",
@@ -187,6 +181,7 @@
 		"MongoDB",
 		"Git",
 		"GitHub",
+		"Gitlab",
 		"React",
 		"Astro",
 		"Figma",
@@ -200,7 +195,8 @@
 		"Middleware",
 		"OAuth",
 		"JWT",
-		"Trello"
+		"Trello",
+		"Scrum Mate"
 	],
 	"projects": [
 		{
