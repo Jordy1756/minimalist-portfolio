@@ -4,7 +4,8 @@
 		"label": "Informático Empresarial | FullStack | Experiencia en Desarrollo Web",
 		"email": "jordycastro1756@gmail.com",
 		"url": "https://jordy756-minimalist-portfolio.vercel.app/",
-		"summary": "Desarrollador Full Stack con enfoque en tecnologías web modernas y 4 años de experiencia en proyectos académicos y profesionales. Especializado en el desarrollo de aplicaciones con arquitecturas limpias, microservicios y principios SOLID. Soy un apasionado del aprendizaje continuo y autodidacta, adaptándome rápidamente a nuevas tecnologías. Destaco por mi capacidad para trabajar en equipo en entornos ágiles, comunicar ideas técnicas de forma efectiva y entregar soluciones eficientes que cumplen tanto requisitos técnicos como necesidades del usuario final.",
+		"image": "https://res.cloudinary.com/dygwpgeq9/image/upload/v1757993133/Portfolio_ktajy9.webp",
+		"summary": "Desarrollador Full Stack con enfoque en tecnologías web modernas. Especializado en el desarrollo de aplicaciones con arquitecturas limpias, microservicios y principios SOLID. Soy un apasionado del aprendizaje continuo y autodidacta, adaptándome rápidamente a nuevas tecnologías. Destaco por mi capacidad para trabajar en equipo en entornos ágiles, comunicar ideas técnicas de forma efectiva y entregar soluciones eficientes que cumplen tanto requisitos técnicos como necesidades del usuario final.",
 		"location": {
 			"city": "Turrialba, Cartago",
 			"countryCode": "CR",
@@ -28,7 +29,7 @@
 		{
 			"name": "4Geeks",
 			"position": "Pasante Desarrollador Full Stack",
-			"startDate": "2020-03-10",
+			"startDate": "2025-07-19",
 			"endDate": null,
 			"summary": "Desarrollo de proyectos de software para diversos clientes de la empresa, trabajando con tecnologías variadas según los requerimientos de cada proyecto.",
 			"highlights": [
@@ -36,7 +37,8 @@
 				"Identifiqué y solucioné problemas críticos de UX y lógica en el proceso de pago y localización de la app.",
 				"Implementé mensajes de error claros y validaciones que mejoran la experiencia de usuario.",
 				"Programé almacenamiento condicional de imágenes para ambiente local y producción en Azure.",
-				"Creé un módulo en Angular 12 que muestra agentes de IA consumiendo datos desde Google Sheets."
+				"Creé un módulo en Angular que muestra agentes de IA consumiendo datos desde Google Sheets.",
+				"Desarrollé un chat en tiempo real utilizando Angular con FireDatabase."
 			]
 		},
 		{
@@ -83,6 +85,12 @@
 		}
 	],
 	"certificates": [
+		{
+			"name": "Inmersión IA - Google Gemini",
+			"date": "2025-09-04",
+			"issuer": "Alura Latam",
+			"url": "https://credsverse.com/credentials/9866ddd9-de2b-4355-b2bd-9597724cebb8"
+		},
 		{
 			"name": "Oracle Next Education Completo",
 			"date": "2024-02-12",
@@ -183,6 +191,7 @@
 		"GitHub",
 		"Gitlab",
 		"React",
+		"Angular",
 		"Astro",
 		"Figma",
 		"Clean Architecture",
