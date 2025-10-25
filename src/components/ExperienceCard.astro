@@ -20,7 +20,7 @@ const endYear = endDate !== null ? new Date(endDate).getFullYear() : "Actual";
 			<h3 class="text-lg font-semibold">{name}</h3>
 			<h4 class="text-base font-medium">{position}</h4>
 		</div>
-		<div class="text-neutral-500 text-sm font-medium">
+		<div class="text-right text-sm font-medium text-neutral-500">
 			<time datetime={startDate}>{startYear}</time>
 			<span>-</span>
 			<time datetime={endDate}>{endYear}</time>
@@ -29,7 +29,7 @@ const endYear = endDate !== null ? new Date(endDate).getFullYear() : "Actual";
 	<main class="flex flex-col gap-3">
 		<p class="text-sm">{summary}</p>
 		<ul class="flex list-inside list-disc flex-col gap-2 pl-4">
-			{highlights.map((highlight) => <li class="text-sm -indent-5 pl-4">{highlight}</li>)}
+			{highlights.map((highlight) => <li class="pl-4 -indent-5 text-sm">{highlight}</li>)}
 		</ul>
 	</main>
 </article>

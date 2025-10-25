@@ -1,17 +1,17 @@
 {
 	"basics": {
 		"name": "Yordi Castro Rojas",
-		"label": "Informático Empresarial | FullStack | Experiencia en Desarrollo Web",
+		"label": "Full Stack Developer | React, Node JS, .NET, Flutter | Especializado en soluciones web modernas",
 		"email": "jordycastro1756@gmail.com",
 		"url": "https://jordy756-minimalist-portfolio.vercel.app/",
 		"image": "https://res.cloudinary.com/dygwpgeq9/image/upload/v1757993133/Portfolio_ktajy9.webp",
-		"summary": "Desarrollador Full Stack con enfoque en tecnologías web modernas. Especializado en el desarrollo de aplicaciones con arquitecturas limpias, microservicios y principios SOLID. Soy un apasionado del aprendizaje continuo y autodidacta, adaptándome rápidamente a nuevas tecnologías. Destaco por mi capacidad para trabajar en equipo en entornos ágiles, comunicar ideas técnicas de forma efectiva y entregar soluciones eficientes que cumplen tanto requisitos técnicos como necesidades del usuario final.",
+		"summary": "Desarrollador Full Stack con más de 1 año de experiencia profesional en la creación de aplicaciones web y soluciones digitales. Especializado en tecnologías modernas, arquitecturas limpias, microservicios y principios SOLID. Adaptable, autodidacta y entusiasta del aprendizaje continuo, aporto fuerte capacidad de análisis, trabajo colaborativo en entornos ágiles y comunicación técnica efectiva. Comprometido con la entrega de soluciones robustas y eficientes que integran requisitos de negocio y experiencia de usuario final.",
 		"location": {
 			"city": "Turrialba, Cartago",
 			"countryCode": "CR",
 			"region": "Costa Rica"
 		},
-		"resume": "https://drive.google.com/file/d/1NvifXfZpDqlW-IReTYbxrC3LaSmAHuNe/view?usp=sharing",
+		"resume": "https://drive.google.com/file/d/1h7i4BzpSJlhOEvHl6AkvY3W7936O4nn5/view?usp=sharing",
 		"profiles": [
 			{
 				"network": "LinkedIn",
@@ -28,36 +28,27 @@
 	"works": [
 		{
 			"name": "4Geeks",
-			"position": "Pasante Desarrollador Full Stack",
+			"position": "Desarrollador Full Stack",
 			"startDate": "2025-07-19",
 			"endDate": null,
-			"summary": "Desarrollo de proyectos de software para diversos clientes de la empresa, trabajando con tecnologías variadas según los requerimientos de cada proyecto.",
+			"summary": "Liderazgo y desarrollo Full Stack en proyectos web, móviles y desktop para B2B/B2C en entornos ágiles. Enfocado en arquitectura eficiente, mejora continua, trabajo transversal con equipos multidisciplinarios y experiencia de usuario de alto nivel en el ecosistema 4Geeks.",
 			"highlights": [
-				"Desarrollé una aplicación de escritorio para autoservicio usando React con Electron y consumiendo una API de Django.",
-				"Identifiqué y solucioné problemas críticos de UX y lógica en el proceso de pago y localización de la app.",
-				"Implementé mensajes de error claros y validaciones que mejoran la experiencia de usuario.",
-				"Programé almacenamiento condicional de imágenes para ambiente local y producción en Azure.",
-				"Creé un módulo en Angular que muestra agentes de IA consumiendo datos desde Google Sheets.",
-				"Desarrollé un chat en tiempo real utilizando Angular con FireDatabase."
+				"Lideré el desarrollo desde cero de la aplicación móvil oficial 4Geeks (Flutter), integrando autenticación segura, gestión de ventas y generación de links de pago en tiempo real, consumiendo APIs REST y optimizando la experiencia de usuario.",
+				"Dirigí la creación integral de MARKET-APP (Electron + React), una solución de autoservicio con manejo seguro de sesión, localización internacional (i18n) y arquitectura robusta de autenticación y pagos.",
+				"Construí el sistema de mensajería en tiempo real (Angular + Firebase) tipo chat moderno, permitiendo comunicación directa, notificaciones y gestión visual de conversaciones entre candidatos y reclutadores.",
+				"Rediseñé el sistema hospitalario ERPNext adaptando toda la UI al sistema visual 4Geeks, mediante CSS modular, logrando identidad visual uniforme y mejor experiencia en cualquier dispositivo."
 			]
 		},
 		{
 			"name": "INTA Costa Rica",
-			"position": "Programador Full Stack",
+			"position": "Desarrollador Full Stack",
 			"startDate": "2023-07-10",
 			"endDate": "2023-12-01",
-			"summary": "Desarrollo de un sistema integral de gestión de inventario para el Instituto Nacional de Innovación y Transferencia en Tecnología Agropecuaria, cubriendo todas las etapas desde requisitos hasta implementación.",
+			"summary": "Desarrollo y entrega de un sistema integral de gestión de inventario para el Instituto Nacional de Innovación y Transferencia en Tecnología Agropecuaria, cubriendo todas las fases clave del ciclo de vida del software.",
 			"highlights": [
-				"Colaboré en sesiones de levantamiento de requisitos con stakeholders para definir alcance y funcionalidades.",
-				"Diseñé la arquitectura del sistema, garantizando escalabilidad, mantenibilidad y seguridad.",
-				"Desarrollé módulos frontend y backend utilizando Blazor y C#.",
-				"Implementé y optimicé la estructura de base de datos en SQL Server con enfoque en integridad y rendimiento.",
-				"Creé un sistema de gestión de usuarios con múltiples niveles de acceso y permisos granulares.",
-				"Implementé pruebas unitarias y de integración automatizadas para garantizar calidad de código.",
-				"Diseñé interfaz de usuario intuitiva y accesible siguiendo principios de UX/UI modernos.",
-				"Configuré un sistema robusto de registro y monitoreo para facilitar la resolución de incidencias.",
-				"Elaboré documentación técnica y guías de usuario para facilitar adopción y soporte.",
-				"Ejecuté el despliegue en producción asegurando migración sin pérdida de datos y mínimo tiempo de inactividad."
+				"Colaboré activamente con stakeholders en la recopilación de requerimientos y lideré el diseño de la arquitectura, estableciendo la base técnica para un sistema escalable, seguro y mantenible.",
+				"Desarrollé y desplegué módulos frontend y backend con Blazor y C#, incluyendo gestión de usuarios con distintos niveles de acceso y optimización de base de datos en SQL Server.",
+				"Implementé pruebas automatizadas, monitoreo de incidencias, documentación técnica y despliegue a producción, asegurando calidad, adopción, migración de datos sin errores y operación continua del sistema."
 			]
 		},
 		{
@@ -65,14 +56,11 @@
 			"position": "Diseñador Web y Desarrollador",
 			"startDate": "2025-01-01",
 			"endDate": "2025-03-01",
-			"summary": "Sitio web profesional para aumentar la presencia digital de la empresa, mejorar su visibilidad online y presentar su catálogo de productos lácteos de manera atractiva.",
+			"summary": "Diseño y desarrollo de sitio web profesional para potenciar la presencia digital y la imagen comercial de Lácteos El Torito, destacando su catálogo de productos y ofreciendo una experiencia moderna y atractiva a sus clientes.",
 			"highlights": [
-				"Conduje entrevistas con el cliente para capturar los valores de marca y objetivos comerciales.",
-				"Diseñé un sistema visual completo, incluyendo paleta de colores, tipografías y componentes UI coherentes con la identidad de marca.",
-				"Desarrollé un sitio web de alto rendimiento utilizando Astro, CSS modular y JavaScript optimizado.",
-				"Optimicé el rendimiento web logrando puntuaciones superiores a 90 en Google Lighthouse.",
-				"Integré sistema de formularios con validación y conexión a servicios de email marketing.",
-				"Desarrollé diseño responsivo garantizando experiencia óptima en todos los dispositivos."
+				"Lideré sesiones con el cliente para definir los valores de marca, objetivos comerciales y requisitos funcionales, asegurando alineación estratégica del producto.",
+				"Diseñé e implementé un sistema visual completo: paleta de colores, tipografías y componentes UI coherentes con la identidad de marca, responsivo para cualquier dispositivo.",
+				"Desarrollé y lancé el sitio web con Astro y JavaScript optimizado, integrando formularios con validación, conectividad con servicios de email marketing y logrando un rendimiento superior a 90 en Google Lighthouse."
 			]
 		}
 	],
@@ -98,25 +86,25 @@
 			"url": "https://app.aluracursos.com/user/jordycastro1756/fullCertificate/fb6c4059144a90dd07315ca00c5512cb"
 		},
 		{
-			"name": "Formación Oracle Cloud Infrastructure - ONE",
+			"name": "Oracle Cloud Infrastructure - ONE",
 			"date": "2024-02-12",
 			"issuer": "Oracle + Alura Latam",
 			"url": "https://app.aluracursos.com/degree/certificate/ea298e54-1895-4417-8584-d2c5427d00a1?lang"
 		},
 		{
-			"name": "Formación Python, Data Science en OCI y Oracle Analytics - ONE",
+			"name": "Python, Data Science en OCI y Oracle Analytics - ONE",
 			"date": "2024-02-11",
 			"issuer": "Oracle + Alura Latam",
 			"url": "https://app.aluracursos.com/degree/certificate/04a9391f-9659-4e90-957f-bb92590932b1?lang"
 		},
 		{
-			"name": "Formación Mi carrera - ONE",
+			"name": "Mi carrera - ONE",
 			"date": "2024-01-28",
 			"issuer": "Oracle + Alura Latam",
 			"url": "https://app.aluracursos.com/degree/certificate/eadefe33-7bc7-448a-ab08-52940c46a340?lang"
 		},
 		{
-			"name": "Formación SQL con MySQL Server de Oracle - ONE",
+			"name": "SQL con MySQL Server de Oracle - ONE",
 			"date": "2024-01-28",
 			"issuer": "Oracle + Alura Latam",
 			"url": "https://app.aluracursos.com/degree/certificate/64022822-52a8-4650-a452-dbdba2a1974d?lang"
@@ -124,53 +112,47 @@
 		{
 			"name": "Scrum Fundamentals Certified (SFC)",
 			"date": "2023-10-31",
-			"issuer": "SCRUMstudy - Accreditation Body for Scrum and Agile",
+			"issuer": "SCRUMstudy",
 			"url": "https://www.scrumstudy.com/certification/verify?type=SFC&number=1003121"
 		},
 		{
-			"name": "Oracle Next Education F2 T5 Front-end",
-			"date": "2023-09-23",
-			"issuer": "Oracle + Alura Latam",
-			"url": "https://app.aluracursos.com/program/certificate/aa6f522d-96a0-4dc3-bffa-a141704bc450?lang"
-		},
-		{
-			"name": "Formación Emprendimiento G5 - ONE",
+			"name": "Emprendimiento G5 - ONE",
 			"date": "2023-09-21",
 			"issuer": "Oracle + Alura Latam",
 			"url": "https://app.aluracursos.com/degree/certificate/6133f90d-70b9-4d00-b882-801095e4be21?lang"
 		},
 		{
-			"name": "Formación Business Agility G5 - ONE",
+			"name": "Business Agility G5 - ONE",
 			"date": "2023-09-18",
 			"issuer": "Oracle + Alura Latam",
 			"url": "https://app.aluracursos.com/degree/certificate/1d84630a-49b9-449c-bcfb-9ddde23445e0?lang"
 		},
 		{
-			"name": "Formación React G5 - ONE",
+			"name": "React G5 - ONE",
 			"date": "2023-08-13",
 			"issuer": "Oracle + Alura Latam",
 			"url": "https://app.aluracursos.com/degree/certificate/49c0491b-db89-4608-aabf-afa4abf7e4db?lang"
 		},
 		{
-			"name": "Formación Front End G5 - ONE",
+			"name": "Front End G5 - ONE",
 			"date": "2023-07-21",
 			"issuer": "Oracle + Alura Latam",
 			"url": "https://app.aluracursos.com/degree/certificate/5a11a5fa-18d3-4798-bec5-2362bc471acd?lang"
 		},
 		{
-			"name": "Formación HTML & CSS",
+			"name": "HTML & CSS",
 			"date": "2023-07-17",
 			"issuer": "Oracle + Alura Latam",
 			"url": "https://app.aluracursos.com/degree/certificate/26863581-ab8c-4bf6-bf67-87645f598c44?lang"
 		},
 		{
-			"name": "Formación Desarrollo Personal G5 - ONE",
+			"name": "Desarrollo Personal G5 - ONE",
 			"date": "2023-05-27",
 			"issuer": "Oracle + Alura Latam",
 			"url": "https://app.aluracursos.com/degree/certificate/a69c6240-19c9-4be7-a5de-5e3a1a0bdfd7?lang"
 		},
 		{
-			"name": "Formación Principiante en Programación G5 - ONE",
+			"name": "Principiante en Programación G5 - ONE",
 			"date": "2023-04-17",
 			"issuer": "Oracle + Alura Latam",
 			"url": "https://app.aluracursos.com/degree/certificate/e55e6770-5e3c-472e-b079-145720c43ee4?lang"
@@ -181,31 +163,26 @@
 		"CSS",
 		"JavaScript",
 		"TypeScript",
-		"Node JS",
+		"Node.js",
 		"Express",
 		"C#",
-		"MySQL",
-		"SQL Server",
-		"MongoDB",
-		"Git",
-		"GitHub",
-		"Gitlab",
 		"React",
 		"Angular",
 		"Astro",
-		"Figma",
+		"Flutter",
+		"MongoDB",
+		"SQL Server",
+		"MySQL",
+		"Git",
+		"GitHub",
+		"Gitlab",
+		"SOLID",
 		"Clean Architecture",
 		"Microservicios",
-		"SOLID",
-		"Scrum",
+		"RESTful API",
 		"Design Systems",
-		"Responsive Design",
-		"Gateway API",
-		"Middleware",
-		"OAuth",
-		"JWT",
-		"Trello",
-		"Scrum Mate"
+		"Figma",
+		"Scrum"
 	],
 	"projects": [
 		{
