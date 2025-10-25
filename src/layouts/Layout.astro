@@ -1,13 +1,13 @@
 ---
-import "../styles/global.css";
-
-import { basics } from "@cv";
+import "@styles/global.css";
+import { basics } from "@cv/es.json";
 
 interface Props {
 	title: string;
+	locale: string;
 }
 
-const { title } = Astro.props;
+const { title, locale } = Astro.props;
 const { summary, url, image } = basics;
 ---
 

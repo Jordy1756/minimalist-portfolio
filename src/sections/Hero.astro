@@ -1,11 +1,16 @@
 ---
-import EmailIcon from "@/assets/icons/EmailIcon.astro";
-import GithubIcon from "@/assets/icons/GithubIcon.astro";
-import LinkedInIcon from "@/assets/icons/LinkedInIcon.astro";
-import ResumeIcon from "@/assets/icons/ResumeIcon.astro";
-import WorldIcon from "@/assets/icons/WorldIcon.astro";
-import { basics } from "@cv";
+import type { Basics } from "@entities/basics.entity";
+import EmailIcon from "@icons/EmailIcon.astro";
+import GithubIcon from "@icons/GithubIcon.astro";
+import LinkedInIcon from "@icons/LinkedInIcon.astro";
+import ResumeIcon from "@icons/ResumeIcon.astro";
+import WorldIcon from "@icons/WorldIcon.astro";
 
+interface Props {
+	basics: Basics;
+}
+
+const { basics } = Astro.props;
 const { name, label, email, location, profiles, resume } = basics;
 
 const SOCIAL_ICONS = {

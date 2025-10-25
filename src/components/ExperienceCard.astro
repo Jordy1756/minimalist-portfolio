@@ -2,8 +2,8 @@
 type Props = {
 	name: string;
 	position: string;
-	startDate: string;
-	endDate: string | null;
+	startDate: Date;
+	endDate: Date | null;
 	summary: string;
 	highlights: string[];
 };
@@ -21,9 +21,9 @@ const endYear = endDate !== null ? new Date(endDate).getFullYear() : "Actual";
 			<h4 class="text-base font-medium">{position}</h4>
 		</div>
 		<div class="text-right text-sm font-medium text-neutral-500">
-			<time datetime={startDate}>{startYear}</time>
+			<time datetime={startDate + ""}>{startYear}</time>
 			<span>-</span>
-			<time datetime={endDate}>{endYear}</time>
+			<time datetime={endDate + ""}>{endYear}</time>
 		</div>
 	</header>
 	<main class="flex flex-col gap-3">

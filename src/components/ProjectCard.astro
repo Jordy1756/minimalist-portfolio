@@ -1,6 +1,6 @@
 ---
-import ExternalIcon from "@/assets/icons/ExternalIcon.astro";
-import GithubIcon from "@/assets/icons/GithubIcon.astro";
+import ExternalIcon from "@icons/ExternalIcon.astro";
+import GithubIcon from "@icons/GithubIcon.astro";
 
 type Props = {
 	name: string;
@@ -37,7 +37,12 @@ const { name, description, highlights, url, github } = Astro.props;
 		</a>
 		{
 			url && (
-				<a class="flex items-center gap-2" href={url} target="_blank" rel="noopener noreferrer">
+				<a
+					class="flex items-center gap-2"
+					href={url}
+					target="_blank"
+					rel="noopener noreferrer"
+				>
 					<ExternalIcon width={20} height={20} color="var(--neutral-800)" />
 					<span>Demo</span>
 				</a>

@@ -1,7 +1,13 @@
 ---
-import { education } from "@cv";
-import Section from "@/components/Section.astro";
-import EducationCard from "@/components/EducationCard.astro";
+import type { Education } from "@entities/education.entity";
+import Section from "@components/Section.astro";
+import EducationCard from "@components/EducationCard.astro";
+
+interface Props {
+	education: Education[];
+}
+
+const { education } = Astro.props;
 ---
 
 <Section title="Educación">

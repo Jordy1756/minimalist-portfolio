@@ -1,7 +1,13 @@
 ---
-import { projects } from "@cv";
-import Section from "@/components/Section.astro";
-import ProjectCard from "@/components/ProjectCard.astro";
+import type { Project } from "@entities/project.entity";
+import Section from "@components/Section.astro";
+import ProjectCard from "@components/ProjectCard.astro";
+
+interface Props {
+	projects: Project[];
+}
+
+const { projects } = Astro.props;
 ---
 
 <Section title="Proyectos">

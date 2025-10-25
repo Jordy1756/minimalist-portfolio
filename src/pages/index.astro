@@ -1,23 +1,5 @@
 ---
-import About from "@/sections/About.astro";
-import Layout from "../layouts/Layout.astro";
-import Hero from "@/sections/Hero.astro";
-import Experience from "@/sections/Experience.astro";
-import Education from "@/sections/Education.astro";
-import Projects from "@/sections/Projects.astro";
-import Skills from "@/sections/Skills.astro";
-import Certificates from "@/sections/Certificates.astro";
-import { basics } from "@cv";
+import { getRelativeLocaleUrl } from "astro:i18n";
 
-const { name, label } = basics;
+return Astro.redirect(getRelativeLocaleUrl("es"));
 ---
-
-<Layout title={`Portafolio de ${name} - ${label}`}>
-	<Hero />
-	<About />
-	<Experience />
-	<Projects />
-	<Education />
-	<Certificates />
-	<Skills />
-</Layout>

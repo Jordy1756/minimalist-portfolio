@@ -1,14 +1,13 @@
 ---
-import { certificates } from "@cv";
-import Section from "@/components/Section.astro";
-import CertificateCard from "@/components/CertificateCard.astro";
+import type { Certificate } from "@entities/certificate.entity";
+import Section from "@components/Section.astro";
+import CertificateCard from "@components/CertificateCard.astro";
 
-type Certificate = {
-	date: string;
-	name: string;
-	issuer: string;
-	url?: string;
-};
+interface Props {
+	certificates: Certificate[];
+}
+
+const { certificates } = Astro.props;
 
 const certificatesByYear = certificates.reduce(
 	(acc, cert) => {
@@ -29,11 +28,18 @@ const sortedYears = Object.keys(certificatesByYear)
 		{
 			sortedYears.map((year) => (
 				<div class="flex flex-col gap-1">
-					<span class="text-sm font-medium text-neutral-600 -translate-x-3.5">{year}</span>
+					<span class="-translate-x-3.5 text-sm font-medium text-neutral-600">
+						{year}
+					</span>
 					<ul class="flex flex-col gap-4 border-l border-neutral-200">
 						{certificatesByYear[year].map(({ name, date, issuer, url }) => (
 							<li>
-								<CertificateCard name={name} date={date} issuer={issuer} url={url} />
+								<CertificateCard
+									name={name}
+									date={date}
+									issuer={issuer}
+									url={url}
+								/>
 							</li>
 						))}
 					</ul>

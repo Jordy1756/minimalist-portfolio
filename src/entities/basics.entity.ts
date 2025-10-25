@@ -1,0 +1,14 @@
+import type { Profile } from "@entities/profile.entity";
+import type { Location } from "@entities/location.entity";
+
+export interface Basics {
+	name: string;
+	label: string;
+	email: string;
+	url: string;
+	image: string;
+	summary: string;
+	location: Location;
+	resume: string;
+	profiles: Profile[];
+}

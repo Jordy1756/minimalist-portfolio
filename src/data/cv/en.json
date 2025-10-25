@@ -1,0 +1,236 @@
+{
+	"basics": {
+		"name": "Yordi Castro Rojas",
+		"label": "Full Stack Developer | React, Node JS, .NET, Flutter | Specialized in Modern Web Solutions",
+		"email": "jordycastro1756@gmail.com",
+		"url": "https://jordy756-minimalist-portfolio.vercel.app/",
+		"image": "https://res.cloudinary.com/dygwpgeq9/image/upload/v1757993133/Portfolio_ktajy9.webp",
+		"summary": "Full Stack Developer with over 1 year of professional experience in building web applications and digital solutions. Specialized in modern technologies, clean architectures, microservices, and SOLID principles. Adaptable, self-taught, and passionate about continuous learning, I bring strong analytical abilities, collaborative teamwork in agile environments, and effective technical communication. Committed to delivering robust and efficient solutions that integrate business requirements and end-user experience.",
+		"location": {
+			"city": "Turrialba, Cartago",
+			"countryCode": "CR",
+			"region": "Costa Rica"
+		},
+		"resume": "https://drive.google.com/file/d/1h7i4BzpSJlhOEvHl6AkvY3W7936O4nn5/view?usp=sharing",
+		"profiles": [
+			{
+				"network": "LinkedIn",
+				"username": "Yordi Castro",
+				"url": "https://linkedin.com/in/yordicastro"
+			},
+			{
+				"network": "GitHub",
+				"username": "Jordy1756",
+				"url": "https://github.com/Jordy1756"
+			}
+		]
+	},
+	"experience": [
+		{
+			"name": "4Geeks",
+			"position": "Full Stack Developer",
+			"startDate": "2025-07-19",
+			"endDate": null,
+			"summary": "Lead and Full Stack development across web, mobile, and desktop projects for B2B/B2C in agile settings. Focused on efficient architecture, continuous improvement, cross-team collaboration, and top-tier user experience within the 4Geeks ecosystem.",
+			"highlights": [
+				"Led the end-to-end development of the official 4Geeks mobile application (Flutter), integrating secure authentication, sales management, and real-time payment link generation through REST API consumption and UX optimization.",
+				"Directed the full creation of MARKET-APP (Electron + React), a self-service solution with secure session handling, internationalization (i18n), and a robust authentication and payment architecture.",
+				"Developed a real-time messaging system (Angular + Firebase) with modern chat features, enabling direct communication, notifications, and intuitive conversation management between candidates and recruiters.",
+				"Redesigned the ERPNext hospital system by adapting its UI to the 4Geeks visual system using modular CSS, achieving consistent branding and better experience across all devices."
+			]
+		},
+		{
+			"name": "INTA Costa Rica",
+			"position": "Full Stack Developer",
+			"startDate": "2023-07-10",
+			"endDate": "2023-12-01",
+			"summary": "Development and delivery of a comprehensive inventory management system for the National Institute for Innovation and Technology Transfer in Agriculture, covering all key software lifecycle phases.",
+			"highlights": [
+				"Collaborated closely with stakeholders to gather requirements and led architectural design, laying the technical foundation for a scalable, secure, and maintainable system.",
+				"Developed and deployed frontend and backend modules using Blazor and C#, implementing multi-level user access management and optimizing SQL Server database performance.",
+				"Implemented automated testing, incident monitoring, technical documentation, and production deployment to ensure quality, user adoption, seamless data migration, and continuous system operation."
+			]
+		},
+		{
+			"name": "Lácteos El Torito",
+			"position": "Web Designer & Developer",
+			"startDate": "2025-01-01",
+			"endDate": "2025-03-01",
+			"summary": "Designed and developed a professional website to enhance the digital presence and branding of Lácteos El Torito, showcasing their product catalog and providing a modern, attractive user experience.",
+			"highlights": [
+				"Led client sessions to define brand values, business goals, and functional requirements, ensuring strategic product alignment.",
+				"Designed and implemented a complete visual system—color palette, typography, and UI components—consistent with brand identity and fully responsive across devices.",
+				"Developed and launched the website using Astro and optimized JavaScript, integrating validated forms and email marketing services, achieving a Google Lighthouse performance score above 90."
+			]
+		}
+	],
+	"education": [
+		{
+			"institution": "University of Costa Rica, Turrialba",
+			"area": "Business Informatics",
+			"startDate": "2020-03-10",
+			"endDate": null
+		}
+	],
+	"certificates": [
+		{
+			"name": "AI Immersion – Google Gemini",
+			"date": "2025-09-04",
+			"issuer": "Alura Latam",
+			"url": "https://credsverse.com/credentials/9866ddd9-de2b-4355-b2bd-9597724cebb8"
+		},
+		{
+			"name": "Oracle Next Education (Full Program)",
+			"date": "2024-02-12",
+			"issuer": "Oracle + Alura Latam",
+			"url": "https://app.aluracursos.com/user/jordycastro1756/fullCertificate/fb6c4059144a90dd07315ca00c5512cb"
+		},
+		{
+			"name": "Oracle Cloud Infrastructure – ONE",
+			"date": "2024-02-12",
+			"issuer": "Oracle + Alura Latam",
+			"url": "https://app.aluracursos.com/degree/certificate/ea298e54-1895-4417-8584-d2c5427d00a1?lang"
+		},
+		{
+			"name": "Python, Data Science in OCI and Oracle Analytics – ONE",
+			"date": "2024-02-11",
+			"issuer": "Oracle + Alura Latam",
+			"url": "https://app.aluracursos.com/degree/certificate/04a9391f-9659-4e90-957f-bb92590932b1?lang"
+		},
+		{
+			"name": "Mi carrera – ONE",
+			"date": "2024-01-28",
+			"issuer": "Oracle + Alura Latam",
+			"url": "https://app.aluracursos.com/degree/certificate/eadefe33-7bc7-448a-ab08-52940c46a340?lang"
+		},
+		{
+			"name": "SQL with Oracle MySQL Server – ONE",
+			"date": "2024-01-28",
+			"issuer": "Oracle + Alura Latam",
+			"url": "https://app.aluracursos.com/degree/certificate/64022822-52a8-4650-a452-dbdba2a1974d?lang"
+		},
+		{
+			"name": "Scrum Fundamentals Certified (SFC)",
+			"date": "2023-10-31",
+			"issuer": "SCRUMstudy",
+			"url": "https://www.scrumstudy.com/certification/verify?type=SFC&number=1003121"
+		},
+		{
+			"name": "Entrepreneurship G5 – ONE",
+			"date": "2023-09-21",
+			"issuer": "Oracle + Alura Latam",
+			"url": "https://app.aluracursos.com/degree/certificate/6133f90d-70b9-4d00-b882-801095e4be21?lang"
+		},
+		{
+			"name": "Business Agility G5 – ONE",
+			"date": "2023-09-18",
+			"issuer": "Oracle + Alura Latam",
+			"url": "https://app.aluracursos.com/degree/certificate/1d84630a-49b9-449c-bcfb-9ddde23445e0?lang"
+		},
+		{
+			"name": "React G5 – ONE",
+			"date": "2023-08-13",
+			"issuer": "Oracle + Alura Latam",
+			"url": "https://app.aluracursos.com/degree/certificate/49c0491b-db89-4608-aabf-afa4abf7e4db?lang"
+		},
+		{
+			"name": "Front End G5 – ONE",
+			"date": "2023-07-21",
+			"issuer": "Oracle + Alura Latam",
+			"url": "https://app.aluracursos.com/degree/certificate/5a11a5fa-18d3-4798-bec5-2362bc471acd?lang"
+		},
+		{
+			"name": "HTML & CSS",
+			"date": "2023-07-17",
+			"issuer": "Oracle + Alura Latam",
+			"url": "https://app.aluracursos.com/degree/certificate/26863581-ab8c-4bf6-bf67-87645f598c44?lang"
+		},
+		{
+			"name": "Personal Development G5 – ONE",
+			"date": "2023-05-27",
+			"issuer": "Oracle + Alura Latam",
+			"url": "https://app.aluracursos.com/degree/certificate/a69c6240-19c9-4be7-a5de-5e3a1a0bdfd7?lang"
+		},
+		{
+			"name": "Programming Beginner G5 – ONE",
+			"date": "2023-04-17",
+			"issuer": "Oracle + Alura Latam",
+			"url": "https://app.aluracursos.com/degree/certificate/e55e6770-5e3c-472e-b079-145720c43ee4?lang"
+		}
+	],
+	"skills": [
+		"HTML",
+		"CSS",
+		"JavaScript",
+		"TypeScript",
+		"Node.js",
+		"Express",
+		"C#",
+		"React",
+		"Angular",
+		"Astro",
+		"Flutter",
+		"MongoDB",
+		"SQL Server",
+		"MySQL",
+		"Git",
+		"GitHub",
+		"Gitlab",
+		"SOLID",
+		"Clean Architecture",
+		"Microservices",
+		"RESTful API",
+		"Design Systems",
+		"Figma",
+		"Scrum"
+	],
+	"projects": [
+		{
+			"name": "Lácteos El Torito",
+			"highlights": ["Astro", "TypeScript", "CSS", "Figma"],
+			"description": "Website for a dairy products company.",
+			"url": "https://lacteos-el-torito.vercel.app/",
+			"github": "https://github.com/Jordy1756/el-torito-dairy-products.git"
+		},
+		{
+			"name": "Silk Tree",
+			"description": "Web application for managing medical appointments, users, and hospital services.",
+			"highlights": ["React", "Screaming Architecture", "TypeScript"],
+			"url": "https://silk-tree.vercel.app/",
+			"github": "https://github.com/Jordy1756/silk-tree"
+		},
+		{
+			"name": "Alura Geek",
+			"description": "Challenge ONE Alura Geek Latam Group 05",
+			"highlights": ["HTML", "CSS", "Vanilla JS"],
+			"url": "https://jordy1756.github.io/alura-geek/",
+			"github": "https://github.com/Jordy1756/alura-geek.git"
+		},
+		{
+			"name": "Turríka",
+			"description": "Interactive landing page showcasing the history and making of Turrialba cheese chicharrones.",
+			"highlights": ["Astro JS", "GSAP", "Lenis"],
+			"url": "https://turrika.vercel.app/",
+			"github": "https://github.com/Jordy1756/turrika.git"
+		},
+		{
+			"name": "Silk Tree RESTful API",
+			"description": "RESTful API for managing medical appointments, users, and hospital services.",
+			"highlights": ["Node JS", "Express", "JWT", "MySQL"],
+			"github": "https://github.com/Jordy1756/silk-tree-api.git"
+		},
+		{
+			"name": "Alura Geek RESTful API",
+			"description": "RESTful API for managing articles, users, and comments.",
+			"highlights": ["Node JS", "Express", "JWT", "Mongo DB"],
+			"url": "https://alura-geek-api-one.vercel.app/",
+			"github": "https://github.com/Jordy1756/alura-geek-api.git"
+		},
+		{
+			"name": "Hi Cupon RESTful API",
+			"description": "RESTful API for managing coupons and promotions, allowing users to get discounts on products and services.",
+			"highlights": ["C#", "Clean Architecture", "SQL Server"],
+			"github": "https://github.com/Jordy1756/HiCupon_API_NET.git"
+		}
+	]
+}

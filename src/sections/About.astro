@@ -1,8 +1,13 @@
 ---
-import Section from "@/components/Section.astro";
-import { basics } from "@cv";
+import type { Basics } from "@entities/basics.entity";
+import Section from "@components/Section.astro";
 
-const { summary } = basics;
+interface Props {
+	about: Basics;
+}
+
+const { about } = Astro.props;
+const { summary } = about;
 ---
 
 <Section title="Sobre mí">

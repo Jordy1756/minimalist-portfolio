@@ -1,12 +1,21 @@
 ---
-import { works } from "@cv";
-import ExperienceCard from "@/components/ExperienceCard.astro";
-import Section from "@/components/Section.astro";
+import type { Experience } from "@entities/experience.entity";
+import ExperienceCard from "@components/ExperienceCard.astro";
+import Section from "@components/Section.astro";
+
+interface Props {
+	experience: Experience[];
+}
+
+const { experience } = Astro.props;
+console.log({ experience });
+console.log({ typeOfStartDate: typeof experience[0]?.startDate });
+console.log({ typeOfEndDate: typeof experience[0]?.endDate });
 ---
 
 <Section title="Experiencia laboral">
 	{
-		works.map(({ name, position, startDate, endDate, summary, highlights }) => (
+		experience.map(({ name, position, startDate, endDate, summary, highlights }) => (
 			<ExperienceCard
 				name={name}
 				position={position}
