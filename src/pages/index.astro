@@ -1,8 +1,7 @@
 ---
 export const prerender = false;
 
-const browserLang = Astro.request.headers.get("accept-language");
-const preferredLang = browserLang?.startsWith("en") ? "en" : "es";
+const preferredLang = Astro.preferredLocale ?? "es";
 
-return Astro.redirect(`/${preferredLang}/`, 302);
+return Astro.redirect(`/${preferredLang}/`);
 ---
