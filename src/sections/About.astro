@@ -3,13 +3,14 @@ import type { Basics } from "@entities/basics.entity";
 import Section from "@components/Section.astro";
 
 interface Props {
+	title: string;
 	about: Basics;
 }
 
-const { about } = Astro.props;
+const { title, about } = Astro.props;
 const { summary } = about;
 ---
 
-<Section title="Sobre mí">
+<Section title={title}>
 	<p class="text-sm">{summary}</p>
 </Section>

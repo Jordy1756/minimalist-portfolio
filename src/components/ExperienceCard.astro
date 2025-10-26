@@ -1,17 +1,18 @@
 ---
+import type { Experience } from "@entities/experience.entity";
+import { getTranslations } from "@i18n/index";
+
 type Props = {
-	name: string;
-	position: string;
-	startDate: Date;
-	endDate: Date | null;
-	summary: string;
-	highlights: string[];
+	experience: Experience;
 };
 
-const { name, position, startDate, endDate, summary, highlights } = Astro.props;
+const { experience } = Astro.props;
+const { name, position, startDate, endDate, summary, highlights } = experience;
 
+const t = getTranslations();
+const presentLabel = t.common.presentLabel;
 const startYear = new Date(startDate).getFullYear();
-const endYear = endDate !== null ? new Date(endDate).getFullYear() : "Actual";
+const endYear = endDate !== null ? new Date(endDate).getFullYear() : presentLabel;
 ---
 
 <article class="flex flex-col gap-3">

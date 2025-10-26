@@ -1,4 +1,5 @@
 ---
+import type { Locale } from "@definitions/i18n.types";
 import Layout from "@layouts/Layout.astro";
 import Hero from "@sections/Hero.astro";
 import About from "@sections/About.astro";
@@ -7,28 +8,28 @@ import Projects from "@sections/Projects.astro";
 import Education from "@sections/Education.astro";
 import Certificates from "@sections/Certificates.astro";
 import Skills from "@sections/Skills.astro";
+import { getCurrentLocale, getTranslations, setLocale } from "@i18n/index.ts";
 
 export const getStaticPaths = async () => [
 	{ params: { locale: "es" } },
 	{ params: { locale: "en" } }
 ];
 
-const locale = Astro.params.locale || "es";
+setLocale(Astro.params.locale as Locale);
 
-const supportedLocales = ["es", "en"];
-const currentLocale = supportedLocales.includes(locale) ? locale : "es";
-
+const currentLocale = getCurrentLocale();
 const resume = await import(`../../data/cv/${currentLocale}.json`);
-
 const { basics, experience, education, projects, certificates, skills } = resume;
+
+const t = getTranslations();
 ---
 
-<Layout title={`Portafolio de ${basics.name} - ${basics.label}`} locale={currentLocale}>
+<Layout title={`${t.pages.home.title} - ${basics.label}`} locale={currentLocale} basics={basics}>
 	<Hero basics={basics} />
-	<About about={basics} />
-	<Experience experience={experience} />
-	<Projects projects={projects} />
-	<Education education={education} />
-	<Certificates certificates={certificates} />
-	<Skills skills={skills} />
+	<About title={t.pages.home.sections.aboutMe.title} about={basics} />
+	<Experience title={t.pages.home.sections.experience.title} experience={experience} />
+	<Projects title={t.pages.home.sections.projects.title} projects={projects} />
+	<Education title={t.pages.home.sections.education.title} education={education} />
+	<Certificates title={t.pages.home.sections.certificates.title} certificates={certificates} />
+	<Skills title={t.pages.home.sections.skills.title} skills={skills} />
 </Layout>

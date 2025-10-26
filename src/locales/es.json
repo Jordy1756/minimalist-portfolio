@@ -1,0 +1,31 @@
+{
+	"common": {
+		"presentLabel": "Presente"
+	},
+	"pages": {
+		"home": {
+			"title": "Portafolio de Yordi Castro Rojas",
+			"sections": {
+				"aboutMe": {
+					"title": "Sobre mí"
+				},
+				"experience": {
+					"title": "Experiencia"
+				},
+				"projects": {
+					"title": "Proyectos",
+					"codeButton": "Código"
+				},
+				"education": {
+					"title": "Educación"
+				},
+				"certificates": {
+					"title": "Certificados"
+				},
+				"skills": {
+					"title": "Habilidades"
+				}
+			}
+		}
+	}
+}

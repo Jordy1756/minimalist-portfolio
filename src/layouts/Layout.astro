@@ -1,18 +1,19 @@
 ---
+import type { Basics } from "@entities/basics.entity";
 import "@styles/global.css";
-import { basics } from "@cv/es.json";
 
 interface Props {
 	title: string;
 	locale: string;
+	basics: Basics;
 }
 
-const { title, locale } = Astro.props;
+const { title, locale, basics } = Astro.props;
 const { summary, url, image } = basics;
 ---
 
 <!doctype html>
-<html lang="es">
+<html lang={locale}>
 	<head>
 		<meta charset="UTF-8" />
 		<title>{title}</title>

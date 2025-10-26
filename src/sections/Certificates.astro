@@ -4,10 +4,11 @@ import Section from "@components/Section.astro";
 import CertificateCard from "@components/CertificateCard.astro";
 
 interface Props {
+	title: string;
 	certificates: Certificate[];
 }
 
-const { certificates } = Astro.props;
+const { title, certificates } = Astro.props;
 
 const certificatesByYear = certificates.reduce(
 	(acc, cert) => {
@@ -23,7 +24,7 @@ const sortedYears = Object.keys(certificatesByYear)
 	.sort((a, b) => b - a);
 ---
 
-<Section title="Certificados">
+<Section title={title}>
 	<div class="flex flex-col gap-8 pl-5">
 		{
 			sortedYears.map((year) => (
@@ -32,14 +33,9 @@ const sortedYears = Object.keys(certificatesByYear)
 						{year}
 					</span>
 					<ul class="flex flex-col gap-4 border-l border-neutral-200">
-						{certificatesByYear[year].map(({ name, date, issuer, url }) => (
+						{certificatesByYear[year].map((certificate) => (
 							<li>
-								<CertificateCard
-									name={name}
-									date={date}
-									issuer={issuer}
-									url={url}
-								/>
+								<CertificateCard certificate={certificate} />
 							</li>
 						))}
 					</ul>

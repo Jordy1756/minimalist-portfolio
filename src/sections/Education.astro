@@ -4,21 +4,13 @@ import Section from "@components/Section.astro";
 import EducationCard from "@components/EducationCard.astro";
 
 interface Props {
+	title: string;
 	education: Education[];
 }
 
-const { education } = Astro.props;
+const { title, education } = Astro.props;
 ---
 
-<Section title="Educación">
-	{
-		education.map(({ institution, startDate, endDate, area }) => (
-			<EducationCard
-				institution={institution}
-				startDate={startDate}
-				endDate={endDate}
-				area={area}
-			/>
-		))
-	}
+<Section title={title}>
+	{education.map((education) => <EducationCard education={education} />)}
 </Section>

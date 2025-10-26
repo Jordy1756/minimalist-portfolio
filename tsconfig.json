@@ -5,15 +5,18 @@
 	"compilerOptions": {
 		"baseUrl": ".",
 		"paths": {
-			"@cv/*": ["./src/data/cv/*"],
+			"@icons/*": ["src/assets/icons/*"],
 			"@components/*": ["src/components/*"],
-			"@sections/*": ["src/sections/*"],
-			"@layouts/*": ["src/layouts/*"],
-			"@styles/*": ["src/styles/*"],
-			"@utils/*": ["src/utils/*"],
+			"@constants/*": ["src/constants/*"],
+			"@cv/*": ["./src/data/cv/*"],
 			"@entities/*": ["src/entities/*"],
+			"@i18n/*": ["src/i18n/*"],
+			"@layouts/*": ["src/layouts/*"],
+			"@locales/*": ["src/locales/*"],
+			"@sections/*": ["src/sections/*"],
+			"@styles/*": ["src/styles/*"],
 			"@definitions/*": ["src/types/*"],
-			"@icons/*": ["src/assets/icons/*"]
+			"@utils/*": ["src/utils/*"]
 		}
 	}
 }

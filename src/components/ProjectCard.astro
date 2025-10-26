@@ -1,16 +1,17 @@
 ---
+import type { Project } from "@entities/project.entity";
+import { getTranslations } from "@i18n/index";
 import ExternalIcon from "@icons/ExternalIcon.astro";
 import GithubIcon from "@icons/GithubIcon.astro";
 
 type Props = {
-	name: string;
-	description: string;
-	highlights: string[];
-	url: string | undefined;
-	github: string;
+	project: Project;
 };
 
-const { name, description, highlights, url, github } = Astro.props;
+const { project } = Astro.props;
+const { name, description, highlights, url, github } = project;
+
+const t = getTranslations();
 ---
 
 <article class="flex flex-col gap-1.5 rounded-lg border border-neutral-200 p-4">
@@ -33,7 +34,7 @@ const { name, description, highlights, url, github } = Astro.props;
 	<footer class="flex flex-1 items-end gap-4">
 		<a class="flex items-center gap-2" href={github} target="_blank" rel="noopener noreferrer">
 			<GithubIcon width={20} height={20} color="var(--neutral-800)" />
-			<span>Código</span>
+			<span>{t.pages.home.sections.projects.codeButton}</span>
 		</a>
 		{
 			url && (

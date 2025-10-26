@@ -1,15 +1,18 @@
 ---
+import type { Education } from "@entities/education.entity";
+import { getTranslations } from "@i18n/index";
+
 type Props = {
-	institution: string;
-	startDate: Date;
-	endDate: Date | null;
-	area: string;
+	education: Education;
 };
 
-const { institution, startDate, endDate, area } = Astro.props;
+const { education } = Astro.props;
+const { institution, startDate, endDate, area } = education;
 
+const t = getTranslations();
+const presentLabel = t.common.presentLabel;
 const startYear = new Date(startDate).getFullYear();
-const endYear = endDate !== null ? new Date(endDate).getFullYear() : "Actual";
+const endYear = endDate !== null ? new Date(endDate).getFullYear() : presentLabel;
 ---
 
 <article>

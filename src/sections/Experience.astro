@@ -4,26 +4,13 @@ import ExperienceCard from "@components/ExperienceCard.astro";
 import Section from "@components/Section.astro";
 
 interface Props {
+	title: string;
 	experience: Experience[];
 }
 
-const { experience } = Astro.props;
-console.log({ experience });
-console.log({ typeOfStartDate: typeof experience[0]?.startDate });
-console.log({ typeOfEndDate: typeof experience[0]?.endDate });
+const { title, experience } = Astro.props;
 ---
 
-<Section title="Experiencia laboral">
-	{
-		experience.map(({ name, position, startDate, endDate, summary, highlights }) => (
-			<ExperienceCard
-				name={name}
-				position={position}
-				startDate={startDate}
-				endDate={endDate}
-				summary={summary}
-				highlights={highlights}
-			/>
-		))
-	}
+<Section title={title}>
+	{experience.map((experience) => <ExperienceCard experience={experience} />)}
 </Section>
