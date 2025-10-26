@@ -1,7 +1,8 @@
 ---
-return Astro.redirect("/en/");
----
+export const prerender = false;
 
-<div>
-    <h1>Hola mundo mientras espero</h1>
-</div>
+const browserLang = Astro.request.headers.get("accept-language");
+const preferredLang = browserLang?.startsWith("en") ? "en" : "es";
+
+return Astro.redirect(`/${preferredLang}/`, 302);
+---
