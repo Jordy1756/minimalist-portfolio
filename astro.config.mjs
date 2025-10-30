@@ -8,7 +8,7 @@ import vercel from "@astrojs/vercel";
 export default defineConfig({
 	adapter: vercel(),
 	i18n: {
-		defaultLocale: "es",
+		defaultLocale: "en",
 		locales: ["es", "en"],
 		fallback: {
 			en: "es"

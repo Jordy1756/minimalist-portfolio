@@ -6,7 +6,7 @@ type Props = {
 const { title } = Astro.props;
 ---
 
-<section class="mr-auto ml-auto flex w-full max-w-[var(--max-width)] flex-col gap-4 p-4 md:last:pb-12">
+<section class="flex flex-col gap-4">
 	<h2 class="text-xl font-bold">{title}</h2>
 	<slot />
 </section>

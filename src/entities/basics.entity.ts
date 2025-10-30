@@ -6,7 +6,11 @@ export interface Basics {
 	label: string;
 	email: string;
 	url: string;
-	image: string;
+	ogImage: string;
+	avatar: {
+		src: string;
+		alt: string;
+	};
 	summary: string;
 	location: Location;
 	resume: string;

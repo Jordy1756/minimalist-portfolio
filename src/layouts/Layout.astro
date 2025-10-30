@@ -9,7 +9,7 @@ interface Props {
 }
 
 const { title, locale, basics } = Astro.props;
-const { summary, url, image } = basics;
+const { summary, url, ogImage } = basics;
 ---
 
 <!doctype html>
@@ -19,23 +19,25 @@ const { summary, url, image } = basics;
 		<title>{title}</title>
 		<meta name="description" content={summary} />
 		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<link rel="icon" type="image/webp" href="/favicon.webp" />
 
 		<meta property="og:url" content={url} />
 		<meta property="og:type" content="website" />
 		<meta property="og:title" content={title} />
 		<meta property="og:description" content={summary} />
-		<meta property="og:image" content={image} />
+		<meta property="og:image" content={ogImage} />
 
 		<meta name="twitter:card" content="summary_large_image" />
 		<meta property="twitter:domain" content={url.split("//")[1] ?? ""} />
 		<meta property="twitter:url" content={url} />
 		<meta name="twitter:title" content={title} />
 		<meta name="twitter:description" content={summary} />
-		<meta name="twitter:image" content={image} />
+		<meta name="twitter:image" content={ogImage} />
 	</head>
 	<body class="font-nunito-sans bg-neutral-50 text-neutral-900">
-		<slot />
+		<div class="mx-auto flex w-full max-w-[var(--max-width)] flex-col gap-8 p-4 md:py-12">
+			<slot />
+		</div>
 	</body>
 </html>
 
