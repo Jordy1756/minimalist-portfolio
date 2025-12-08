@@ -5,7 +5,7 @@
 	"compilerOptions": {
 		"baseUrl": ".",
 		"paths": {
-			"@icons/*": ["src/assets/icons/*"],
+			"@icons/*": ["src/components/icons/*"],
 			"@components/*": ["src/components/*"],
 			"@constants/*": ["src/constants/*"],
 			"@cv/*": ["./src/data/cv/*"],

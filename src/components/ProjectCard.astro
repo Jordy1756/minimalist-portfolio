@@ -1,12 +1,12 @@
 ---
-import type { Project } from "@entities/project.entity";
+import type { Project } from "@entities/project";
 import { getTranslations } from "@i18n/index";
 import ExternalIcon from "@icons/ExternalIcon.astro";
 import GithubIcon from "@icons/GithubIcon.astro";
 
-type Props = {
+interface Props {
 	project: Project;
-};
+}
 
 const { project } = Astro.props;
 const { name, description, highlights, url, github } = project;

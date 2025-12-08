@@ -1,5 +1,5 @@
-import type { Profile } from "@entities/profile.entity";
-import type { Location } from "@entities/location.entity";
+import type { Profile } from "@entities/profile";
+import type { Location } from "@entities/location";
 
 export interface Basics {
 	name: string;

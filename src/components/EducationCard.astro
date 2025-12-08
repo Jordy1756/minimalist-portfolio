@@ -1,10 +1,10 @@
 ---
-import type { Education } from "@entities/education.entity";
+import type { Education } from "@entities/education";
 import { getTranslations } from "@i18n/index";
 
-type Props = {
+interface Props {
 	education: Education;
-};
+}
 
 const { education } = Astro.props;
 const { institution, startDate, endDate, area } = education;

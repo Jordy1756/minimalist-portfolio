@@ -1,11 +1,11 @@
 ---
-import type { Certificate } from "@entities/certificate.entity";
+import type { Certificate } from "@entities/certificate";
 import { getCurrentLocale } from "@i18n/index";
 import ExternalIcon from "@icons/ExternalIcon.astro";
 
-type Props = {
+interface Props {
 	certificate: Certificate;
-};
+}
 
 const { certificate } = Astro.props;
 const { name, date, issuer, url } = certificate;

@@ -1,10 +1,10 @@
 ---
-import type { Experience } from "@entities/experience.entity";
+import type { Experience } from "@entities/experience";
 import { getTranslations } from "@i18n/index";
 
-type Props = {
+interface Props {
 	experience: Experience;
-};
+}
 
 const { experience } = Astro.props;
 const { name, position, startDate, endDate, summary, highlights } = experience;
