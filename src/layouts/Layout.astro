@@ -34,7 +34,7 @@ const { summary, url, ogImage } = basics;
 		<meta name="twitter:description" content={summary} />
 		<meta name="twitter:image" content={ogImage} />
 	</head>
-	<body class="font-nunito-sans bg-neutral-50 text-neutral-900">
+	<body class="font-nunito-sans bg-neutral-50 text-neutral-700">
 		<div class="mx-auto flex w-full max-w-[var(--max-width)] flex-col gap-8 p-4 md:py-12">
 			<slot />
 		</div>
@@ -49,6 +49,7 @@ const { summary, url, ogImage } = basics;
 	:is(h1, h2, h3, h4, h5, h6) {
 		line-height: 1.25;
 		text-wrap: balance;
+		color: var(--color-neutral-900);
 	}
 
 	p,

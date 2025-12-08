@@ -1,7 +1,7 @@
-import type { Locale } from "@definitions/i18n.types";
+import type { Locale } from "@definitions/i18n";
 import es from "@locales/es.json";
 import en from "@locales/en.json";
-import { DEFAULT_LOCALE, SUPPORTED_LOCALES } from "@constants/locale.constanst";
+import { DEFAULT_LOCALE, SUPPORTED_LOCALES } from "@constants/locale";
 
 const translations = { es, en };
 
