@@ -1,95 +1,80 @@
 # Minimalist Portfolio
 
-[![Astro Badge](https://img.shields.io/badge/Astro-BC52EE?logo=astro&logoColor=fff&style=flat)](https://astro.build/)
-[![TypeScript Badge](https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=fff&style=flat)](https://www.typescriptlang.org/)
-[![Tailwind CSS Badge](https://img.shields.io/badge/Tailwind_CSS-06B6D4?logo=tailwindcss&logoColor=fff&style=flat)](https://tailwindcss.com/)
+Este repositorio contiene el código fuente de mi portafolio personal y currículum web. Es un proyecto diseñado bajo una filosofía minimalista, enfocado en el rendimiento, la accesibilidad y una arquitectura de código limpia.
 
-A minimalist portfolio website built with Astro, TypeScript, and Tailwind CSS. This project showcases professional experience, skills, and projects in a clean, performant, and accessible way.
+🔗 **Demo:** [jordy756-minimalist-portfolio.vercel.app](https://jordy756-minimalist-portfolio.vercel.app/)
 
-## 🚀 Features
+## 🚀 Tecnologías
 
-- 📱 Responsive design
-- ⚡ High performance with Astro
-- 🎨 Clean and minimalist UI
-- 📊 SEO optimized
-- 🌐 JSON-based content management
-- 🎯 TypeScript for type safety
+Este proyecto ha sido construido utilizando tecnologías web modernas para asegurar la máxima velocidad y optimización SEO:
 
-## 🛠️ Tech Stack
+- **[Astro](https://astro.build/):** Framework principal para generar un sitio estático (SSG) de alto rendimiento.
+- **[TypeScript](https://www.typescriptlang.org/):** Para garantizar la seguridad de tipos y la escalabilidad del código.
+- **[Tailwind CSS](https://tailwindcss.com/):** Para un estilizado rápido, responsivo y mantenible.
+- **[Vercel](https://vercel.com/):** Plataforma de despliegue y hosting.
 
-- [Astro](https://astro.build/) - Static Site Generator
-- [TypeScript](https://www.typescriptlang.org/) - Programming Language
-- [Tailwind CSS](https://tailwindcss.com/) - CSS Framework
-- [Prettier](https://prettier.io/) - Code Formatter
+## ✨ Características
 
-## 📦 Project Structure
+- **Diseño Minimalista:** Interfaz limpia y libre de distracciones.
+- **Internacionalización (i18n):** Soporte completo para Español e Inglés.
+- **Responsive Design:** Totalmente adaptado a dispositivos móviles, tablets y escritorio.
+- **Print Friendly:** Estilos optimizados para imprimir la página como un CV tradicional (Ctrl + P).
+- **Alto Rendimiento:** Puntuaciones perfectas en Google Lighthouse.
+- **Modo Oscuro/Claro:** Adaptable a las preferencias del sistema.
 
-```
-/
-├── src/
-│   ├── assets/
-│   │   └── icons/      # SVG icons
-│   ├── components/     # Reusable Astro components
-│   ├── data/
-│   │   └── cv.json     # Content data
-│   ├── layouts/        # Page layouts
-│   ├── pages/         # Routes
-│   ├── sections/      # Page sections
-│   ├── styles/        # Global styles
-│   └── types/         # TypeScript types
-└── package.json
-```
+## 📂 Estructura del Proyecto
 
-## 🚀 Getting Started
+El proyecto sigue una arquitectura modular y organizada:
 
-1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/minimalist-portfolio.git
+src/
+├── assets/         # Iconos y recursos estáticos
+├── components/     # Componentes UI reutilizables (Cards, Sections)
+├── data/           # Datos del CV (JSON) separados por idioma
+├── entities/       # Definiciones de tipos e interfaces (TypeScript)
+├── i18n/           # Configuración y diccionarios de traducción
+├── layouts/        # Plantillas principales de página
+├── pages/          # Rutas de la aplicación (basadas en archivos)
+├── sections/       # Secciones principales (Hero, About, Experience, etc.)
+├── styles/         # Estilos globales CSS
+└── utils/          # Funciones de utilidad y helpers
 ```
 
-2. Install dependencies:
-```bash
-npm install
-```
+## 🛠️ Instalación y Ejecución Local
 
-3. Start development server:
-```bash
-npm run dev
-```
+Si deseas clonar este repositorio para ver cómo está construido o ejecutarlo localmente:
 
-4. Build for production:
-```bash
-npm run build
-```
+1. **Clonar el repositorio:**
 
-## 📝 Content Management
+   ```bash
+   git clone https://github.com/Jordy1756/minimalist-portfolio.git
+   cd minimalist-portfolio
+   ```
 
-All content is managed through the `cv.json` file located in `src/data/`. Update this file to modify:
+2. **Instalar dependencias:**
 
-- Personal information
-- Work experience
-- Education
-- Skills
-- Projects
-- Certificates
+   ```bash
+   npm install
+   ```
 
-## 🎨 Customization
+3. **Ejecutar servidor de desarrollo:**
 
-- Colors: Edit Tailwind configuration
-- Typography: Modify global.css
-- Layout: Adjust components in src/components/
-- Content: Update cv.json
+   ```bash
+   npm run dev
+   ```
 
-## 📄 License
+   El sitio estará disponible en `http://localhost:4321`.
 
-This project is open source and available under the [MIT License](LICENSE).
+4. **Construir para producción:**
 
-## 🤝 Contributing
+   ```bash
+   npm run build
+   ```
 
-Contributions, issues, and feature requests are welcome!
+## 📄 Licencia
 
-## 📞 Contact
+Este proyecto está bajo la Licencia [MIT](LICENSE). Eres libre de usar este código como inspiración o base para tu propio portafolio, manteniendo la atribución correspondiente.
 
-For questions or feedback, please reach out through:
-- [LinkedIn](https://linkedin.com/in/yordicastro)
-- [GitHub](https://github.com/Jordy1756)
+---
+
+Desarrollado con ❤️ por [Yordi Castro](https://github.com/Jordy1756)

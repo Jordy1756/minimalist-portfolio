@@ -23,6 +23,7 @@ const t = getTranslations();
 						target="_blank"
 						rel="noopener noreferrer"
 						class="flex items-center gap-2 hover:underline"
+						aria-label={`Visitar el proyecto ${name}`}
 					>
 						{name}
 					</a>
@@ -31,7 +32,12 @@ const t = getTranslations();
 				)
 			}
 		</h3>
-		<a href={github} target="_blank" rel="noopener noreferrer">
+		<a
+			href={github}
+			target="_blank"
+			rel="noopener noreferrer"
+			aria-label={`Ver el repositorio de GitHub del proyecto ${name}`}
+		>
 			<GithubIcon
 				width={20}
 				height={20}

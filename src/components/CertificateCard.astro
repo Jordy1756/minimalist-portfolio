@@ -29,7 +29,13 @@ const formattedDate = getFormattedDate(date, localeCode, { month: "short" });
 	</aside>
 	<header class="flex items-start justify-between gap-2">
 		<h3 class="text-base font-semibold text-neutral-900">{name}</h3>
-		<a href={url} target="_blank" rel="noopener noreferrer" class="text-sm underline">
+		<a
+			class="text-sm underline"
+			href={url}
+			target="_blank"
+			rel="noopener noreferrer"
+			aria-label={`Ver el certificado ${name} emitido por ${issuer}`}
+		>
 			<ExternalIcon
 				width={16}
 				height={16}
