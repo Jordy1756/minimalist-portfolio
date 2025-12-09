@@ -20,7 +20,10 @@ const formattedDate = getFormattedDate(date, localeCode, { month: "short" });
 	<span class="absolute top-2/4 -left-4 h-2 w-2 -translate-y-2/4 rounded-full bg-neutral-200"
 	></span>
 	<aside class="row-span-2 flex items-center">
-		<time class="text-xs text-nowrap text-neutral-500 uppercase" datetime={date + ""}>
+		<time
+			class="text-xs font-normal text-nowrap text-neutral-500 uppercase"
+			datetime={date + ""}
+		>
 			{formattedDate}
 		</time>
 	</aside>
@@ -30,7 +33,7 @@ const formattedDate = getFormattedDate(date, localeCode, { month: "short" });
 			<ExternalIcon
 				width={16}
 				height={16}
-				class="text-neutral-500 transition-colors hover:text-neutral-700"
+				class="text-neutral-700 transition-colors hover:text-neutral-900"
 			/>
 		</a>
 	</header>

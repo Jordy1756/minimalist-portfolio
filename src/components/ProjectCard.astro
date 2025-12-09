@@ -35,13 +35,15 @@ const t = getTranslations();
 			<GithubIcon
 				width={20}
 				height={20}
-				class="flex items-center gap-2 text-neutral-500 transition-colors hover:text-neutral-700"
+				class="flex items-center gap-2 text-neutral-700 transition-colors hover:text-neutral-900"
 			/>
 		</a>
 	</header>
-	<main class="flex flex-1 flex-col gap-2">
-		<p class="flex-1 text-sm">{description}</p>
-		<ul class="flex flex-wrap gap-2 text-xs text-neutral-500">
+	<main class="mb-4 flex flex-1 flex-col gap-2">
+		<p class="text-sm">{description}</p>
+	</main>
+	<footer>
+		<ul class="flex flex-wrap gap-2 text-xs font-bold text-neutral-700">
 			{
 				highlights.map((highlight, index) => (
 					<li class="flex gap-2">
@@ -51,5 +53,5 @@ const t = getTranslations();
 				))
 			}
 		</ul>
-	</main>
+	</footer>
 </article>
