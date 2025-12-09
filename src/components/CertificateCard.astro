@@ -2,6 +2,7 @@
 import type { Certificate } from "@entities/certificate";
 import { getCurrentLocale } from "@i18n/index";
 import ExternalIcon from "@icons/ExternalIcon.astro";
+import { getFormattedDate } from "@utils/handleDates";
 
 interface Props {
 	certificate: Certificate;
@@ -11,9 +12,8 @@ const { certificate } = Astro.props;
 const { name, date, issuer, url } = certificate;
 
 const locale = getCurrentLocale();
-const month = new Date(date).toLocaleDateString(locale === "es" ? "es-ES" : "en-US", {
-	month: "short"
-});
+const localeCode = locale === "es" ? "es-ES" : "en-US";
+const formattedDate = getFormattedDate(date, localeCode, { month: "short" });
 ---
 
 <article class="relative flex flex-col gap-1 pl-3">
@@ -21,18 +21,24 @@ const month = new Date(date).toLocaleDateString(locale === "es" ? "es-ES" : "en-
 	></span>
 	<header class="flex items-start justify-between gap-2">
 		<div class="flex items-baseline gap-2">
-			<time class="text-xs text-neutral-400 uppercase" datetime={date + ""}>{month}</time>
+			<time class="text-xs text-neutral-500 uppercase" datetime={date + ""}>
+				{formattedDate}
+			</time>
 			<h3 class="text-base font-medium">{name}</h3>
 		</div>
 		{
 			url && (
 				<a href={url} target="_blank" rel="noopener noreferrer" class="text-sm underline">
-					<ExternalIcon width={16} height={16} color="var(--neutral-800)" />
+					<ExternalIcon
+						width={16}
+						height={16}
+						class="text-neutral-500 transition-colors hover:text-neutral-700"
+					/>
 				</a>
 			)
 		}
 	</header>
 	<main class="flex items-center justify-between gap-2">
-		<p class="text-sm text-neutral-500">{issuer}</p>
+		<p class="text-sm text-neutral-600">{issuer}</p>
 	</main>
 </article>

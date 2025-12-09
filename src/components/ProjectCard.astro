@@ -33,7 +33,11 @@ const t = getTranslations();
 	</main>
 	<footer class="flex flex-1 items-end gap-4">
 		<a class="flex items-center gap-2" href={github} target="_blank" rel="noopener noreferrer">
-			<GithubIcon width={20} height={20} color="var(--neutral-800)" />
+			<GithubIcon
+				width={20}
+				height={20}
+				class="text-neutral-500 transition-colors hover:text-neutral-700"
+			/>
 			<span>{t.pages.home.sections.projects.codeButton}</span>
 		</a>
 		{
@@ -44,7 +48,11 @@ const t = getTranslations();
 					target="_blank"
 					rel="noopener noreferrer"
 				>
-					<ExternalIcon width={20} height={20} color="var(--neutral-800)" />
+					<ExternalIcon
+						width={20}
+						height={20}
+						class="text-neutral-500 transition-colors hover:text-neutral-700"
+					/>
 					<span>Demo</span>
 				</a>
 			)

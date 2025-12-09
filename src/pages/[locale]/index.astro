@@ -22,14 +22,17 @@ const resume = await import(`../../data/cv/${currentLocale}.json`);
 const { basics, experience, education, projects, certificates, skills } = resume;
 
 const t = getTranslations();
+
+const { home } = t.pages;
+const { sections } = home;
 ---
 
-<Layout title={`${t.pages.home.title} - ${basics.label}`} locale={currentLocale} basics={basics}>
+<Layout title={`${home.title} - ${basics.label}`} locale={currentLocale} basics={basics}>
 	<Hero basics={basics} />
-	<About title={t.pages.home.sections.aboutMe.title} about={basics} />
-	<Experience title={t.pages.home.sections.experience.title} experience={experience} />
-	<Projects title={t.pages.home.sections.projects.title} projects={projects} />
-	<Education title={t.pages.home.sections.education.title} education={education} />
-	<Certificates title={t.pages.home.sections.certificates.title} certificates={certificates} />
-	<Skills title={t.pages.home.sections.skills.title} skills={skills} />
+	<About title={sections.aboutMe.title} about={basics} />
+	<Experience title={sections.experience.title} experience={experience} />
+	<Projects title={sections.projects.title} projects={projects} />
+	<Education title={sections.education.title} education={education} />
+	<Certificates title={sections.certificates.title} certificates={certificates} />
+	<Skills title={sections.skills.title} skills={skills} />
 </Layout>
