@@ -25,14 +25,12 @@ const sortedYears = Object.keys(certificatesByYear)
 ---
 
 <Section title={title}>
-	<div class="flex flex-col gap-8 pl-5">
+	<div class="flex flex-col gap-8">
 		{
 			sortedYears.map((year) => (
 				<div class="flex flex-col gap-1">
-					<span class="-translate-x-3.5 text-sm font-medium text-neutral-600">
-						{year}
-					</span>
-					<ul class="flex flex-col gap-4 border-l border-neutral-200">
+					<span class="font-bold text-neutral-900">{year}</span>
+					<ul class="flex flex-col gap-4 border-l border-neutral-200 ml-6">
 						{certificatesByYear[year].map((certificate) => (
 							<li>
 								<CertificateCard certificate={certificate} />

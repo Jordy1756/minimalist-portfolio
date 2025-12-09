@@ -1,7 +1,6 @@
 ---
 import type { Project } from "@entities/project";
 import { getTranslations } from "@i18n/index";
-import ExternalIcon from "@icons/ExternalIcon.astro";
 import GithubIcon from "@icons/GithubIcon.astro";
 
 interface Props {
@@ -14,48 +13,43 @@ const { name, description, highlights, url, github } = project;
 const t = getTranslations();
 ---
 
-<article class="flex flex-col gap-1.5 rounded-lg border border-neutral-200 p-4">
-	<header>
-		<h3 class="text-lg font-semibold">{name}</h3>
+<article class="flex flex-col gap-1 rounded-lg border border-neutral-200 p-4">
+	<header class="flex items-center justify-between">
+		<h3 class="flex text-lg font-bold text-neutral-800">
+			{
+				url ? (
+					<a
+						href={url}
+						target="_blank"
+						rel="noopener noreferrer"
+						class="flex items-center gap-2 hover:underline"
+					>
+						{name}
+					</a>
+				) : (
+					name
+				)
+			}
+		</h3>
+		<a href={github} target="_blank" rel="noopener noreferrer">
+			<GithubIcon
+				width={20}
+				height={20}
+				class="flex items-center gap-2 text-neutral-500 transition-colors hover:text-neutral-700"
+			/>
+		</a>
 	</header>
-	<main class="flex flex-col gap-1.5">
-		<p class="text-sm">{description}</p>
-		<ul class="flex flex-wrap gap-1 text-xs text-neutral-500">
+	<main class="flex flex-1 flex-col gap-2">
+		<p class="flex-1 text-sm">{description}</p>
+		<ul class="flex flex-wrap gap-2 text-xs text-neutral-500">
 			{
 				highlights.map((highlight, index) => (
-					<li class="flex gap-1">
-						<span>{index > 0 && "·"}</span>
+					<li class="flex gap-2">
+						{index > 0 && <span>·</span>}
 						<span>{highlight}</span>
 					</li>
 				))
 			}
 		</ul>
 	</main>
-	<footer class="flex flex-1 items-end gap-4">
-		<a class="flex items-center gap-2" href={github} target="_blank" rel="noopener noreferrer">
-			<GithubIcon
-				width={20}
-				height={20}
-				class="text-neutral-500 transition-colors hover:text-neutral-700"
-			/>
-			<span>{t.pages.home.sections.projects.codeButton}</span>
-		</a>
-		{
-			url && (
-				<a
-					class="flex items-center gap-2"
-					href={url}
-					target="_blank"
-					rel="noopener noreferrer"
-				>
-					<ExternalIcon
-						width={20}
-						height={20}
-						class="text-neutral-500 transition-colors hover:text-neutral-700"
-					/>
-					<span>Demo</span>
-				</a>
-			)
-		}
-	</footer>
 </article>
