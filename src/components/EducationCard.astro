@@ -1,6 +1,5 @@
 ---
 import type { Education } from "@entities/education";
-import { getCurrentLocale } from "@i18n/index";
 import { getFormattedDate } from "@utils/handleDates";
 
 interface Props {
@@ -10,8 +9,8 @@ interface Props {
 const { education } = Astro.props;
 const { institution, startDate, endDate, area } = education;
 
-const locale = getCurrentLocale();
-const localeCode = locale === "es" ? "es-ES" : "en-US";
+const currentLocale = Astro.currentLocale ?? "en";
+const localeCode = currentLocale === "es" ? "es-ES" : "en-US";
 
 const formattedStartDate = getFormattedDate(startDate, localeCode, {
 	year: "numeric"
@@ -20,7 +19,7 @@ const formattedEndDate = getFormattedDate(
 	endDate,
 	localeCode,
 	{ year: "numeric" },
-	locale === "es" ? "Presente" : "Present"
+	currentLocale === "es" ? "Presente" : "Present"
 );
 ---
 

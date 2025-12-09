@@ -1,6 +1,5 @@
 ---
 import type { Certificate } from "@entities/certificate";
-import { getCurrentLocale } from "@i18n/index";
 import ExternalIcon from "@icons/ExternalIcon.astro";
 import { getFormattedDate } from "@utils/handleDates";
 
@@ -11,8 +10,8 @@ interface Props {
 const { certificate } = Astro.props;
 const { name, date, issuer, url } = certificate;
 
-const locale = getCurrentLocale();
-const localeCode = locale === "es" ? "es-ES" : "en-US";
+const currentLocale = Astro.currentLocale ?? "en";
+const localeCode = currentLocale === "es" ? "es-ES" : "en-US";
 const formattedDate = getFormattedDate(date, localeCode, { month: "short" });
 ---
 

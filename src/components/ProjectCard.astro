@@ -1,7 +1,7 @@
 ---
 import type { Project } from "@entities/project";
-import { getTranslations } from "@i18n/index";
 import GithubIcon from "@icons/GithubIcon.astro";
+// import { getTranslations } from "@utils/i18n";
 
 interface Props {
 	project: Project;
@@ -10,7 +10,8 @@ interface Props {
 const { project } = Astro.props;
 const { name, description, highlights, url, github } = project;
 
-const t = getTranslations();
+// const currentLocale = Astro.currentLocale ?? "en";
+// const t = getTranslations(currentLocale);
 ---
 
 <article class="flex flex-col gap-1 rounded-lg border border-neutral-200 p-4">

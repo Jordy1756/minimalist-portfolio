@@ -7,10 +7,8 @@
 		"paths": {
 			"@icons/*": ["src/components/icons/*"],
 			"@components/*": ["src/components/*"],
-			"@constants/*": ["src/constants/*"],
 			"@cv/*": ["./src/data/cv/*"],
 			"@entities/*": ["src/entities/*"],
-			"@i18n/*": ["src/i18n/*"],
 			"@layouts/*": ["src/layouts/*"],
 			"@locales/*": ["src/locales/*"],
 			"@sections/*": ["src/sections/*"],

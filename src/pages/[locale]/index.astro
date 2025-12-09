@@ -1,5 +1,4 @@
 ---
-import type { Locale } from "@definitions/i18n";
 import Layout from "@layouts/Layout.astro";
 import Hero from "@sections/Hero.astro";
 import About from "@sections/About.astro";
@@ -8,20 +7,19 @@ import Projects from "@sections/Projects.astro";
 import Education from "@sections/Education.astro";
 import Certificates from "@sections/Certificates.astro";
 import Skills from "@sections/Skills.astro";
-import { getCurrentLocale, getTranslations, setLocale } from "@i18n/index.ts";
+import { getTranslations } from "@utils/i18n";
 
 export const getStaticPaths = async () => [
 	{ params: { locale: "es" } },
 	{ params: { locale: "en" } }
 ];
 
-setLocale(Astro.params.locale as Locale);
+const currentLocale = Astro.currentLocale ?? "en";
 
-const currentLocale = getCurrentLocale();
 const resume = await import(`../../data/cv/${currentLocale}.json`);
 const { basics, experience, education, projects, certificates, skills } = resume;
 
-const t = getTranslations();
+const t = getTranslations(currentLocale);
 
 const { home } = t.pages;
 const { sections } = home;
