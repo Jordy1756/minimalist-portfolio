@@ -17,7 +17,11 @@ export const ui = {
 		"certificates.title": "Certificados",
 		"certificates.card.aria": (name: string, issuer: string) =>
 			`Ver el certificado ${name} emitido por ${issuer} en una nueva pestaña`,
-		"skills.title": "Habilidades"
+		"skills.title": "Habilidades",
+		"404.title": "404 - Página no encontrada",
+		"404.subtitle": "Página no encontrada",
+		"404.description": "La página que buscas no existe o ha sido movida.",
+		"404.homeButton": "Ir a Inicio"
 	},
 	en: {
 		"hero.email.aria": (name: string, email: string) => `Send an email to ${name} at ${email}`,
@@ -33,6 +37,10 @@ export const ui = {
 		"certificates.title": "Certificates",
 		"certificates.card.aria": (name: string, issuer: string) =>
 			`View the ${name} certificate issued by ${issuer} in a new tab`,
-		"skills.title": "Skills"
+		"skills.title": "Skills",
+		"404.title": "404 - Page not found",
+		"404.subtitle": "Page Not Found",
+		"404.description": "The page you are looking for does not exist or has been moved.",
+		"404.homeButton": "Go to Home"
 	}
 } as const;
