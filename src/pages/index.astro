@@ -3,5 +3,5 @@ export const prerender = false;
 
 const preferredLang = Astro.preferredLocale ?? "en";
 
-return Astro.redirect(`/${preferredLang}/`);
+return Astro.redirect(`/${preferredLang}/`, 302);
 ---
