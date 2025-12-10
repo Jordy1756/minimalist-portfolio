@@ -2,7 +2,7 @@
 import type { Certificate } from "@entities/certificate";
 import ExternalIcon from "@icons/ExternalIcon.astro";
 import { getFormattedDate } from "@utils/handleDates";
-import { getLangFromUrl, useTranslations } from "@utils/i18n";
+import { getLangFromUrl, useTranslations } from "@i18n/utils";
 
 interface Props {
 	certificate: Certificate;
@@ -36,6 +36,7 @@ const formattedDate = getFormattedDate(date, localeCode, { month: "short" });
 			href={url}
 			target="_blank"
 			rel="noopener noreferrer"
+			title={t("certificates.card.aria", name, issuer)}
 			aria-label={t("certificates.card.aria", name, issuer)}
 		>
 			<ExternalIcon

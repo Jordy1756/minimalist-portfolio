@@ -7,7 +7,7 @@ import Projects from "@sections/Projects.astro";
 import Education from "@sections/Education.astro";
 import Certificates from "@sections/Certificates.astro";
 import Skills from "@sections/Skills.astro";
-import { useTranslations } from "@utils/i18n";
+import { useTranslations } from "@i18n/utils";
 
 export const getStaticPaths = async () => [
 	{ params: { locale: "en" } },
