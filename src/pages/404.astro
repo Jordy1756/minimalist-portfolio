@@ -9,14 +9,12 @@ const resume = await import(`../data/cv/${currentLocale}.json`);
 const { basics } = resume;
 ---
 
-<Layout title={t("404.title")} locale={currentLocale} basics={basics}>
+<Layout title={t("404.head.title")} locale={currentLocale} basics={basics}>
 	<main class="flex flex-1 flex-col items-center justify-center text-center">
-		<h1 class="text-8xl font-bold text-neutral-500 md:text-9xl">404</h1>
+		<h1 class="text-8xl font-bold text-neutral-300 md:text-9xl">404</h1>
 		<div class="flex flex-col items-center gap-2">
-			<h2 class="text-2xl font-semibold text-neutral-950">{t("404.subtitle")}</h2>
-			<p class="max-w-xs text-sm text-neutral-700">
-				{t("404.description")}
-			</p>
+			<h2 class="text-2xl font-bold text-neutral-950">{t("404.subtitle")}</h2>
+			<p class="max-w-xs text-sm text-neutral-700">{t("404.description")}</p>
 			<a
 				href={`/${currentLocale}/`}
 				class="rounded-sm border border-neutral-200 px-4 py-2 text-sm font-semibold transition-colors hover:bg-neutral-100 hover:text-neutral-950"

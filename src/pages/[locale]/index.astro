@@ -21,7 +21,11 @@ const resume = await import(`../../data/cv/${lang}.json`);
 const { basics, experience, education, projects, certificates, skills } = resume;
 ---
 
-<Layout title={`${""} - ${basics.label}`} locale={lang} basics={basics}>
+<Layout
+	title={`${t("home.head.title", basics.name)} - ${basics.label}`}
+	locale={lang}
+	basics={basics}
+>
 	<Hero basics={basics} />
 	<About about={basics} />
 	<Experience experience={experience} />

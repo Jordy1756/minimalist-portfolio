@@ -2,6 +2,7 @@ export const defaultLang = "en";
 
 export const ui = {
 	es: {
+		"home.head.title": (name: string) => `Portafolio de ${name}`,
 		"hero.email.aria": (name: string, email: string) =>
 			`Enviar un correo electrónico a ${name} al correo ${email}`,
 		"hero.profile.aria": (name: string, network: string) =>
@@ -18,12 +19,13 @@ export const ui = {
 		"certificates.card.aria": (name: string, issuer: string) =>
 			`Ver el certificado ${name} emitido por ${issuer} en una nueva pestaña`,
 		"skills.title": "Habilidades",
-		"404.title": "404 - Página no encontrada",
+		"404.head.title": "404 - Página no encontrada",
 		"404.subtitle": "Página no encontrada",
 		"404.description": "La página que buscas no existe o ha sido movida.",
 		"404.homeButton": "Ir a Inicio"
 	},
 	en: {
+		"home.head.title": (name: string) => `${name}'s Portfolio`,
 		"hero.email.aria": (name: string, email: string) => `Send an email to ${name} at ${email}`,
 		"hero.profile.aria": (name: string, network: string) => `Visit ${name}'s profile on ${network}`,
 		"hero.resume.aria": (name: string) => `View ${name}'s resume in PDF`,
@@ -38,7 +40,7 @@ export const ui = {
 		"certificates.card.aria": (name: string, issuer: string) =>
 			`View the ${name} certificate issued by ${issuer} in a new tab`,
 		"skills.title": "Skills",
-		"404.title": "404 - Page not found",
+		"404.head.title": "404 - Page not found",
 		"404.subtitle": "Page Not Found",
 		"404.description": "The page you are looking for does not exist or has been moved.",
 		"404.homeButton": "Go to Home"
