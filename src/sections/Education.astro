@@ -2,15 +2,18 @@
 import type { Education } from "@entities/education";
 import Section from "@components/Section.astro";
 import EducationCard from "@components/EducationCard.astro";
+import { getLangFromUrl, useTranslations } from "@utils/i18n";
 
 interface Props {
-	title: string;
 	education: Education[];
 }
 
-const { title, education } = Astro.props;
+const { education } = Astro.props;
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
 ---
 
-<Section title={title}>
+<Section title={t("education.title")}>
 	{education.map((education) => <EducationCard education={education} />)}
 </Section>

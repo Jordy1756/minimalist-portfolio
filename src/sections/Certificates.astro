@@ -2,13 +2,16 @@
 import type { Certificate } from "@entities/certificate";
 import Section from "@components/Section.astro";
 import CertificateCard from "@components/CertificateCard.astro";
+import { getLangFromUrl, useTranslations } from "@utils/i18n";
 
 interface Props {
-	title: string;
 	certificates: Certificate[];
 }
 
-const { title, certificates } = Astro.props;
+const { certificates } = Astro.props;
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
 
 const certificatesByYear = certificates.reduce(
 	(acc, cert) => {
@@ -24,13 +27,13 @@ const sortedYears = Object.keys(certificatesByYear)
 	.sort((a, b) => b - a);
 ---
 
-<Section title={title}>
+<Section title={t("certificates.title")}>
 	<div class="flex flex-col gap-8">
 		{
 			sortedYears.map((year) => (
 				<div class="flex flex-col gap-1">
 					<span class="font-bold text-neutral-900">{year}</span>
-					<ul class="flex flex-col gap-4 border-l border-neutral-200 ml-6">
+					<ul class="ml-6 flex flex-col gap-4 border-l border-neutral-200">
 						{certificatesByYear[year].map((certificate) => (
 							<li>
 								<CertificateCard certificate={certificate} />

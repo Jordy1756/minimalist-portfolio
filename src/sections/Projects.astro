@@ -2,16 +2,19 @@
 import type { Project } from "@entities/project";
 import Section from "@components/Section.astro";
 import ProjectCard from "@components/ProjectCard.astro";
+import { getLangFromUrl, useTranslations } from "@utils/i18n";
 
 interface Props {
-	title: string;
 	projects: Project[];
 }
 
-const { title, projects } = Astro.props;
+const { projects } = Astro.props;
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
 ---
 
-<Section title={title}>
+<Section title={t("projects.title")}>
 	<div class="project-section grid gap-4">
 		{projects.map((project) => <ProjectCard project={project} />)}
 	</div>

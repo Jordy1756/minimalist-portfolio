@@ -1,16 +1,19 @@
 ---
 import type { Basics } from "@entities/basics";
 import Section from "@components/Section.astro";
+import { getLangFromUrl, useTranslations } from "@utils/i18n";
 
 interface Props {
-	title: string;
 	about: Basics;
 }
 
-const { title, about } = Astro.props;
+const { about } = Astro.props;
 const { summary } = about;
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
 ---
 
-<Section title={title}>
+<Section title={t("aboutMe.title")}>
 	<p class="text-sm">{summary}</p>
 </Section>

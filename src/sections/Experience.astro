@@ -2,15 +2,18 @@
 import type { Experience } from "@entities/experience";
 import ExperienceCard from "@components/ExperienceCard.astro";
 import Section from "@components/Section.astro";
+import { getLangFromUrl, useTranslations } from "@utils/i18n";
 
 interface Props {
-	title: string;
 	experience: Experience[];
 }
 
-const { title, experience } = Astro.props;
+const { experience } = Astro.props;
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
 ---
 
-<Section title={title}>
+<Section title={t("experience.title")}>
 	{experience.map((experience) => <ExperienceCard experience={experience} />)}
 </Section>

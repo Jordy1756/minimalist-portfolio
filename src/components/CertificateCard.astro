@@ -2,6 +2,7 @@
 import type { Certificate } from "@entities/certificate";
 import ExternalIcon from "@icons/ExternalIcon.astro";
 import { getFormattedDate } from "@utils/handleDates";
+import { getLangFromUrl, useTranslations } from "@utils/i18n";
 
 interface Props {
 	certificate: Certificate;
@@ -10,8 +11,10 @@ interface Props {
 const { certificate } = Astro.props;
 const { name, date, issuer, url } = certificate;
 
-const currentLocale = Astro.currentLocale ?? "en";
-const localeCode = currentLocale === "es" ? "es-ES" : "en-US";
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+
+const localeCode = lang === "es" ? "es-ES" : "en-US";
 const formattedDate = getFormattedDate(date, localeCode, { month: "short" });
 ---
 
@@ -33,7 +36,7 @@ const formattedDate = getFormattedDate(date, localeCode, { month: "short" });
 			href={url}
 			target="_blank"
 			rel="noopener noreferrer"
-			aria-label={`Ver el certificado ${name} emitido por ${issuer}`}
+			aria-label={t("certificates.card.aria", name, issuer)}
 		>
 			<ExternalIcon
 				width={16}

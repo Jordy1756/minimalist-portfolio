@@ -1,6 +1,7 @@
 ---
 import type { Experience } from "@entities/experience";
 import { getFormattedDate } from "@utils/handleDates";
+import { getLangFromUrl } from "@utils/i18n";
 
 interface Props {
 	experience: Experience;
@@ -9,8 +10,8 @@ interface Props {
 const { experience } = Astro.props;
 const { name, position, startDate, endDate, summary, highlights } = experience;
 
-const currentLocale = Astro.currentLocale ?? "en";
-const localeCode = currentLocale === "es" ? "es-ES" : "en-US";
+const lang = getLangFromUrl(Astro.url);
+const localeCode = lang === "es" ? "es-ES" : "en-US";
 
 const formattedStartDate = getFormattedDate(startDate, localeCode, {
 	year: "numeric"
@@ -19,7 +20,7 @@ const formattedEndDate = getFormattedDate(
 	endDate,
 	localeCode,
 	{ year: "numeric" },
-	currentLocale === "es" ? "Presente" : "Present"
+	lang === "es" ? "Presente" : "Present"
 );
 ---
 

@@ -7,30 +7,27 @@ import Projects from "@sections/Projects.astro";
 import Education from "@sections/Education.astro";
 import Certificates from "@sections/Certificates.astro";
 import Skills from "@sections/Skills.astro";
-import { getTranslations } from "@utils/i18n";
+import { useTranslations } from "@utils/i18n";
 
 export const getStaticPaths = async () => [
 	{ params: { locale: "en" } },
 	{ params: { locale: "es" } }
 ];
 
-const currentLocale = Astro.currentLocale ?? "en";
+const currentLocale = (Astro.currentLocale ?? "en") as "en" | "es";
 
 const resume = await import(`../../data/cv/${currentLocale}.json`);
 const { basics, experience, education, projects, certificates, skills } = resume;
 
-const t = getTranslations(currentLocale);
-
-const { home } = t.pages;
-const { sections } = home;
+const t = useTranslations(currentLocale);
 ---
 
-<Layout title={`${home.title} - ${basics.label}`} locale={currentLocale} basics={basics}>
+<Layout title={`${""} - ${basics.label}`} locale={currentLocale} basics={basics}>
 	<Hero basics={basics} />
-	<About title={sections.aboutMe.title} about={basics} />
-	<Experience title={sections.experience.title} experience={experience} />
-	<Projects title={sections.projects.title} projects={projects} />
-	<Education title={sections.education.title} education={education} />
-	<Certificates title={sections.certificates.title} certificates={certificates} />
-	<Skills title={sections.skills.title} skills={skills} />
+	<About about={basics} />
+	<Experience experience={experience} />
+	<Projects projects={projects} />
+	<Education education={education} />
+	<Certificates certificates={certificates} />
+	<Skills skills={skills} />
 </Layout>

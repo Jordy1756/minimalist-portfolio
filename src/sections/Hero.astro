@@ -5,6 +5,7 @@ import GithubIcon from "@icons/GithubIcon.astro";
 import LinkedInIcon from "@icons/LinkedInIcon.astro";
 import ResumeIcon from "@icons/ResumeIcon.astro";
 import WorldIcon from "@icons/WorldIcon.astro";
+import { getLangFromUrl, useTranslations } from "@utils/i18n";
 import { Image } from "astro:assets";
 
 interface Props {
@@ -18,6 +19,9 @@ const SOCIAL_ICONS = {
 	GitHub: GithubIcon,
 	LinkedIn: LinkedInIcon
 };
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
 ---
 
 <header
@@ -40,10 +44,10 @@ const SOCIAL_ICONS = {
 			<li class="rounded-sm border border-neutral-200 p-1">
 				<a
 					href={`mailto:${email}`}
-					title={`Enviar un correo electrónico a ${name} al correo ${email}`}
 					target="_blank"
 					rel="noopener noreferrer"
-					aria-label={`Enviar un correo electrónico a ${name} al correo ${email}`}
+					title={t("hero.email.aria", name, email)}
+					aria-label={t("hero.email.aria", name, email)}
 				>
 					<EmailIcon
 						width={20}
@@ -59,10 +63,10 @@ const SOCIAL_ICONS = {
 						<li class="rounded-sm border border-neutral-200 p-1">
 							<a
 								href={url}
-								title={`Visitar el perfil de ${name} en ${network}`}
 								target="_blank"
 								rel="noopener noreferrer"
-								aria-label={`Visitar el perfil de ${name} en ${network}`}
+								title={t("hero.profile.aria", name, network)}
+								aria-label={t("hero.profile.aria", name, network)}
 							>
 								<Icon
 									width={20}
@@ -77,10 +81,10 @@ const SOCIAL_ICONS = {
 			<li class="rounded-sm border border-neutral-200 p-1">
 				<a
 					href={resume}
-					title={`Ver el currículum de ${name} en PDF`}
 					target="_blank"
 					rel="noopener noreferrer"
-					aria-label={`Ver el currículum de ${name} en PDF`}
+					title={t("hero.resume.aria", name)}
+					aria-label={t("hero.resume.aria", name)}
 				>
 					<ResumeIcon
 						width={20}

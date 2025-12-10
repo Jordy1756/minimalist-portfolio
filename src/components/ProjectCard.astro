@@ -1,7 +1,7 @@
 ---
 import type { Project } from "@entities/project";
 import GithubIcon from "@icons/GithubIcon.astro";
-// import { getTranslations } from "@utils/i18n";
+import { getLangFromUrl, useTranslations } from "@utils/i18n";
 
 interface Props {
 	project: Project;
@@ -10,8 +10,8 @@ interface Props {
 const { project } = Astro.props;
 const { name, description, highlights, url, github } = project;
 
-// const currentLocale = Astro.currentLocale ?? "en";
-// const t = getTranslations(currentLocale);
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
 ---
 
 <article class="flex flex-col gap-1 rounded-lg border border-neutral-200 p-4">
@@ -24,7 +24,8 @@ const { name, description, highlights, url, github } = project;
 						target="_blank"
 						rel="noopener noreferrer"
 						class="flex items-center gap-2 hover:underline"
-						aria-label={`Visitar el proyecto ${name}`}
+						title={t("projects.card.project.aria", name)}
+						aria-label={t("projects.card.project.aria", name)}
 					>
 						{name}
 					</a>
@@ -37,7 +38,8 @@ const { name, description, highlights, url, github } = project;
 			href={github}
 			target="_blank"
 			rel="noopener noreferrer"
-			aria-label={`Ver el repositorio de GitHub del proyecto ${name}`}
+			title={t("projects.card.github.aria", name)}
+			aria-label={t("projects.card.github.aria", name)}
 		>
 			<GithubIcon
 				width={20}
