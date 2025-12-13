@@ -204,8 +204,8 @@
 			"github": "https://github.com/Jordy1756/silk-tree"
 		},
 		{
-			"name": "Alura Geek",
-			"description": "Challenge ONE Alura Geek Latam Grupo 05",
+			"name": "AluraGeek",
+			"description": "E-commerce de productos desarrollado como desafío para Oracle Next Education.",
 			"highlights": ["HTML", "CSS", "Vanilla JS"],
 			"url": "https://jordy1756.github.io/alura-geek/",
 			"github": "https://github.com/Jordy1756/alura-geek.git"
@@ -218,13 +218,20 @@
 			"github": "https://github.com/Jordy1756/turrika.git"
 		},
 		{
+			"name": "AluEncrypt",
+			"description": "Encriptador y desencriptador de texto desarrollado como desafío para Oracle Next Education.",
+			"highlights": ["Astro JS", "TypeScript", "CSS"],
+			"url": "https://alura-encryptor.vercel.app/",
+			"github": "https://github.com/Jordy756/alura-encryptor"
+		},
+		{
 			"name": "Silk Tree RESTful API",
 			"description": "RESTful API para la gestión de citas médicas, usuarios y servicios del hospital.",
 			"highlights": ["Node JS", "Express", "JWT", "MySQL"],
 			"github": "https://github.com/Jordy1756/silk-tree-api.git"
 		},
 		{
-			"name": "Alura Geek RESTful API",
+			"name": "AluraGeek RESTful API",
 			"description": "RESTful API para la gestión de artículos, usuarios y comentarios.",
 			"highlights": ["Node JS", "Express", "JWT", "Mongo DB"],
 			"url": "https://alura-geek-api-one.vercel.app/",
