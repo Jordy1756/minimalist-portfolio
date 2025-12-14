@@ -6,6 +6,7 @@ import vercel from "@astrojs/vercel";
 
 // https://astro.build/config
 export default defineConfig({
+	site: "https://jordy756-minimalist-portfolio.vercel.app",
 	adapter: vercel(),
 	i18n: {
 		defaultLocale: "en",
