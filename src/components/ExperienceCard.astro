@@ -36,10 +36,10 @@ const formattedEndDate = getFormattedDate(
 			<time datetime={endDate + ""}>{formattedEndDate}</time>
 		</div>
 	</header>
-	<main class="flex flex-col gap-3">
+	<section class="flex flex-col gap-3">
 		<p class="text-sm">{summary}</p>
 		<ul class="flex list-inside list-disc flex-col gap-2 pl-4">
 			{highlights.map((highlight) => <li class="pl-4 -indent-5 text-sm">{highlight}</li>)}
 		</ul>
-	</main>
+	</section>
 </article>
