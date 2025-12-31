@@ -15,5 +15,7 @@ const t = useTranslations(lang);
 ---
 
 <Section title={t("experience.title")}>
-	{experience.map((experience) => <ExperienceCard experience={experience} />)}
+	<div class="flex flex-col gap-4">
+		{experience.map((experience) => <ExperienceCard experience={experience} />)}
+	</div>
 </Section>
