@@ -1,10 +1,7 @@
 ---
 import type { Basics } from "@entities/basics";
 import "@styles/global.css";
-import "@fontsource/nunito-sans/400.css";
-import "@fontsource/nunito-sans/600.css";
-import "@fontsource/nunito-sans/700.css";
-import "@fontsource/nunito-sans/800.css";
+import Font from "astro/components/Font.astro";
 
 interface Props {
 	title: string;
@@ -25,6 +22,7 @@ const hostname = url.hostname;
 		<meta name="viewport" content="width=device-width" />
 		<title>{title}</title>
 		<link rel="icon" type="image/webp" href="/favicon.webp" />
+		<Font cssVariable="--font-nunito-sans" preload />
 
 		<meta name="description" content={summary} />
 
