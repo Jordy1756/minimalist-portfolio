@@ -7,7 +7,7 @@ export const ui = {
 			`Enviar un correo electrónico a ${name} al correo ${email}`,
 		"hero.profile.aria": (name: string, network: string) =>
 			`Visitar el perfil de ${name} en ${network}`,
-		"hero.resume.aria": (name: string) => `Ver el currículum de ${name} en PDF`,
+		"hero.resume.aria": (name: string) => `Descargar el currículum de ${name} en PDF`,
 		"aboutMe.title": "Sobre mí",
 		"experience.title": "Experiencia",
 		"projects.title": "Proyectos",
@@ -28,7 +28,7 @@ export const ui = {
 		"home.head.title": (name: string) => `${name}'s Portfolio`,
 		"hero.email.aria": (name: string, email: string) => `Send an email to ${name} at ${email}`,
 		"hero.profile.aria": (name: string, network: string) => `Visit ${name}'s profile on ${network}`,
-		"hero.resume.aria": (name: string) => `View ${name}'s resume in PDF`,
+		"hero.resume.aria": (name: string) => `Download ${name}'s resume in PDF`,
 		"aboutMe.title": "About Me",
 		"experience.title": "Experience",
 		"projects.title": "Projects",

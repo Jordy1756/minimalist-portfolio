@@ -79,10 +79,10 @@ const t = useTranslations(lang);
 			<li class="rounded-sm border border-neutral-200 p-1">
 				<a
 					href={resume}
-					target="_blank"
 					rel="noopener noreferrer"
 					title={t("hero.resume.aria", name)}
 					aria-label={t("hero.resume.aria", name)}
+					download={resume.split("/").pop()}
 				>
 					<ResumeIcon
 						width={20}
