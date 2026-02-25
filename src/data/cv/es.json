@@ -3,10 +3,10 @@
 		"name": "Yordi Castro",
 		"label": "Full Stack Developer | React, Node JS, .NET, Flutter | Especializado en soluciones web modernas",
 		"email": "jordycastro1756@gmail.com",
-		"ogImage": "https://res.cloudinary.com/dygwpgeq9/image/upload/v1765354995/minimalist_portfolio_es_og_img_zkx84r.webp",
+		"ogImage": "https://res.cloudinary.com/dygwpgeq9/image/upload/v1772054097/minimalist_portfolio_es_og_img_epye2p.webp",
 		"avatar": {
 			"src": "https://res.cloudinary.com/dygwpgeq9/image/upload/v1767911454/me_suwpvi.webp",
-			"alt": "Yordi Castro Avatar - Persona con capucha usando una laptop, icono de hacker anónimo"
+			"alt": "Retrato en blanco y negro de Yordi Castro Rojas posando con un abrigo oscuro frente a una pared con sombras geométricas de luz natural."
 		},
 		"summary": "Desarrollador Full Stack con más de 1 año de experiencia profesional en la creación de aplicaciones web y soluciones digitales. Especializado en tecnologías modernas, arquitecturas limpias, microservicios y principios SOLID. Adaptable, autodidacta y entusiasta del aprendizaje continuo, aporto fuerte capacidad de análisis, trabajo colaborativo en entornos ágiles y comunicación técnica efectiva. Comprometido con la entrega de soluciones robustas y eficientes que integran requisitos de negocio y experiencia de usuario final.",
 		"location": {
@@ -31,7 +31,7 @@
 	"experience": [
 		{
 			"name": "4Geeks",
-			"position": "Desarrollador Full Stack - Pasante",
+			"position": "Desarrollador Full Stack",
 			"startDate": "2025-07-19",
 			"endDate": "2025-12-05",
 			"summary": "Liderazgo y desarrollo Full Stack en proyectos web, móviles y desktop para B2B/B2C en entornos ágiles. Enfocado en arquitectura eficiente, mejora continua, trabajo transversal con equipos multidisciplinarios y experiencia de usuario de alto nivel en el ecosistema 4Geeks.",
@@ -69,8 +69,8 @@
 	],
 	"education": [
 		{
-			"institution": "Universidad de Costa Rica, Turrialba",
-			"area": "Informática Empresarial",
+			"institution": "Universidad de Costa Rica",
+			"area": "Bachiller en Informática Empresarial",
 			"startDate": "2020-03-10",
 			"endDate": "2026-02-13"
 		}
@@ -166,16 +166,16 @@
 		"CSS",
 		"JavaScript",
 		"TypeScript",
-		"Node.js",
-		"Express",
-		"C#",
 		"React",
 		"Angular",
 		"Astro",
-		"Flutter",
+		"Node.js",
+		"Express",
+		".NET",
 		"MongoDB",
 		"SQL Server",
 		"MySQL",
+		"Flutter",
 		"Git",
 		"GitHub",
 		"Gitlab",
@@ -183,8 +183,9 @@
 		"Clean Architecture",
 		"Microservicios",
 		"RESTful API",
-		"Design Systems",
 		"Figma",
+		"Design Systems",
+		"UX/UI Design",
 		"Scrum"
 	],
 	"projects": [

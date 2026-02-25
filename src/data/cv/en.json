@@ -3,10 +3,10 @@
 		"name": "Yordi Castro",
 		"label": "Full Stack Developer | React, Node JS, .NET, Flutter | Specialized in Modern Web Solutions",
 		"email": "jordycastro1756@gmail.com",
-		"ogImage": "https://res.cloudinary.com/dygwpgeq9/image/upload/v1765354995/minimalist_portfolio_en_og_img_muh4oz.webp",
+		"ogImage": "https://res.cloudinary.com/dygwpgeq9/image/upload/v1772054096/minimalist_portfolio_en_og_img_ow7ugd.webp",
 		"avatar": {	
 			"src": "https://res.cloudinary.com/dygwpgeq9/image/upload/v1767911454/me_suwpvi.webp",
-			"alt": "Yordi Castro Avatar - Person in a hoodie using a laptop, anonymous hacker icon"
+			"alt": "Black and white portrait of Yordi Castro Rojas posing in a dark overcoat against a wall with geometric shadows from natural light."
 		},
 		"summary": "Full Stack Developer with over 1 year of professional experience in building web applications and digital solutions. Specialized in modern technologies, clean architectures, microservices, and SOLID principles. Adaptable, self-taught, and passionate about continuous learning, I bring strong analytical abilities, collaborative teamwork in agile environments, and effective technical communication. Committed to delivering robust and efficient solutions that integrate business requirements and end-user experience.",
 		"location": {
@@ -31,7 +31,7 @@
 	"experience": [
 		{
 			"name": "4Geeks",
-			"position": "Full Stack Developer Intern",
+			"position": "Full Stack Developer",
 			"startDate": "2025-07-19",
 			"endDate": "2025-12-05",
 			"summary": "Lead and Full Stack development across web, mobile, and desktop projects for B2B/B2C in agile settings. Focused on efficient architecture, continuous improvement, cross-team collaboration, and top-tier user experience within the 4Geeks ecosystem.",
@@ -69,7 +69,7 @@
 	],
 	"education": [
 		{
-			"institution": "Universidad de Costa Rica, Turrialba",
+			"institution": "Universidad de Costa Rica",
 			"area": "Bachelor's Degree in Business Computing",
 			"startDate": "2020-03-10",
 			"endDate": "2026-02-13"
@@ -166,25 +166,26 @@
 		"CSS",
 		"JavaScript",
 		"TypeScript",
-		"Node.js",
-		"Express",
-		"C#",
 		"React",
 		"Angular",
 		"Astro",
-		"Flutter",
+		"Node.js",
+		"Express",
+		".NET",
 		"MongoDB",
 		"SQL Server",
 		"MySQL",
+		"Flutter",
 		"Git",
 		"GitHub",
 		"Gitlab",
 		"SOLID",
 		"Clean Architecture",
-		"Microservices",
+		"Microservicios",
 		"RESTful API",
-		"Design Systems",
 		"Figma",
+		"Design Systems",
+		"UX/UI Design",
 		"Scrum"
 	],
 	"projects": [
