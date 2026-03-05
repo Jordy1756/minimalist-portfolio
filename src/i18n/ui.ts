@@ -22,7 +22,7 @@ export const ui = {
 		"404.head.title": "404 - Página no encontrada",
 		"404.subtitle": "Página no encontrada",
 		"404.description": "La página que buscas no existe o ha sido movida.",
-		"404.homeButton": "Ir a Inicio"
+		"404.homeButton": "Ir al Inicio"
 	},
 	en: {
 		"home.head.title": (name: string) => `${name}'s Portfolio`,

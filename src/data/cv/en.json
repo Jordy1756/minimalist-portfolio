@@ -1,14 +1,14 @@
 {
 	"basics": {
 		"name": "Yordi Castro",
-		"label": "Full Stack Developer | React, Node JS, .NET, Flutter | Specialized in Modern Web Solutions",
+		"label": "Full Stack Developer | React JS, Astro JS, Node JS, .NET | Specialized in Modern Web Solutions",
 		"email": "jordycastro1756@gmail.com",
 		"ogImage": "https://res.cloudinary.com/dygwpgeq9/image/upload/v1772054096/minimalist_portfolio_en_og_img_ow7ugd.webp",
-		"avatar": {	
+		"avatar": {
 			"src": "https://res.cloudinary.com/dygwpgeq9/image/upload/v1767911454/me_suwpvi.webp",
 			"alt": "Black and white portrait of Yordi Castro Rojas posing in a dark overcoat against a wall with geometric shadows from natural light."
 		},
-		"summary": "Full Stack Developer with over 1 year of professional experience in building web applications and digital solutions. Specialized in modern technologies, clean architectures, microservices, and SOLID principles. Adaptable, self-taught, and passionate about continuous learning, I bring strong analytical abilities, collaborative teamwork in agile environments, and effective technical communication. Committed to delivering robust and efficient solutions that integrate business requirements and end-user experience.",
+		"summary": "Full Stack Developer with professional experience in building web applications and digital solutions. Specialized in modern technologies, clean architectures, microservices, and SOLID principles. Adaptable, self-taught, and passionate about continuous learning, I bring strong analytical abilities, collaborative teamwork in agile environments, and effective technical communication. Committed to delivering robust and efficient solutions that integrate business requirements and end-user experience.",
 		"location": {
 			"city": "Turrialba, Cartago",
 			"countryCode": "CR",
@@ -39,6 +39,7 @@
 				"Led the end-to-end development of the official 4Geeks mobile application (Flutter), integrating secure authentication, sales management, and real-time payment link generation through REST API consumption and UX optimization.",
 				"Directed the full creation of MARKET-APP (Electron + React), a self-service solution with secure session handling, internationalization (i18n), and a robust authentication and payment architecture.",
 				"Developed a real-time messaging system (Angular + Firebase) with modern chat features, enabling direct communication, notifications, and intuitive conversation management between candidates and recruiters.",
+				"Developed and integrated a custom Python SDK with a new API Key authentication system, refactoring backend middlewares to support concurrent API Key, OAuth, and JWT validation, ensuring persistent access and secure key rotation.",
 				"Redesigned the ERPNext hospital system by adapting its UI to the 4Geeks visual system using modular CSS, achieving consistent branding and better experience across all devices."
 			]
 		},
@@ -186,7 +187,9 @@
 		"Figma",
 		"Design Systems",
 		"UX/UI Design",
-		"Scrum"
+		"Scrum",
+		"Python",
+		"Django"
 	],
 	"projects": [
 		{
