@@ -1,0 +1,49 @@
+---
+import Section from "@components/layout/Section.astro";
+import TimePeriod from "@components/ui/TimePeriod.astro";
+import { getLangFromUrl, useTranslations } from "@i18n/utils.ts";
+import type { Experience } from "@scripts/entities/experience.ts";
+
+interface Props {
+	experience: Experience[];
+}
+
+const { experience } = Astro.props;
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+
+const localeCode = lang === "es" ? "es-ES" : "en-US";
+const presentText = lang === "es" ? "Presente" : "Present";
+---
+
+<Section title={t("experience.title")}>
+	<div class="flex flex-col gap-4">
+		{
+			experience.map(({ name, position, startDate, endDate, summary, highlights }) => (
+				<article class="flex flex-col gap-3">
+					<header class="flex justify-between gap-2">
+						<div class="flex flex-col gap-0.5 text-neutral-800">
+							<h3 class="text-lg font-bold">{name}</h3>
+							<h4 class="text-base font-semibold">{position}</h4>
+						</div>
+						<TimePeriod
+							startDate={startDate}
+							endDate={endDate}
+							localeCode={localeCode}
+							presentText={presentText}
+						/>
+					</header>
+					<section class="flex flex-col gap-3">
+						<p>{summary}</p>
+						<ul class="flex list-inside list-disc flex-col gap-2 pl-4">
+							{highlights.map((highlight) => (
+								<li class="pl-4 -indent-5">{highlight}</li>
+							))}
+						</ul>
+					</section>
+				</article>
+			))
+		}
+	</div>
+</Section>

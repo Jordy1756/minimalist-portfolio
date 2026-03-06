@@ -1,0 +1,43 @@
+---
+import Section from "@components/layout/Section.astro";
+import TimePeriod from "@components/ui/TimePeriod.astro";
+import { getLangFromUrl, useTranslations } from "@i18n/utils.ts";
+import type { Education } from "@scripts/entities/education.ts";
+
+interface Props {
+	education: Education[];
+}
+
+const { education } = Astro.props;
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+
+const localeCode = lang === "es" ? "es-ES" : "en-US";
+const presentText = lang === "es" ? "Presente" : "Present";
+---
+
+<Section title={t("education.title")}>
+	{
+		education.map(({ institution, startDate, endDate, area }) => (
+			<article>
+				<header>
+					<header class="flex justify-between gap-2">
+						<div class="flex flex-col">
+							<h3 class="text-lg font-semibold text-neutral-800">{institution}</h3>
+						</div>
+						<TimePeriod
+							startDate={startDate}
+							endDate={endDate}
+							localeCode={localeCode}
+							presentText={presentText}
+						/>
+					</header>
+				</header>
+				<section>
+					<p>{area}</p>
+				</section>
+			</article>
+		))
+	}
+</Section>
