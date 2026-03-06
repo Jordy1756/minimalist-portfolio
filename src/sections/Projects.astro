@@ -1,8 +1,8 @@
 ---
-import type { Project } from "@entities/project";
-import Section from "@components/Section.astro";
 import ProjectCard from "@components/ProjectCard.astro";
-import { getLangFromUrl, useTranslations } from "@i18n/utils";
+import Section from "@components/Section.astro";
+import { getLangFromUrl, useTranslations } from "@i18n/utils.ts";
+import type { Project } from "@scripts/entities/project.ts";
 
 interface Props {
 	projects: Project[];

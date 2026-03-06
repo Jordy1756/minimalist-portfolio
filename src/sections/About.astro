@@ -1,7 +1,7 @@
 ---
-import type { Basics } from "@entities/basics";
 import Section from "@components/Section.astro";
-import { getLangFromUrl, useTranslations } from "@i18n/utils";
+import { getLangFromUrl, useTranslations } from "@i18n/utils.ts";
+import type { Basics } from "@scripts/entities/basics.ts";
 
 interface Props {
 	about: Basics;

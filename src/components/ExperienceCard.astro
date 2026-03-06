@@ -1,7 +1,7 @@
 ---
-import type { Experience } from "@entities/experience";
-import { getFormattedDate } from "@utils/handleDates";
-import { getLangFromUrl } from "@i18n/utils";
+import { getLangFromUrl } from "@i18n/utils.ts";
+import type { Experience } from "@scripts/entities/experience.ts";
+import { getFormattedDate } from "@scripts/utils/handleDates.ts";
 
 interface Props {
 	experience: Experience;

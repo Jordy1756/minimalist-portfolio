@@ -1,8 +1,8 @@
 ---
-import type { Certificate } from "@entities/certificate";
+import { getLangFromUrl, useTranslations } from "@i18n/utils.ts";
 import ExternalIcon from "@icons/ExternalIcon.astro";
-import { getFormattedDate } from "@utils/handleDates";
-import { getLangFromUrl, useTranslations } from "@i18n/utils";
+import type { Certificate } from "@scripts/entities/certificate.ts";
+import { getFormattedDate } from "@scripts/utils/handleDates.ts";
 
 interface Props {
 	certificate: Certificate;
@@ -22,10 +22,7 @@ const formattedDate = getFormattedDate(date, localeCode, { month: "short" });
 	<span class="absolute top-2/4 -left-4 h-2 w-2 -translate-y-2/4 rounded-full bg-neutral-200"
 	></span>
 	<aside class="row-span-2 flex items-center">
-		<time
-			class="text-xs font-normal text-nowrap text-neutral-500 uppercase"
-			datetime={date + ""}
-		>
+		<time class="text-xs font-normal text-nowrap text-neutral-500 uppercase" datetime={date + ""}>
 			{formattedDate}
 		</time>
 	</aside>

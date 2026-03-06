@@ -1,7 +1,7 @@
 ---
-import type { Education } from "@entities/education";
-import { getFormattedDate } from "@utils/handleDates";
-import { getLangFromUrl } from "@i18n/utils";
+import { getLangFromUrl } from "@i18n/utils.ts";
+import type { Education } from "@scripts/entities/education.ts";
+import { getFormattedDate } from "@scripts/utils/handleDates.ts";
 
 interface Props {
 	education: Education;

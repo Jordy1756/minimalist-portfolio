@@ -1,8 +1,8 @@
 ---
-import type { Certificate } from "@entities/certificate";
-import Section from "@components/Section.astro";
 import CertificateCard from "@components/CertificateCard.astro";
-import { getLangFromUrl, useTranslations } from "@i18n/utils";
+import Section from "@components/Section.astro";
+import { getLangFromUrl, useTranslations } from "@i18n/utils.ts";
+import type { Certificate } from "@scripts/entities/certificate.ts";
 
 interface Props {
 	certificates: Certificate[];

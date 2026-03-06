@@ -1,13 +1,13 @@
 ---
+import { getLangFromUrl, useTranslations } from "@i18n/utils.ts";
 import Layout from "@layouts/Layout.astro";
-import Hero from "@sections/Hero.astro";
 import About from "@sections/About.astro";
-import Experience from "@sections/Experience.astro";
-import Projects from "@sections/Projects.astro";
-import Education from "@sections/Education.astro";
 import Certificates from "@sections/Certificates.astro";
+import Education from "@sections/Education.astro";
+import Experience from "@sections/Experience.astro";
+import Hero from "@sections/Hero.astro";
+import Projects from "@sections/Projects.astro";
 import Skills from "@sections/Skills.astro";
-import { getLangFromUrl, useTranslations } from "@i18n/utils";
 
 export const getStaticPaths = async () => [
 	{ params: { locale: "en" } },

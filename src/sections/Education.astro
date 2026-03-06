@@ -1,8 +1,8 @@
 ---
-import type { Education } from "@entities/education";
-import Section from "@components/Section.astro";
 import EducationCard from "@components/EducationCard.astro";
-import { getLangFromUrl, useTranslations } from "@i18n/utils";
+import Section from "@components/Section.astro";
+import { getLangFromUrl, useTranslations } from "@i18n/utils.ts";
+import type { Education } from "@scripts/entities/education.ts";
 
 interface Props {
 	education: Education[];

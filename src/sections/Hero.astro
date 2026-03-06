@@ -1,11 +1,11 @@
 ---
-import type { Basics } from "@entities/basics";
+import { getLangFromUrl, useTranslations } from "@i18n/utils.ts";
 import EmailIcon from "@icons/EmailIcon.astro";
 import GithubIcon from "@icons/GithubIcon.astro";
 import LinkedInIcon from "@icons/LinkedInIcon.astro";
 import ResumeIcon from "@icons/ResumeIcon.astro";
 import WorldIcon from "@icons/WorldIcon.astro";
-import { getLangFromUrl, useTranslations } from "@i18n/utils";
+import type { Basics } from "@scripts/entities/basics.ts";
 import { Image } from "astro:assets";
 
 interface Props {

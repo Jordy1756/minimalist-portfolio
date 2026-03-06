@@ -1,6 +1,6 @@
 ---
+import { useTranslations } from "@i18n/utils.ts";
 import Layout from "@layouts/Layout.astro";
-import { useTranslations } from "@i18n/utils";
 
 const currentLocale = (Astro.currentLocale as "en" | "es") ?? "en";
 const t = useTranslations(currentLocale);
