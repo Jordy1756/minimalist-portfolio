@@ -1,0 +1,11 @@
+---
+import type { HTMLAttributes } from "astro/types";
+
+interface Props extends HTMLAttributes<"svg"> {}
+
+const { target = "_blank", ...props } = Astro.props;
+---
+
+<a target={target} {...props}>
+	<slot />
+</a>
