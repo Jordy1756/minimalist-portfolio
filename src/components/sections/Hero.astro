@@ -1,4 +1,5 @@
 ---
+import Link from "@components/ui/Link.astro";
 import { getLangFromUrl, useTranslations } from "@i18n/utils.ts";
 import EmailIcon from "@icons/EmailIcon.astro";
 import GithubIcon from "@icons/GithubIcon.astro";
@@ -22,6 +23,27 @@ const SOCIAL_ICONS = {
 
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
+
+const heroLinks = [
+	{
+		href: `mailto:${email}`,
+		icon: EmailIcon,
+		title: t("hero.email.aria", name, email),
+		ariaLabel: t("hero.email.aria", name, email)
+	},
+	...profiles.map(({ network, url }) => ({
+		href: url,
+		icon: SOCIAL_ICONS[network as keyof typeof SOCIAL_ICONS],
+		title: t("hero.profile.aria", name, network),
+		ariaLabel: t("hero.profile.aria", name, network)
+	})),
+	{
+		href: resume,
+		icon: ResumeIcon,
+		title: t("hero.resume.aria", name),
+		ariaLabel: t("hero.resume.aria", name)
+	}
+];
 ---
 
 <header
@@ -39,58 +61,19 @@ const t = useTranslations(lang);
 			</address>
 		</div>
 		<ul class="flex items-center justify-center gap-2 md:justify-start">
-			<li class="rounded-sm border border-neutral-200 p-1">
-				<a
-					href={`mailto:${email}`}
-					target="_blank"
-					rel="noopener noreferrer"
-					title={t("hero.email.aria", name, email)}
-					aria-label={t("hero.email.aria", name, email)}
-				>
-					<EmailIcon
-						width={20}
-						height={20}
-						class="text-neutral-700 transition-colors hover:text-neutral-900"
-					/>
-				</a>
-			</li>
 			{
-				profiles.map(({ network, url }) => {
-					const Icon = SOCIAL_ICONS[network as keyof typeof SOCIAL_ICONS];
-					return (
-						<li class="rounded-sm border border-neutral-200 p-1">
-							<a
-								href={url}
-								target="_blank"
-								rel="noopener noreferrer"
-								title={t("hero.profile.aria", name, network)}
-								aria-label={t("hero.profile.aria", name, network)}
-							>
-								<Icon
-									width={20}
-									height={20}
-									class="text-neutral-700 transition-colors hover:text-neutral-900"
-								/>
-							</a>
-						</li>
-					);
-				})
+				heroLinks.map(({ href, icon: Icon, title, ariaLabel }) => (
+					<li class="rounded-sm border border-neutral-200 p-1">
+						<Link href={href} title={title} aria-label={ariaLabel}>
+							<Icon
+								width={20}
+								height={20}
+								class="text-neutral-700 transition-colors hover:text-neutral-900"
+							/>
+						</Link>
+					</li>
+				))
 			}
-			<li class="rounded-sm border border-neutral-200 p-1">
-				<a
-					href={resume}
-					rel="noopener noreferrer"
-					target="_blank"
-					title={t("hero.resume.aria", name)}
-					aria-label={t("hero.resume.aria", name)}
-				>
-					<ResumeIcon
-						width={20}
-						height={20}
-						class="text-neutral-700 transition-colors hover:text-neutral-900"
-					/>
-				</a>
-			</li>
 		</ul>
 	</section>
 	<figure class="flex min-w-35">

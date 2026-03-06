@@ -1,11 +1,11 @@
 ---
 import { getLangFromUrl, useTranslations } from "@i18n/utils.ts";
 import Layout from "@layouts/Layout.astro";
-import About from "@sections/About.astro";
+import About from "@components/sections/About.astro";
 import Certificates from "@sections/Certificates.astro";
 import Education from "@sections/Education.astro";
 import Experience from "@sections/Experience.astro";
-import Hero from "@sections/Hero.astro";
+import Hero from "@components/sections/Hero.astro";
 import Projects from "@sections/Projects.astro";
 import Skills from "@sections/Skills.astro";
 
@@ -29,10 +29,10 @@ const { basics, experience, education, projects, certificates, skills } = resume
 	<Hero basics={basics} />
 	<main class="flex flex-col gap-8">
 		<About about={basics} />
-		<Experience experience={experience} />
-		<Projects projects={projects} />
-		<Education education={education} />
-		<Certificates certificates={certificates} />
-		<Skills skills={skills} />
+		<!-- <Experience experience={experience} /> -->
+		<!-- <Projects projects={projects} /> -->
+		<!-- <Education education={education} /> -->
+		<!-- <Certificates certificates={certificates} /> -->
+		<!-- <Skills skills={skills} /> -->
 	</main>
 </Layout>
