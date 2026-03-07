@@ -8,7 +8,7 @@ export interface Resume {
 	basics: Basics;
 	experience: Experience[];
 	education: Education[];
-	certificates: Certificate[];
+	certificates: Record<string, Certificate[]>;
 	skills: string[];
 	projects: Project[];
 }
