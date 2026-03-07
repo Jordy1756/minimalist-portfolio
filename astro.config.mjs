@@ -31,9 +31,10 @@ export default defineConfig({
 				styles: ["normal"],
 				subsets: ["latin"],
 				display: "swap",
+				formats: ["woff2"],
 				fallbacks: ["system-ui", "sans-serif"],
 				unicodeRange: ["U+0020-007F", "U+00A0-017F"]
-			}
+			},
 		]
 	},
 
