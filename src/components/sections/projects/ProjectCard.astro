@@ -1,0 +1,65 @@
+---
+import GithubIcon from "@components/icons/GithubIcon.astro";
+import Link from "@components/ui/Link.astro";
+import { getLangFromUrl, useTranslations } from "@i18n/utils";
+
+interface Props {
+	name: string;
+	description: string;
+	highlights: string[];
+	url?: string;
+	github: string;
+}
+
+const { name, description, highlights, url, github } = Astro.props;
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+---
+
+<article class="flex flex-col gap-1 rounded-lg border border-neutral-200 p-4">
+	<header class="flex items-center justify-between">
+		<h3 class="flex text-lg font-bold text-neutral-800">
+			{
+				url ? (
+					<Link
+						href={url}
+						class="flex items-center gap-2 hover:underline"
+						title={t("projects.card.project.aria", name)}
+						aria-label={t("projects.card.project.aria", name)}
+					>
+						{name}
+					</Link>
+				) : (
+					name
+				)
+			}
+		</h3>
+		<Link
+			href={github}
+			title={t("projects.card.github.aria", name)}
+			aria-label={t("projects.card.github.aria", name)}
+		>
+			<GithubIcon
+				width={20}
+				height={20}
+				class="flex items-center gap-2 text-neutral-700 transition-colors hover:text-neutral-900"
+			/>
+		</Link>
+	</header>
+	<section class="mb-4 flex flex-1 flex-col gap-2">
+		<p>{description}</p>
+	</section>
+	<footer>
+		<ul class="flex flex-wrap gap-2 text-xs font-bold text-neutral-700">
+			{
+				highlights.map((highlight, index) => (
+					<li class="flex gap-2">
+						{index > 0 && <span>·</span>}
+						<span>{highlight}</span>
+					</li>
+				))
+			}
+		</ul>
+	</footer>
+</article>

@@ -1,0 +1,38 @@
+---
+import Section from "@components/layout/Section.astro";
+import CertificateCard from "@components/sections/certificates/CertificateCard.astro";
+import { getLangFromUrl, useTranslations } from "@i18n/utils.ts";
+import type { Certificate } from "@scripts/entities/certificate.ts";
+
+interface Props {
+	certificates: Record<string, Certificate[]>;
+}
+
+const { certificates } = Astro.props;
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+
+const sortedYears = Object.keys(certificates)
+	.map(Number)
+	.sort((a, b) => b - a);
+---
+
+<Section title={t("certificates.title")}>
+	<div class="flex flex-col gap-8">
+		{
+			sortedYears.map((year) => (
+				<div class="flex flex-col gap-2">
+					<span class="font-bold text-neutral-900">{year}</span>
+					<ul class="ml-4 flex flex-col gap-4">
+						{certificates[year].map(({ name, url, issuer, date }) => (
+							<li class="relative gap-y-1 pl-4 before:absolute before:top-0 before:left-0 before:h-[calc(100%+16px)] before:w-px before:bg-neutral-200 before:content-[''] after:absolute after:top-1/2 after:left-0 after:h-px after:w-3 after:bg-neutral-200 after:content-[''] last:before:h-1/2">
+								<CertificateCard name={name} url={url} issuer={issuer} date={date} />
+							</li>
+						))}
+					</ul>
+				</div>
+			))
+		}
+	</div>
+</Section>

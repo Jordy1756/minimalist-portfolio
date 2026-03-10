@@ -1,0 +1,37 @@
+---
+import CloseIcon from "@components/icons/CloseIcon.astro";
+
+interface Props {
+	id: string;
+	title: string;
+}
+
+const { id, title } = Astro.props;
+---
+
+<dialog
+	id={id}
+	closedby="any"
+	class="top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 rounded-lg p-4"
+>
+	<header class="flex items-center justify-between gap-4">
+		<h2>{title}</h2>
+		<button command="close" commandfor={id} class="cursor-pointer">
+			<CloseIcon
+				width={20}
+				height={20}
+				class="text-neutral-700 transition-colors hover:text-neutral-900"
+			/>
+		</button>
+	</header>
+	<section>
+		<slot name="main-modal" />
+	</section>
+</dialog>
+
+<style>
+	dialog {
+		background-color: aqua;
+		width: min(90vw, 1400px);
+	}
+</style>

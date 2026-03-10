@@ -8,6 +8,8 @@ const { title, class: className } = Astro.props;
 ---
 
 <section class:list={["flex flex-col gap-3", className]}>
-	<h2 class="text-xl font-extrabold text-neutral-950">{title}</h2>
+	<header>
+		<h2 class="text-xl font-extrabold text-neutral-950">{title}</h2>
+	</header>
 	<slot />
 </section>
