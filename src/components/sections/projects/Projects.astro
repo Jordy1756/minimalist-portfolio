@@ -1,4 +1,5 @@
 ---
+import Section from "@components/layout/Section.astro";
 import ProjectCard from "@components/sections/projects/ProjectCard.astro";
 import { getLangFromUrl, useTranslations } from "@i18n/utils.ts";
 import type { Project } from "@scripts/entities/project.ts";
@@ -11,14 +12,25 @@ const { projects } = Astro.props;
 
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
+
+const priorityProjects = projects.filter((project) => project.priority);
+const otherProjects = projects.filter((project) => !project.priority);
 ---
 
-<section title={t("projects.title")}>
-	<button command="show-modal" commandfor="projects-modal"> Ver todos los proyectos </button>
-	<span slot="main-modal">Astro</span>
-	<div class="project-section grid gap-4">
+<Section title={t("projects.title")}>
+	<Fragment slot="section-header">
+		<button
+			class="relative flex cursor-pointer items-center gap-0.5 underline hover:text-neutral-950 transition-colors"
+			command="show-modal"
+			commandfor="projects-modal"
+		>
+			+{otherProjects.length} mas
+		</button>
+	</Fragment>
+
+	<div class="grid grid-cols-[repeat(auto-fit,minmax(250px,1fr))] gap-4">
 		{
-			projects.map(({ name, url, github, description, highlights }) => (
+			priorityProjects.map(({ name, url, github, description, highlights }) => (
 				<ProjectCard
 					name={name}
 					url={url}
@@ -29,10 +41,4 @@ const t = useTranslations(lang);
 			))
 		}
 	</div>
-</section>
-
-<style>
-	.project-section {
-		grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-	}
-</style>
+</Section>

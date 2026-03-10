@@ -204,54 +204,62 @@
 			"highlights": ["Astro", "TypeScript", "CSS", "Figma"],
 			"description": "Website for a dairy products company.",
 			"url": "https://lacteos-el-torito.vercel.app/",
-			"github": "https://github.com/Jordy1756/el-torito-dairy-products"
+			"github": "https://github.com/Jordy1756/el-torito-dairy-products",
+			"priority": true
 		},
 		{
 			"name": "Silk Tree",
 			"description": "Web application for managing medical appointments, users, and hospital services.",
 			"highlights": ["React", "Screaming Architecture", "TypeScript"],
 			"url": "https://silk-tree.vercel.app/",
-			"github": "https://github.com/Jordy1756/silk-tree"
+			"github": "https://github.com/Jordy1756/silk-tree",
+			"priority": true
 		},
 		{
 			"name": "AluraGeek",
 			"description": "Product e-commerce developed as a challenge for Oracle Next Education.",
 			"highlights": ["HTML", "CSS", "Vanilla JS"],
 			"url": "https://jordy1756.github.io/alura-geek/",
-			"github": "https://github.com/Jordy1756/alura-geek"
+			"github": "https://github.com/Jordy1756/alura-geek",
+			"priority": true
 		},
 		{
 			"name": "Turríka",
 			"description": "Interactive landing page showcasing the history and making of Turrialba cheese chicharrones.",
 			"highlights": ["Astro JS", "GSAP", "Lenis"],
 			"url": "https://turrika.vercel.app/",
-			"github": "https://github.com/Jordy1756/turrika"
+			"github": "https://github.com/Jordy1756/turrika",
+			"priority": true
 		},
 		{
 			"name": "AluEncrypt",
 			"description": "Text encryptor and decryptor developed as a challenge for Oracle Next Education.",
 			"highlights": ["Astro JS", "TypeScript", "CSS"],
 			"url": "https://alura-encryptor.vercel.app/",
-			"github": "https://github.com/Jordy756/alura-encryptor"
+			"github": "https://github.com/Jordy756/alura-encryptor",
+			"priority": true
 		},
 		{
 			"name": "Silk Tree RESTful API",
 			"description": "RESTful API for managing medical appointments, users, and hospital services.",
 			"highlights": ["Node JS", "Express", "JWT", "MySQL"],
-			"github": "https://github.com/Jordy1756/silk-tree-api"
+			"github": "https://github.com/Jordy1756/silk-tree-api",
+			"priority": false
 		},
 		{
 			"name": "AluraGeek RESTful API",
 			"description": "RESTful API for managing articles, users, and comments.",
 			"highlights": ["Node JS", "Express", "JWT", "Mongo DB"],
 			"url": "https://alura-geek-api-one.vercel.app/",
-			"github": "https://github.com/Jordy1756/alura-geek-api"
+			"github": "https://github.com/Jordy1756/alura-geek-api",
+			"priority": false
 		},
 		{
 			"name": "Hi Cupon RESTful API",
 			"description": "RESTful API for managing coupons and promotions, allowing users to get discounts on products and services.",
 			"highlights": ["C#", "Clean Architecture", "SQL Server"],
-			"github": "https://github.com/Jordy1756/HiCupon_API_NET"
+			"github": "https://github.com/Jordy1756/HiCupon_API_NET",
+			"priority": false
 		}
 	]
 }
