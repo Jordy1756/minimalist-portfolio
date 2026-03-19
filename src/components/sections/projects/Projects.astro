@@ -18,16 +18,19 @@ const otherProjects = projects.filter((project) => !project.priority);
 ---
 
 <Section title={t("projects.title")}>
-	<Fragment slot="section-header">
-		<button
-			class="relative flex cursor-pointer items-center gap-0.5 underline hover:text-neutral-950 transition-colors"
-			command="show-modal"
-			commandfor="projects-modal"
-		>
-			+{otherProjects.length} mas
-		</button>
-	</Fragment>
-
+	{
+		otherProjects.length > 0 && (
+			<Fragment slot="section-header">
+				<button
+					class="relative flex cursor-pointer items-center gap-0.5 underline transition-colors hover:text-neutral-950"
+					command="show-modal"
+					commandfor="projects-modal"
+				>
+					+{otherProjects.length} mas
+				</button>
+			</Fragment>
+		)
+	}
 	<div class="grid grid-cols-[repeat(auto-fit,minmax(250px,1fr))] gap-4">
 		{
 			priorityProjects.map(({ name, url, github, description, highlights }) => (

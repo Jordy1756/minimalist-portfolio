@@ -1,16 +1,16 @@
 {
 	"basics": {
-		"name": "Yordi Castro",
-		"label": "Full Stack Developer | React JS, Astro JS, Node JS, .NET | Especializado en soluciones web modernas",
+		"name": "Yordi Castro Rojas",
+		"label": "Desarrollador Full Stack | Clean Architecture, Microservicios, React, Astro, .NET y Node.js",
 		"email": "jordycastro1756@gmail.com",
 		"ogImage": "https://res.cloudinary.com/dygwpgeq9/image/upload/v1772054097/minimalist_portfolio_es_og_img_epye2p.webp",
 		"avatar": {
 			"src": "/images/me.webp",
 			"alt": "Retrato en blanco y negro de Yordi Castro Rojas posando con un abrigo oscuro frente a una pared con sombras geométricas de luz natural."
 		},
-		"summary": "Desarrollador Full Stack con experiencia profesional en la creación de aplicaciones web y soluciones digitales. Especializado en tecnologías modernas, arquitecturas limpias, microservicios y principios SOLID. Adaptable, autodidacta y entusiasta del aprendizaje continuo, aporto fuerte capacidad de análisis, trabajo colaborativo en entornos ágiles y comunicación técnica efectiva. Comprometido con la entrega de soluciones robustas y eficientes que integran requisitos de negocio y experiencia de usuario final.",
+		"summary": "Desarrollador Full Stack con m experiencia profesional en la creación de aplicaciones web y soluciones digitales. Especializado en tecnologías modernas, arquitecturas limpias, microservicios y principios SOLID. Adaptable, autodidacta y entusiasta del aprendizaje continuo, aporto fuerte capacidad de análisis, trabajo colaborativo en entornos ágiles y comunicación técnica efectiva. Comprometido con la entrega de soluciones robustas y eficientes que integran requisitos de negocio y experiencia de usuario final.",
 		"location": {
-			"city": "Turrialba, Cartago",
+			"city": "Turrialba",
 			"countryCode": "CR",
 			"region": "Costa Rica"
 		},
@@ -32,51 +32,66 @@
 		{
 			"name": "4Geeks",
 			"position": "Desarrollador Full Stack",
-			"startDate": "2025-07-19",
-			"endDate": "2025-12-05",
+			"startDate": "2025-07-01",
+			"endDate": "2025-12-01",
 			"summary": "Liderazgo y desarrollo Full Stack en proyectos web, móviles y desktop para B2B/B2C en entornos ágiles. Enfocado en arquitectura eficiente, mejora continua, trabajo transversal con equipos multidisciplinarios y experiencia de usuario de alto nivel en el ecosistema 4Geeks.",
 			"highlights": [
-				"Lideré el desarrollo desde cero de la aplicación móvil oficial 4Geeks (Flutter), integrando autenticación segura, gestión de ventas y generación de links de pago en tiempo real, consumiendo APIs REST y optimizando la experiencia de usuario.",
-				"Dirigí la creación integral de MARKET-APP (Electron + React), una solución de autoservicio con manejo seguro de sesión, localización internacional (i18n) y arquitectura robusta de autenticación y pagos.",
-				"Construí el sistema de mensajería en tiempo real (Angular + Firebase) tipo chat moderno, permitiendo comunicación directa, notificaciones y gestión visual de conversaciones entre candidatos y reclutadores.",
-				"Desarrollé e integré un SDK en Python junto con un nuevo sistema de autenticación por API Key, refactorizando los middlewares del backend para soportar validación concurrente de API Keys, OAuth y JWT, garantizando acceso persistente y rotación segura de llaves.",
-				"Rediseñé el sistema hospitalario ERPNext adaptando toda la UI al sistema visual 4Geeks, mediante CSS modular, logrando identidad visual uniforme y mejor experiencia en cualquier dispositivo."
-			]
-		},
-		{
-			"name": "INTA Costa Rica",
-			"position": "Desarrollador Full Stack",
-			"startDate": "2023-07-10",
-			"endDate": "2023-12-01",
-			"summary": "Desarrollo y entrega de un sistema integral de gestión de inventario para el Instituto Nacional de Innovación y Transferencia en Tecnología Agropecuaria, cubriendo todas las fases clave del ciclo de vida del software.",
-			"highlights": [
-				"Colaboré activamente con stakeholders en la recopilación de requerimientos y lideré el diseño de la arquitectura, estableciendo la base técnica para un sistema escalable, seguro y mantenible.",
-				"Desarrollé y desplegué módulos frontend y backend con Blazor y C#, incluyendo gestión de usuarios con distintos niveles de acceso y optimización de base de datos en SQL Server.",
-				"Implementé pruebas automatizadas, monitoreo de incidencias, documentación técnica y despliegue a producción, asegurando calidad, adopción, migración de datos sin errores y operación continua del sistema."
+				"Lideré el desarrollo integral de la primera aplicación móvil oficial (Flutter) desde cero, expandiendo el alcance digital de la empresa al migrar los servicios web a una experiencia móvil de alto rendimiento.",
+				"Lideré la refactorización y el rediseño de UI/UX de MARKET-APP (Electron + React), transformando un proyecto inicial en una solución de autoservicio funcional, accesible y lista para producción con soporte i18n.",
+				"Desarrollé un sistema de mensajería en tiempo real (Angular + Firebase), incrementando la eficiencia en la comunicación entre candidatos y reclutadores mediante notificaciones instantáneas y gestión de chats.",
+				"Refactoricé middlewares de backend en Python para integrar un nuevo sistema de autenticación por API Key, reforzando la seguridad y permitiendo la validación concurrente de tokens OAuth y JWT."
 			]
 		},
 		{
 			"name": "Lácteos El Torito",
 			"position": "Diseñador Web y Desarrollador",
-			"startDate": "2025-01-01",
-			"endDate": "2025-03-01",
+			"startDate": "2024-01-16",
+			"endDate": "2024-03-01",
 			"summary": "Diseño y desarrollo de sitio web profesional para potenciar la presencia digital y la imagen comercial de Lácteos El Torito, destacando su catálogo de productos y ofreciendo una experiencia moderna y atractiva a sus clientes.",
 			"highlights": [
-				"Lideré sesiones con el cliente para definir los valores de marca, objetivos comerciales y requisitos funcionales, asegurando alineación estratégica del producto.",
-				"Diseñé e implementé un sistema visual completo: paleta de colores, tipografías y componentes UI coherentes con la identidad de marca, responsivo para cualquier dispositivo.",
-				"Desarrollé y lancé el sitio web con Astro y JavaScript optimizado, integrando formularios con validación, conectividad con servicios de email marketing y logrando un rendimiento superior a 90 en Google Lighthouse."
+				"Gestioné el ciclo de vida completo (SDLC) para la primera plataforma web de la empresa, logrando un incremento del 100% en el alcance digital y una presencia de marca profesionalizada.",
+				"Desarrollé y lancé un sitio web de alto rendimiento utilizando Astro, alcanzando puntuaciones casi perfectas en Google Lighthouse (95+) en rendimiento, SEO y accesibilidad.",
+				"Habilité la comunicación omnicanal mediante la integración de formularios automatizados, correo directo y WhatsApp, agilizando el proceso de adquisición de clientes.",
+				"Diseñé un sistema de identidad visual completo desde cero, garantizando una consistencia del 100% en todos los puntos de contacto digitales y dispositivos móviles."
+			]
+		},
+		{
+			"name": "INTA Costa Rica",
+			"position": "Desarrollador Full Stack",
+			"startDate": "2023-08-12",
+			"endDate": "2023-12-04",
+			"summary": "Desarrollo y entrega de un sistema integral de gestión de inventario para el Instituto Nacional de Innovación y Transferencia en Tecnología Agropecuaria, cubriendo todas las fases clave del ciclo de vida del software.",
+			"highlights": [
+				"Gestioné el ciclo de vida completo (SDLC) bajo la metodología RUP para diseñar y desarrollar un ERP desde cero, centralizando la gestión de inventarios de múltiples bodegas a nivel nacional.",
+				"Digitalicé y automaticé el proceso de gestión de stock, sustituyendo cartas físicas y hojas de Excel por un sistema en tiempo real con SQL Server, reduciendo el tiempo de procesamiento de solicitudes en un 80%.",
+				"Desarrollé un módulo de reportes automatizados para auditorías trimestrales, permitiendo la generación de archivos PDF y Excel con un solo clic y eliminando errores humanos en el manejo de datos críticos.",
+				"Orquesté el diseño arquitectónico y despliegue del sistema utilizando Blazor y C#, garantizando la integridad del 100% de los datos durante la migración de registros manuales a una base de datos escalable."
 			]
 		}
 	],
 	"education": [
 		{
 			"institution": "Universidad de Costa Rica",
-			"area": "Bachiller en Informática Empresarial",
+			"area": "Bachillerato en Informática Empresarial",
 			"startDate": "2020-03-10",
-			"endDate": "2026-02-13"
+			"endDate": "2026-02-01"
 		}
 	],
 	"certificates": {
+		"2026": [
+			{
+				"name": "Desarrollo con IA: de 0 a Producción",
+				"date": "2026-03-14",
+				"issuer": "BIG school",
+				"url": "https://res.cloudinary.com/dd3hdnfqi/image/upload/v1773963091/Certificado-Yordi-Castro-Rojas_md7vg4.webp"
+			},
+			{
+				"name": "Creación de agentes de IA con n8n",
+				"date": "2026-03-10",
+				"issuer": "LinkedIn Learning",
+				"url": "https://www.linkedin.com/learning/certificates/400042e01ae5214fc9c9698d009c7c7ae55f31297785670df979e779cd5158e6"
+			}
+		],
 		"2025": [
 			{
 				"name": "Inmersión IA - Google Gemini",
@@ -169,34 +184,43 @@
 		]
 	},
 	"skills": [
-		"HTML",
-		"CSS",
-		"JavaScript",
-		"TypeScript",
 		"React",
 		"Angular",
 		"Astro",
+		"TypeScript",
+		"JavaScript",
+		"HTML5",
+		"CSS3",
+		"Tailwind CSS",
+		"Diseño Responsivo",
+		"Sistemas de Diseño",
+		"Figma",
 		"Node.js",
 		"Express",
 		".NET",
-		"MongoDB",
+		"Entity Framework",
+		"Python",
+		"Django",
+		"Java",
 		"SQL Server",
 		"MySQL",
+		"MongoDB",
 		"Flutter",
+		"APIs RESTful",
+		"Clean Architecture",
+		"DDD",
+		"Screaming Architecture",
+		"SOLID",
+		"Microservicios",
 		"Git",
 		"GitHub",
 		"Gitlab",
-		"SOLID",
-		"Clean Architecture",
-		"Microservicios",
-		"RESTful API",
-		"Figma",
-		"Design Systems",
-		"UX/UI Design",
 		"Scrum",
-		"Python",
-		"Django",
-		"IA Generativa"
+		"IA Generativa",
+		"Agentes de IA",
+		"n8n",
+		"Español (Nativo)",
+		"Inglés (Intermedio - B1/B2)"
 	],
 	"projects": [
 		{
@@ -244,7 +268,7 @@
 			"description": "RESTful API para la gestión de citas médicas, usuarios y servicios del hospital.",
 			"highlights": ["Node JS", "Express", "JWT", "MySQL"],
 			"github": "https://github.com/Jordy1756/silk-tree-api.git",
-			"priority": false
+			"priority": true
 		},
 		{
 			"name": "AluraGeek RESTful API",
@@ -252,14 +276,14 @@
 			"highlights": ["Node JS", "Express", "JWT", "Mongo DB"],
 			"url": "https://alura-geek-api-one.vercel.app/",
 			"github": "https://github.com/Jordy1756/alura-geek-api.git",
-			"priority": false
+			"priority": true
 		},
 		{
 			"name": "Hi Cupon RESTful API",
 			"description": "RESTful API para la gestión de cupones y promociones, permitiendo a los usuarios obtener descuentos en productos y servicios.",
 			"highlights": ["C#", "Clean Architecture", "SQL Server"],
 			"github": "https://github.com/Jordy1756/HiCupon_API_NET.git",
-			"priority": false
+			"priority": true
 		}
 	]
 }

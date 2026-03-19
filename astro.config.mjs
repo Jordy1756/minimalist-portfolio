@@ -20,24 +20,20 @@ export default defineConfig({
 			fallbackType: "rewrite"
 		}
 	},
-
-	experimental: {
-		fonts: [
-			{
-				provider: fontProviders.google(),
-				name: "Nunito Sans",
-				cssVariable: "--font-nunito-sans",
-				weights: [400, 600, 700, 800],
-				styles: ["normal"],
-				subsets: ["latin"],
-				display: "swap",
-				formats: ["woff2"],
-				fallbacks: ["system-ui", "sans-serif"],
-				unicodeRange: ["U+0020-007F", "U+00A0-017F"]
-			},
-		]
-	},
-
+	fonts: [
+		{
+			provider: fontProviders.google(),
+			name: "Nunito Sans",
+			cssVariable: "--font-nunito-sans",
+			weights: [400, 600, 700, 800],
+			styles: ["normal"],
+			subsets: ["latin"],
+			display: "swap",
+			formats: ["woff2"],
+			fallbacks: ["system-ui", "sans-serif"],
+			unicodeRange: ["U+0020-007F", "U+00A0-017F"]
+		}
+	],
 	vite: {
 		plugins: [tailwindcss()]
 	}

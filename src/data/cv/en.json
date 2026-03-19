@@ -1,7 +1,7 @@
 {
 	"basics": {
-		"name": "Yordi Castro",
-		"label": "Full Stack Developer | React JS, Astro JS, Node JS, .NET | Specialized in Modern Web Solutions",
+		"name": "Yordi Castro Rojas",
+		"label": "Full Stack Developer | Clean Architecture, Microservices, React, Astro, .NET, Node.js",
 		"email": "jordycastro1756@gmail.com",
 		"ogImage": "https://res.cloudinary.com/dygwpgeq9/image/upload/v1772054096/minimalist_portfolio_en_og_img_ow7ugd.webp",
 		"avatar": {
@@ -10,7 +10,7 @@
 		},
 		"summary": "Full Stack Developer with professional experience in building web applications and digital solutions. Specialized in modern technologies, clean architectures, microservices, and SOLID principles. Adaptable, self-taught, and passionate about continuous learning, I bring strong analytical abilities, collaborative teamwork in agile environments, and effective technical communication. Committed to delivering robust and efficient solutions that integrate business requirements and end-user experience.",
 		"location": {
-			"city": "Turrialba, Cartago",
+			"city": "Turrialba",
 			"countryCode": "CR",
 			"region": "Costa Rica"
 		},
@@ -31,40 +31,41 @@
 	"experience": [
 		{
 			"name": "4Geeks",
-			"position": "Full Stack Developer",
-			"startDate": "2025-07-19",
-			"endDate": "2025-12-05",
+			"position": "Full Stack Developer Intern",
+			"startDate": "2025-07-01",
+			"endDate": "2025-12-01",
 			"summary": "Lead and Full Stack development across web, mobile, and desktop projects for B2B/B2C in agile settings. Focused on efficient architecture, continuous improvement, cross-team collaboration, and top-tier user experience within the 4Geeks ecosystem.",
 			"highlights": [
-				"Led the end-to-end development of the official 4Geeks mobile application (Flutter), integrating secure authentication, sales management, and real-time payment link generation through REST API consumption and UX optimization.",
-				"Directed the full creation of MARKET-APP (Electron + React), a self-service solution with secure session handling, internationalization (i18n), and a robust authentication and payment architecture.",
-				"Developed a real-time messaging system (Angular + Firebase) with modern chat features, enabling direct communication, notifications, and intuitive conversation management between candidates and recruiters.",
-				"Developed and integrated a custom Python SDK with a new API Key authentication system, refactoring backend middlewares to support concurrent API Key, OAuth, and JWT validation, ensuring persistent access and secure key rotation.",
-				"Redesigned the ERPNext hospital system by adapting its UI to the 4Geeks visual system using modular CSS, achieving consistent branding and better experience across all devices."
+				"Led the end-to-end development of the first official mobile application (Flutter) from scratch, extending the company's digital reach by migrating core web services into a high-performance mobile experience.",
+				"Spearheaded the refactoring and UI/UX redesign of the MARKET-APP (Electron + React), transforming a legacy codebase into a functional, accessible, and production-ready self-service solution with full i18n support.",
+				"Developed a real-time messaging system (Angular + Firebase), increasing communication efficiency between candidates and recruiters through instant notifications and intuitive chat management.",
+				"Refactored backend middlewares in Python to support a new API Key authentication system, enhancing security and enabling concurrent validation of OAuth and JWT tokens."
+			]
+		},
+		{
+			"name": "Lácteos El Torito",
+			"position": "Web Designer and Developer",
+			"startDate": "2024-01-16",
+			"endDate": "2024-03-01",
+			"summary": "Designed and developed a professional website to enhance the digital presence and branding of Lácteos El Torito, showcasing their product catalog and providing a modern, attractive user experience.",
+			"highlights": [
+				"Managed the full SDLC for the company's first web platform, resulting in a 100% increase in digital reach and a professionalized brand presence.",
+				"Developed and launched a high-performance website using Astro, achieving near-perfect Google Lighthouse scores (95+) in performance, SEO, and accessibility.",
+				"Enabled omni-channel communication by integrating automated contact forms, direct email, and WhatsApp, streamlining the customer acquisition process.",
+				"Designed a comprehensive visual identity system from scratch, ensuring 100% consistency across all digital touchpoints and mobile devices."
 			]
 		},
 		{
 			"name": "INTA Costa Rica",
 			"position": "Full Stack Developer",
-			"startDate": "2023-07-10",
-			"endDate": "2023-12-01",
+			"startDate": "2023-08-12",
+			"endDate": "2023-12-04",
 			"summary": "Development and delivery of a comprehensive inventory management system for the National Institute for Innovation and Technology Transfer in Agriculture, covering all key software lifecycle phases.",
 			"highlights": [
-				"Collaborated closely with stakeholders to gather requirements and led architectural design, laying the technical foundation for a scalable, secure, and maintainable system.",
-				"Developed and deployed frontend and backend modules using Blazor and C#, implementing multi-level user access management and optimizing SQL Server database performance.",
-				"Implemented automated testing, incident monitoring, technical documentation, and production deployment to ensure quality, user adoption, seamless data migration, and continuous system operation."
-			]
-		},
-		{
-			"name": "Lácteos El Torito",
-			"position": "Web Designer & Developer",
-			"startDate": "2025-01-01",
-			"endDate": "2025-03-01",
-			"summary": "Designed and developed a professional website to enhance the digital presence and branding of Lácteos El Torito, showcasing their product catalog and providing a modern, attractive user experience.",
-			"highlights": [
-				"Led client sessions to define brand values, business goals, and functional requirements, ensuring strategic product alignment.",
-				"Designed and implemented a complete visual system—color palette, typography, and UI components—consistent with brand identity and fully responsive across devices.",
-				"Developed and launched the website using Astro and optimized JavaScript, integrating validated forms and email marketing services, achieving a Google Lighthouse performance score above 90."
+				"Managed the full SDLC using RUP methodology to design and develop a custom ERP from scratch, centralizing the inventory management of multiple warehouses across the country.",
+				"Digitized and automated the stock procurement process, replacing manual physical letters and Excel sheets with a real-time SQL Server system, reducing request processing time by 80%.",
+				"Engineered an automated reporting module for quarterly audits, enabling one-click PDF/Excel generation and eliminating human error in high-stakes agricultural data.",
+				"Orchestrated the architectural design and deployment of the system using Blazor and C#, ensuring 100% data integrity during the migration from legacy manual records to a scalable database."
 			]
 		}
 	],
@@ -73,10 +74,24 @@
 			"institution": "Universidad de Costa Rica",
 			"area": "Bachelor's Degree in Business Computing",
 			"startDate": "2020-03-10",
-			"endDate": "2026-02-13"
+			"endDate": "2026-02-01"
 		}
 	],
 	"certificates": {
+		"2026": [
+			{
+				"name": "AI Development: From 0 to Production",
+				"date": "2026-03-14",
+				"issuer": "BIG school",
+				"url": "https://res.cloudinary.com/dd3hdnfqi/image/upload/v1773963091/Certificado-Yordi-Castro-Rojas_md7vg4.webp"
+			},
+			{
+				"name": "Building AI Agents with n8n",
+				"date": "2026-03-10",
+				"issuer": "LinkedIn Learning",
+				"url": "https://www.linkedin.com/learning/certificates/400042e01ae5214fc9c9698d009c7c7ae55f31297785670df979e779cd5158e6"
+			}
+		],
 		"2025": [
 			{
 				"name": "AI Immersion – Google Gemini",
@@ -169,34 +184,43 @@
 		]
 	},
 	"skills": [
-		"HTML",
-		"CSS",
-		"JavaScript",
-		"TypeScript",
 		"React",
 		"Angular",
 		"Astro",
+		"TypeScript",
+		"JavaScript",
+		"HTML5",
+		"CSS3",
+		"Tailwind CSS",
+		"Responsive Design",
+		"Design Systems",
+		"Figma",
 		"Node.js",
 		"Express",
 		".NET",
-		"MongoDB",
+		"Entity Framework",
+		"Python",
+		"Django",
+		"Java",
 		"SQL Server",
 		"MySQL",
+		"MongoDB",
 		"Flutter",
+		"RESTful APIs",
+		"Clean Architecture",
+		"DDD",
+		"Screaming Architecture",
+		"SOLID Principles",
+		"Microservices",
 		"Git",
 		"GitHub",
 		"Gitlab",
-		"SOLID",
-		"Clean Architecture",
-		"Microservicios",
-		"RESTful API",
-		"Figma",
-		"Design Systems",
-		"UX/UI Design",
 		"Scrum",
-		"Python",
-		"Django",
-		"Generative AI"
+		"Generative AI",
+		"AI Agents",
+		"n8n",
+		"Spanish (Native)",
+		"English (Intermediate - B1/B2)"
 	],
 	"projects": [
 		{
@@ -244,7 +268,7 @@
 			"description": "RESTful API for managing medical appointments, users, and hospital services.",
 			"highlights": ["Node JS", "Express", "JWT", "MySQL"],
 			"github": "https://github.com/Jordy1756/silk-tree-api",
-			"priority": false
+			"priority": true
 		},
 		{
 			"name": "AluraGeek RESTful API",
@@ -252,14 +276,14 @@
 			"highlights": ["Node JS", "Express", "JWT", "Mongo DB"],
 			"url": "https://alura-geek-api-one.vercel.app/",
 			"github": "https://github.com/Jordy1756/alura-geek-api",
-			"priority": false
+			"priority": true
 		},
 		{
 			"name": "Hi Cupon RESTful API",
 			"description": "RESTful API for managing coupons and promotions, allowing users to get discounts on products and services.",
 			"highlights": ["C#", "Clean Architecture", "SQL Server"],
 			"github": "https://github.com/Jordy1756/HiCupon_API_NET",
-			"priority": false
+			"priority": true
 		}
 	]
 }
