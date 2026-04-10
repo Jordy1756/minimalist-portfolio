@@ -1,6 +1,6 @@
 export interface Certificate {
-	name: string;
-	date: Date;
-	issuer: string;
-	url: string;
+  name: string;
+  date: Date;
+  issuer: string;
+  url: string;
 }

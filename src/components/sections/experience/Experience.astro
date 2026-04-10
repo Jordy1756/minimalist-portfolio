@@ -1,11 +1,11 @@
 ---
 import Section from "@components/layout/Section.astro";
+import ExperienceCard from "@components/sections/experience/ExperienceCard.astro";
 import { getLangFromUrl, useTranslations } from "@i18n/utils.ts";
 import type { Experience } from "@scripts/entities/experience.ts";
-import ExperienceCard from "@components/sections/experience/ExperienceCard.astro";
 
 interface Props {
-	experience: Experience[];
+  experience: Experience[];
 }
 
 const { experience } = Astro.props;
@@ -15,18 +15,7 @@ const t = useTranslations(lang);
 ---
 
 <Section title={t("experience.title")}>
-	<div class="flex flex-col gap-4">
-		{
-			experience.map(({ name, position, startDate, endDate, summary, highlights }) => (
-				<ExperienceCard
-					name={name}
-					position={position}
-					startDate={startDate}
-					endDate={endDate}
-					summary={summary}
-					highlights={highlights}
-				/>
-			))
-		}
-	</div>
+  <div class="flex flex-col gap-4">
+    {experience.map((experience) => <ExperienceCard experience={experience} />)}
+  </div>
 </Section>

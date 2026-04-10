@@ -4,7 +4,7 @@ import { getLangFromUrl, useTranslations } from "@i18n/utils.ts";
 import type { Basics } from "@scripts/entities/basics.ts";
 
 interface Props {
-	about: Basics;
+  about: Basics;
 }
 
 const { about } = Astro.props;
@@ -15,5 +15,5 @@ const t = useTranslations(lang);
 ---
 
 <Section title={t("aboutMe.title")}>
-	<p>{summary}</p>
+  <p>{summary}</p>
 </Section>

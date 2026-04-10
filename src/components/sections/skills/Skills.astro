@@ -3,7 +3,7 @@ import Section from "@components/layout/Section.astro";
 import { getLangFromUrl, useTranslations } from "@i18n/utils.ts";
 
 interface Props {
-	skills: string[];
+  skills: string[];
 }
 
 const { skills } = Astro.props;
@@ -13,13 +13,11 @@ const t = useTranslations(lang);
 ---
 
 <Section title={t("skills.title")}>
-	<ul class="flex flex-wrap gap-2">
-		{
-			skills.map((skill) => (
-				<li class="rounded-sm bg-neutral-800 px-4 py-1 text-center text-sm font-semibold text-neutral-50">
-					{skill}
-				</li>
-			))
-		}
-	</ul>
+  <ul class="flex flex-wrap gap-2">
+    {
+      skills.map((skill) => (
+        <li class="rounded-sm bg-neutral-800 px-4 py-1 text-center text-sm font-semibold text-neutral-50">{skill}</li>
+      ))
+    }
+  </ul>
 </Section>

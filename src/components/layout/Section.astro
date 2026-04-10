@@ -1,16 +1,16 @@
 ---
 interface Props {
-	title: string;
-	class?: string;
+  title: string;
+  class?: string;
 }
 
 const { title, class: className } = Astro.props;
 ---
 
 <section class:list={["flex flex-col gap-3", className]}>
-	<header class="flex items-center justify-between gap-4">
-		<h2 class="text-xl font-extrabold text-neutral-950">{title}</h2>
-		<slot name="section-header" />
-	</header>
-	<slot />
+  <header class="flex items-center justify-between gap-4">
+    <h2 class="text-xl font-extrabold text-neutral-950">{title}</h2>
+    <slot name="section-header" />
+  </header>
+  <slot />
 </section>

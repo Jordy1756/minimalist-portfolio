@@ -2,23 +2,23 @@
 import { getFormattedDate } from "@scripts/utils/handleDates";
 
 interface Props {
-	startDate: Date;
-	endDate: Date | null;
-	localeCode: "en-US" | "es-ES";
-	presentText: string;
-	class?: string;
+  startDate: Date;
+  endDate: Date | null;
+  localeCode: "en-US" | "es-ES";
+  presentText: string;
+  class?: string;
 }
 
 const { startDate, endDate, localeCode, presentText, class: className } = Astro.props;
 
 const formattedStartDate = getFormattedDate(startDate, localeCode, {
-	year: "numeric"
+  year: "numeric",
 });
 const formattedEndDate = getFormattedDate(endDate, localeCode, { year: "numeric" }, presentText);
 ---
 
 <div class:list={["text-right text-neutral-500", className]}>
-	<time datetime={startDate + ""}>{formattedStartDate}</time>
-	<span>-</span>
-	<time datetime={endDate + ""}>{formattedEndDate}</time>
+  <time datetime={startDate + ""}>{formattedStartDate}</time>
+  <span>-</span>
+  <time datetime={endDate + ""}>{formattedEndDate}</time>
 </div>

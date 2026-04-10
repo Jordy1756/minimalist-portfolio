@@ -1,6 +1,30 @@
 @import "tailwindcss";
 
 @theme {
-	--font-nunito-sans: "Nunito Sans", sans-serif;
-	--max-width: 700px;
+  --max-width: 700px;
+}
+
+@theme inline {
+  --font-sans: var(--font-nunito-sans);
+  --font-mono: var(--font-nunito-sans);
+}
+
+@layer base {
+  :root {
+    interpolate-size: allow-keywords;
+  }
+
+  *,
+  *::before,
+  *::after {
+    scrollbar-width: thin;
+  }
+
+  :is(h1, h2, h3, h4, h5, h6) {
+    @apply font-semibold text-balance;
+  }
+
+  :is(button, a) {
+    @apply cursor-pointer;
+  }
 }

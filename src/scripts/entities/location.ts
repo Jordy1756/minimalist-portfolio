@@ -1,5 +1,5 @@
 export interface Location {
-	city: string;
-	countryCode: string;
-	region: string;
+  city: string;
+  countryCode: string;
+  region: string;
 }

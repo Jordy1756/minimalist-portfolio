@@ -1,15 +1,14 @@
 ---
 import TimePeriod from "@components/ui/TimePeriod.astro";
 import { getLangFromUrl } from "@i18n/utils";
+import type { Education } from "@scripts/entities/education";
 
 interface Props {
-	institution: string;
-	area: string;
-	startDate: Date;
-	endDate: Date | null;
+  education: Education;
 }
 
-const { institution, area, startDate, endDate } = Astro.props;
+const { education } = Astro.props;
+const { institution, area, startDate, endDate } = education;
 
 const lang = getLangFromUrl(Astro.url);
 
@@ -18,20 +17,15 @@ const presentText = lang === "es" ? "Presente" : "Present";
 ---
 
 <article>
-	<header>
-		<header class="flex justify-between gap-2">
-			<div class="flex flex-col">
-				<h3 class="text-lg font-semibold text-neutral-800">{institution}</h3>
-			</div>
-			<TimePeriod
-				startDate={startDate}
-				endDate={endDate}
-				localeCode={localeCode}
-				presentText={presentText}
-			/>
-		</header>
-	</header>
-	<section>
-		<p>{area}</p>
-	</section>
+  <header>
+    <header class="flex justify-between gap-2">
+      <div class="flex flex-col">
+        <h3 class="text-lg font-semibold text-neutral-800">{institution}</h3>
+      </div>
+      <TimePeriod startDate={startDate} endDate={endDate} localeCode={localeCode} presentText={presentText} />
+    </header>
+  </header>
+  <section>
+    <p>{area}</p>
+  </section>
 </article>
