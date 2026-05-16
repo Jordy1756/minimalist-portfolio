@@ -1,4 +1,4 @@
-@import "tailwindcss";
+@import 'tailwindcss';
 
 @theme {
   --max-width: 700px;
@@ -17,7 +17,7 @@
   *,
   *::before,
   *::after {
-    scrollbar-width: thin;
+    @apply scrollbar-thin;
   }
 
   :is(h1, h2, h3, h4, h5, h6) {

@@ -1,8 +1,8 @@
 ---
-import Section from "@components/layout/Section.astro";
-import ProjectCard from "@components/sections/projects/ProjectCard.astro";
-import { getLangFromUrl, useTranslations } from "@i18n/utils.ts";
-import type { Project } from "@scripts/entities/project.ts";
+import Section from '@components/layout/Section.astro';
+import ProjectCard from '@components/sections/projects/ProjectCard.astro';
+import { getLangFromUrl, useTranslations } from '@i18n/utils.ts';
+import type { Project } from '@scripts/entities/project.ts';
 
 interface Props {
   projects: Project[];
@@ -17,7 +17,7 @@ const priorityProjects = projects.filter((project) => project.priority);
 const otherProjects = projects.filter((project) => !project.priority);
 ---
 
-<Section title={t("projects.title")}>
+<Section title={t('projects.title')}>
   {
     otherProjects.length > 0 && (
       <Fragment slot="section-header">

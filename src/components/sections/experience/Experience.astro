@@ -1,8 +1,8 @@
 ---
-import Section from "@components/layout/Section.astro";
-import ExperienceCard from "@components/sections/experience/ExperienceCard.astro";
-import { getLangFromUrl, useTranslations } from "@i18n/utils.ts";
-import type { Experience } from "@scripts/entities/experience.ts";
+import Section from '@components/layout/Section.astro';
+import ExperienceCard from '@components/sections/experience/ExperienceCard.astro';
+import { getLangFromUrl, useTranslations } from '@i18n/utils.ts';
+import type { Experience } from '@scripts/entities/experience.ts';
 
 interface Props {
   experience: Experience[];
@@ -14,7 +14,7 @@ const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
 ---
 
-<Section title={t("experience.title")}>
+<Section title={t('experience.title')}>
   <div class="flex flex-col gap-4">
     {experience.map((experience) => <ExperienceCard experience={experience} />)}
   </div>

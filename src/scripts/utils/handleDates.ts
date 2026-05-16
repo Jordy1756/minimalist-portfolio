@@ -1,6 +1,6 @@
 export const getFormattedDate = (
   date: Date | null,
-  locale: "es-ES" | "en-US",
+  locale: 'es-ES' | 'en-US',
   options: Intl.DateTimeFormatOptions,
   presentLabel?: string,
 ) => {

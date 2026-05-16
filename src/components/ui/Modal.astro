@@ -1,5 +1,5 @@
 ---
-import CloseIcon from "@components/icons/Close.astro";
+import CloseIcon from '@components/icons/Close.astro';
 
 interface Props {
   id: string;
@@ -23,7 +23,7 @@ const { id, title, class: className } = Astro.props;
       <CloseIcon width={24} class="text-neutral-950 transition-colors hover:text-neutral-700" />
     </button>
   </header>
-  <section class:list={["max-h-[calc(90vh-100px)] overflow-y-auto p-4", className]}>
+  <section class:list={['max-h-[calc(90vh-100px)] overflow-y-auto p-4', className]}>
     <slot />
   </section>
 </dialog>

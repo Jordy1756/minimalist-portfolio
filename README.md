@@ -28,16 +28,13 @@ El proyecto sigue una arquitectura modular y organizada:
 
 ```bash
 src/
-├── assets/         # Iconos y recursos estáticos
 ├── components/     # Componentes UI reutilizables (Cards, Sections)
 ├── data/           # Datos del CV (JSON) separados por idioma
-├── entities/       # Definiciones de tipos e interfaces (TypeScript)
 ├── i18n/           # Configuración y diccionarios de traducción
 ├── layouts/        # Plantillas principales de página
 ├── pages/          # Rutas de la aplicación (basadas en archivos)
-├── sections/       # Secciones principales (Hero, About, Experience, etc.)
-├── styles/         # Estilos globales CSS
-└── utils/          # Funciones de utilidad y helpers
+├── scripts/        # Scripts JavaScript
+└── styles/         # Estilos globales y configuraciones de Tailwind
 ```
 
 ## 🛠️ Instalación y Ejecución Local
@@ -77,4 +74,4 @@ Este proyecto está bajo la Licencia [MIT](LICENSE). Eres libre de usar este có
 
 ---
 
-Desarrollado con ❤️ por [Yordi Castro](https://github.com/Jordy1756)
+Desarrollado con ❤️ por [Jordy Castro](https://github.com/Jordy1756)

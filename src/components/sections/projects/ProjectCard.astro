@@ -1,8 +1,8 @@
 ---
-import GithubIcon from "@components/icons/Github.astro";
-import Link from "@components/ui/Link.astro";
-import { getLangFromUrl, useTranslations } from "@i18n/utils";
-import type { Project } from "@scripts/entities/project";
+import GithubIcon from '@components/icons/Github.astro';
+import Link from '@components/ui/Link.astro';
+import { getLangFromUrl, useTranslations } from '@i18n/utils';
+import type { Project } from '@scripts/entities/project';
 
 interface Props {
   project: Project;
@@ -23,8 +23,8 @@ const t = useTranslations(lang);
           <Link
             href={url}
             class="flex items-center gap-2 hover:underline"
-            title={t("projects.card.project.aria", name)}
-            aria-label={t("projects.card.project.aria", name)}
+            title={t('projects.card.project.aria', name)}
+            aria-label={t('projects.card.project.aria', name)}
           >
             {name}
           </Link>
@@ -33,7 +33,7 @@ const t = useTranslations(lang);
         )
       }
     </h3>
-    <Link href={github} title={t("projects.card.github.aria", name)} aria-label={t("projects.card.github.aria", name)}>
+    <Link href={github} title={t('projects.card.github.aria', name)} aria-label={t('projects.card.github.aria', name)}>
       <GithubIcon
         width={20}
         height={20}

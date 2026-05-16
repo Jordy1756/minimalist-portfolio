@@ -1,13 +1,13 @@
 ---
-import EmailIcon from "@components/icons/Email.astro";
-import GithubIcon from "@components/icons/Github.astro";
-import LinkedInIcon from "@components/icons/LinkedIn.astro";
-import ResumeIcon from "@components/icons/Resume.astro";
-import WorldIcon from "@components/icons/World.astro";
-import Link from "@components/ui/Link.astro";
-import { getLangFromUrl, useTranslations } from "@i18n/utils.ts";
-import type { Basics } from "@scripts/entities/basics.ts";
-import { Image } from "astro:assets";
+import EmailIcon from '@components/icons/Email.astro';
+import GithubIcon from '@components/icons/Github.astro';
+import LinkedInIcon from '@components/icons/LinkedIn.astro';
+import ResumeIcon from '@components/icons/Resume.astro';
+import WorldIcon from '@components/icons/World.astro';
+import Link from '@components/ui/Link.astro';
+import { getLangFromUrl, useTranslations } from '@i18n/utils.ts';
+import type { Basics } from '@scripts/entities/basics.ts';
+import { Image } from 'astro:assets';
 
 interface Props {
   basics: Basics;
@@ -28,20 +28,20 @@ const heroLinks = [
   {
     href: `mailto:${email}`,
     icon: EmailIcon,
-    title: t("hero.email.aria", name, email),
-    ariaLabel: t("hero.email.aria", name, email),
+    title: t('hero.email.aria', name, email),
+    ariaLabel: t('hero.email.aria', name, email),
   },
   ...profiles.map(({ network, url }) => ({
     href: url,
     icon: SOCIAL_ICONS[network as keyof typeof SOCIAL_ICONS],
-    title: t("hero.profile.aria", name, network),
-    ariaLabel: t("hero.profile.aria", name, network),
+    title: t('hero.profile.aria', name, network),
+    ariaLabel: t('hero.profile.aria', name, network),
   })),
   {
     href: resume,
     icon: ResumeIcon,
-    title: t("hero.resume.aria", name),
-    ariaLabel: t("hero.resume.aria", name),
+    title: t('hero.resume.aria', name),
+    ariaLabel: t('hero.resume.aria', name),
   },
 ];
 ---

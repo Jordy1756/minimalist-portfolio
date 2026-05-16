@@ -1,7 +1,7 @@
 ---
-import Section from "@components/layout/Section.astro";
-import { getLangFromUrl, useTranslations } from "@i18n/utils.ts";
-import type { Basics } from "@scripts/entities/basics.ts";
+import Section from '@components/layout/Section.astro';
+import { getLangFromUrl, useTranslations } from '@i18n/utils.ts';
+import type { Basics } from '@scripts/entities/basics.ts';
 
 interface Props {
   about: Basics;
@@ -14,6 +14,6 @@ const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
 ---
 
-<Section title={t("aboutMe.title")}>
+<Section title={t('aboutMe.title')}>
   <p>{summary}</p>
 </Section>

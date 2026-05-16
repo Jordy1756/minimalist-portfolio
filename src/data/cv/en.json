@@ -211,7 +211,6 @@
     "Microservices",
     "Git",
     "GitHub",
-    "Gitlab",
     "Scrum",
     "Generative AI",
     "AI Agents",
@@ -220,6 +219,14 @@
     "English (Intermediate - B1/B2)"
   ],
   "projects": [
+    {
+      "name": "Nexo Flow CRM",
+      "description": "CRM landing page for sales teams with WhatsApp, email, automation, and analytics.",
+      "highlights": ["Astro", "TypeScript", "Tailwind CSS"],
+      "url": "https://nexo-flow-crm.vercel.app/",
+      "github": "https://github.com/Jordy756/nexo-flow-crm",
+      "priority": true
+    },
     {
       "name": "Lácteos El Torito",
       "highlights": ["Astro", "TypeScript", "CSS", "Figma"],
@@ -253,14 +260,6 @@
       "priority": true
     },
     {
-      "name": "Alura Encryptor",
-      "description": "Text encryptor and decryptor developed as a challenge for Oracle Next Education.",
-      "highlights": ["Astro JS", "TypeScript", "Tailwind CSS"],
-      "url": "https://alura-encryptor.vercel.app/",
-      "github": "https://github.com/Jordy756/alura-encryptor",
-      "priority": true
-    },
-    {
       "name": "Silk Tree RESTful API",
       "description": "RESTful API for managing medical appointments, users, and hospital services.",
       "highlights": ["Node JS", "Express", "JWT", "MySQL"],
@@ -283,14 +282,6 @@
       "priority": true
     },
     {
-      "name": "Nexo Flow CRM",
-      "description": "CRM landing page for sales teams with WhatsApp, email, automation, and analytics.",
-      "highlights": ["Astro", "TypeScript", "Tailwind CSS"],
-      "url": "https://nexo-flow-crm.vercel.app/",
-      "github": "https://github.com/Jordy756/nexo-flow-crm",
-      "priority": true
-    },
-    {
       "name": "Mockit",
       "description": "Hackathon app that generates mock REST APIs from JSON templates.",
       "highlights": ["Astro", "Tailwind CSS", "TypeScript"],
@@ -303,6 +294,14 @@
       "description": "Backend API that creates dynamic mock REST endpoints from JSON templates.",
       "highlights": ["Express", "Generative AI", "TypeScript"],
       "github": "https://github.com/Jordy756/mockit-api",
+      "priority": true
+    },
+    {
+      "name": "Alura Encryptor",
+      "description": "Text encryptor and decryptor developed as a challenge for Oracle Next Education.",
+      "highlights": ["Astro JS", "TypeScript", "Tailwind CSS"],
+      "url": "https://alura-encryptor.vercel.app/",
+      "github": "https://github.com/Jordy756/alura-encryptor",
       "priority": true
     }
   ]

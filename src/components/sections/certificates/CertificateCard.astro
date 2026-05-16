@@ -1,9 +1,9 @@
 ---
-import ExternalIcon from "@components/icons/External.astro";
-import Link from "@components/ui/Link.astro";
-import { getLangFromUrl, useTranslations } from "@i18n/utils";
-import type { Certificate } from "@scripts/entities/certificate";
-import { getFormattedDate } from "@scripts/utils/handleDates";
+import ExternalIcon from '@components/icons/External.astro';
+import Link from '@components/ui/Link.astro';
+import { getLangFromUrl, useTranslations } from '@i18n/utils';
+import type { Certificate } from '@scripts/entities/certificate';
+import { getFormattedDate } from '@scripts/utils/handleDates';
 
 interface Props {
   certificate: Certificate;
@@ -15,12 +15,12 @@ const { name, url, issuer, date } = certificate;
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
 
-const formattedDate = getFormattedDate(date, lang === "es" ? "es-ES" : "en-US", { month: "short" });
+const formattedDate = getFormattedDate(date, lang === 'es' ? 'es-ES' : 'en-US', { month: 'short' });
 ---
 
 <article class="grid grid-cols-[30px_1fr] grid-rows-[auto_1fr] gap-x-4">
   <aside class="row-span-2 flex items-center">
-    <time class="text-center text-xs text-nowrap text-neutral-500 uppercase" datetime={date + ""}>
+    <time class="text-center text-xs text-nowrap text-neutral-500 uppercase" datetime={date + ''}>
       {formattedDate}
     </time>
   </aside>
@@ -28,8 +28,8 @@ const formattedDate = getFormattedDate(date, lang === "es" ? "es-ES" : "en-US", 
     <h3 class="text-base font-semibold text-neutral-900">{name}</h3>
     <Link
       href={url}
-      title={t("certificates.card.aria", name, issuer)}
-      aria-label={t("certificates.card.aria", name, issuer)}
+      title={t('certificates.card.aria', name, issuer)}
+      aria-label={t('certificates.card.aria', name, issuer)}
     >
       <ExternalIcon width={20} height={20} class="text-neutral-700 transition-colors hover:text-neutral-900" />
     </Link>
