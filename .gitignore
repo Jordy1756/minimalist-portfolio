@@ -28,3 +28,6 @@ pnpm-debug.log*
 
 # Skill registry files
 .atl
+
+# Vercel
+.vercel/

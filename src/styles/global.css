@@ -12,19 +12,15 @@
 @layer base {
   :root {
     interpolate-size: allow-keywords;
-  }
-
-  *,
-  *::before,
-  *::after {
-    @apply scrollbar-thin;
+    scrollbar-width: thin;
   }
 
   :is(h1, h2, h3, h4, h5, h6) {
-    @apply font-semibold text-balance;
+    font-weight: 600;
+    text-wrap: balance;
   }
 
   :is(button, a) {
-    @apply cursor-pointer;
+    cursor: pointer;
   }
 }
