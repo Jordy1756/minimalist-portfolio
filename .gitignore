@@ -28,6 +28,7 @@ pnpm-debug.log*
 
 # Skill registry files
 .atl
+skills-lock.json
 
 # Vercel
 .vercel/
