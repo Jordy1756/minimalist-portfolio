@@ -18,20 +18,18 @@ const t = useTranslations(lang);
 <article class="flex min-h-43.75 flex-col gap-1 rounded-lg border border-neutral-200 p-4">
   <header class="flex items-center justify-between">
     <h3 class="flex text-lg font-bold text-neutral-800">
-      {
-        url ? (
-          <Link
-            href={url}
-            class="flex items-center gap-2 hover:underline"
-            title={t('projects.card.project.aria', name)}
-            aria-label={t('projects.card.project.aria', name)}
-          >
-            {name}
-          </Link>
-        ) : (
-          name
-        )
-      }
+      {url ? (
+        <Link
+          href={url}
+          class="flex items-center gap-2 hover:underline"
+          title={t('projects.card.project.aria', name)}
+          aria-label={t('projects.card.project.aria', name)}
+        >
+          {name}
+        </Link>
+      ) : (
+        name
+      )}
     </h3>
     <Link href={github} title={t('projects.card.github.aria', name)} aria-label={t('projects.card.github.aria', name)}>
       <GithubIcon
@@ -46,14 +44,12 @@ const t = useTranslations(lang);
   </section>
   <footer>
     <ul class="flex flex-wrap gap-2 text-xs font-bold text-neutral-700">
-      {
-        highlights.map((highlight, index) => (
-          <li class="flex gap-2">
-            {index > 0 && <span>·</span>}
-            <span>{highlight}</span>
-          </li>
-        ))
-      }
+      {highlights.map((highlight, index) => (
+        <li class="flex gap-2">
+          {index > 0 && <span>·</span>}
+          <span>{highlight}</span>
+        </li>
+      ))}
     </ul>
   </footer>
 </article>

@@ -1,5 +1,5 @@
 ---
-import Section from '@components/layout/Section.astro';
+import Section from '@components/chrome/Section.astro';
 import EducationCard from '@components/sections/education/EducationCard.astro';
 import { getLangFromUrl, useTranslations } from '@i18n/utils.ts';
 import type { Education } from '@scripts/entities/education.ts';
@@ -15,5 +15,7 @@ const t = useTranslations(lang);
 ---
 
 <Section title={t('education.title')}>
-  {education.map((education) => <EducationCard education={education} />)}
+  {education.map((education) => (
+    <EducationCard education={education} />
+  ))}
 </Section>

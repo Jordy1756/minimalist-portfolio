@@ -26,7 +26,9 @@ const presentText = lang === 'es' ? 'Presente' : 'Present';
   </header>
   <section class="flex flex-col gap-3">
     <ul class="flex list-inside list-disc flex-col gap-2 pl-4">
-      {highlights.map((highlight) => <li class="pl-4 -indent-5">{highlight}</li>)}
+      {highlights.map((highlight) => (
+        <li class="pl-4 -indent-5">{highlight}</li>
+      ))}
     </ul>
   </section>
 </article>

@@ -1,5 +1,5 @@
 ---
-import Section from '@components/layout/Section.astro';
+import Section from '@components/chrome/Section.astro';
 import ProjectCard from '@components/sections/projects/ProjectCard.astro';
 import { getLangFromUrl, useTranslations } from '@i18n/utils.ts';
 import type { Project } from '@scripts/entities/project.ts';
@@ -18,20 +18,20 @@ const otherProjects = projects.filter((project) => !project.priority);
 ---
 
 <Section title={t('projects.title')}>
-  {
-    otherProjects.length > 0 && (
-      <Fragment slot="section-header">
-        <button
-          class="relative flex cursor-pointer items-center gap-0.5 underline transition-colors hover:text-neutral-950"
-          command="show-modal"
-          commandfor="projects-modal"
-        >
-          +{otherProjects.length} mas
-        </button>
-      </Fragment>
-    )
-  }
+  {otherProjects.length > 0 && (
+    <Fragment slot="section-header">
+      <button
+        class="relative flex cursor-pointer items-center gap-0.5 underline transition-colors hover:text-neutral-950"
+        command="show-modal"
+        commandfor="projects-modal"
+      >
+        +{otherProjects.length} mas
+      </button>
+    </Fragment>
+  )}
   <div class="grid grid-cols-[repeat(auto-fit,minmax(250px,1fr))] gap-4">
-    {priorityProjects.map((project) => <ProjectCard project={project} />)}
+    {priorityProjects.map((project) => (
+      <ProjectCard project={project} />
+    ))}
   </div>
 </Section>

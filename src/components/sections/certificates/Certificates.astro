@@ -1,5 +1,5 @@
 ---
-import Section from '@components/layout/Section.astro';
+import Section from '@components/chrome/Section.astro';
 import CertificateCard from '@components/sections/certificates/CertificateCard.astro';
 import { getLangFromUrl, useTranslations } from '@i18n/utils.ts';
 import type { Certificate } from '@scripts/entities/certificate.ts';
@@ -20,19 +20,17 @@ const sortedYears = Object.keys(certificates)
 
 <Section title={t('certificates.title')}>
   <div class="flex flex-col gap-8">
-    {
-      sortedYears.map((year) => (
-        <div class="flex flex-col gap-2">
-          <span class="font-bold text-neutral-900">{year}</span>
-          <ul class="ml-4 flex flex-col gap-4">
-            {certificates[year].map((certificate) => (
-              <li class="relative gap-y-1 pl-4 before:absolute before:top-0 before:left-0 before:h-[calc(100%+16px)] before:w-px before:bg-neutral-200 after:absolute after:top-1/2 after:left-0 after:h-px after:w-3 after:bg-neutral-200 last:before:h-1/2">
-                <CertificateCard certificate={certificate} />
-              </li>
-            ))}
-          </ul>
-        </div>
-      ))
-    }
+    {sortedYears.map((year) => (
+      <div class="flex flex-col gap-2">
+        <span class="font-bold text-neutral-900">{year}</span>
+        <ul class="ml-4 flex flex-col gap-4">
+          {certificates[year].map((certificate) => (
+            <li class="relative gap-y-1 pl-4 before:absolute before:top-0 before:left-0 before:h-[calc(100%+16px)] before:w-px before:bg-neutral-200 after:absolute after:top-1/2 after:left-0 after:h-px after:w-3 after:bg-neutral-200 last:before:h-1/2">
+              <CertificateCard certificate={certificate} />
+            </li>
+          ))}
+        </ul>
+      </div>
+    ))}
   </div>
 </Section>

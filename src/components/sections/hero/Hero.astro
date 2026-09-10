@@ -53,21 +53,17 @@ const heroLinks = [
       <h2 class="text-lg font-semibold text-neutral-800">{label}</h2>
       <address class="flex items-center justify-center gap-2 md:justify-start">
         <WorldIcon width={16} height={16} class="text-neutral-700" />
-        <p class="not-italic">
-          {`${location.city}, ${location.region}`}
-        </p>
+        <p class="not-italic">{`${location.city}, ${location.region}`}</p>
       </address>
     </div>
     <ul class="flex items-center justify-center gap-2 md:justify-start">
-      {
-        heroLinks.map(({ href, icon: Icon, title, ariaLabel }) => (
-          <li class="rounded-sm border border-neutral-200 p-1">
-            <Link href={href} title={title} aria-label={ariaLabel}>
-              <Icon width={20} height={20} class="text-neutral-700 transition-colors hover:text-neutral-900" />
-            </Link>
-          </li>
-        ))
-      }
+      {heroLinks.map(({ href, icon: Icon, title, ariaLabel }) => (
+        <li class="rounded-sm border border-neutral-200 p-1">
+          <Link href={href} title={title} aria-label={ariaLabel}>
+            <Icon width={20} height={20} class="text-neutral-700 transition-colors hover:text-neutral-900" />
+          </Link>
+        </li>
+      ))}
     </ul>
   </section>
   <figure class="flex min-w-35">
