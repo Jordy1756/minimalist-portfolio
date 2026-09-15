@@ -1,20 +1,19 @@
 // @ts-check
 import { defineConfig, fontProviders } from 'astro/config';
-
 import tailwindcss from '@tailwindcss/vite';
+import sitemap from '@astrojs/sitemap';
 
 // https://astro.build/config
 export default defineConfig({
   site: 'https://jordy756-minimalist-portfolio.vercel.app',
 
+  integrations: [sitemap()],
+
   i18n: {
+    locales: ['en', 'es'],
     defaultLocale: 'en',
-    locales: ['es', 'en'],
-    fallback: { es: 'en' },
     routing: {
       prefixDefaultLocale: true,
-      redirectToDefaultLocale: false,
-      fallbackType: 'rewrite',
     },
   },
 
@@ -36,4 +35,5 @@ export default defineConfig({
   vite: {
     plugins: [tailwindcss()],
   },
+
 });

@@ -3,9 +3,7 @@ import { getCurrentLocale, useTranslations } from '@i18n/utils.ts';
 import Layout from '@layouts/Layout.astro';
 
 const currentLocale = getCurrentLocale(Astro.currentLocale);
-const t = useTranslations(currentLocale);
-
-// const { basics } = resume;
+const { t } = useTranslations(currentLocale);
 ---
 
 <Layout title={t('notFound.title')} description="">
