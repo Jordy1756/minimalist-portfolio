@@ -1,19 +1,10 @@
-/**
- * UI strings for the portfolio, separated by locale.
- *
- * Each top-level group is a concern:
- *   - sections: titles/labels rendered as <h2>/<h1> in each section.
- *   - meta:     <head> tags (og:* , twitter:*, site description).
- *   - ui:       short UI strings (button labels, generic words).
- *   - aria:     aria-label templates with {var} placeholders.
- *
- * Use `format()` (from utils.ts) to interpolate aria templates at render time.
- */
 const sections = {
   en: {
     hero: {
       title: 'Yordi Castro Rojas',
       subtitle: 'Full Stack Developer | Clean Architecture, Microservices, React, Astro, .NET, Node.js',
+      imageAlt:
+        'Black and white portrait of Yordi Castro Rojas posing in a dark overcoat against a wall with geometric shadows from natural light.',
     },
     aboutMe: { title: 'About me' },
     experience: { title: 'Experience' },
@@ -26,6 +17,8 @@ const sections = {
     hero: {
       title: 'Yordi Castro Rojas',
       subtitle: 'Desarrollador Full Stack | Clean Architecture, Microservicios, React, Astro, .NET y Node.js',
+      imageAlt:
+        'Retrato en blanco y negro de Yordi Castro Rojas posando con un abrigo oscuro frente a una pared con sombras geométricas de luz natural.',
     },
     aboutMe: { title: 'Sobre mí' },
     experience: { title: 'Experiencia' },

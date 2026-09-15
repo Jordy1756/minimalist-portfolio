@@ -8,25 +8,12 @@ export const defaultLocale: Locale = 'en';
 
 const dictionaries = { en, es } as const;
 
-/**
- * Replaces `{var}` placeholders in a template string with values from `vars`.
- * Unknown keys are left as literal `{key}` to surface missing translations.
- */
 export const format = (template: string, vars: Record<string, string | number>): string =>
   template.replace(/\{(\w+)\}/g, (_, key) => String(vars[key] ?? `{${key}}`));
 
 export const getCurrentLocale = (locale: string | undefined): Locale =>
   (locales as readonly string[]).includes(locale ?? '') ? (locale as Locale) : defaultLocale;
 
-/**
- * Returns i18n helpers bound to a locale.
- *
- *   const { t, aria, sections, meta } = useTranslations(locale);
- *   t('actions.viewProject');              // -> "View project"
- *   aria('certificate', { name, issuer }); // -> interpolated template
- *
- * Unknown keys fall back to the default locale, then to the raw key.
- */
 export const useTranslations = (locale: Locale) => {
   const tr = translations[locale] ?? translations[defaultLocale];
   const fallback = translations[defaultLocale];
@@ -42,7 +29,4 @@ export const useTranslations = (locale: Locale) => {
   };
 };
 
-/**
- * Returns the locale's data payload (basics, experience, certificates, projects, etc.).
- */
-export const useContent = (locale: Locale) => dictionaries[locale] ?? dictionaries[defaultLocale];
+export const useContent = (locale: Locale) => dictionaries[locale];

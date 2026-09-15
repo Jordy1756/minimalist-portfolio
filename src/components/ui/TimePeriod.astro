@@ -2,8 +2,8 @@
 import { getFormattedDate } from '@scripts/utils/handleDates';
 
 interface Props {
-  startDate: Date;
-  endDate: Date | null;
+  startDate: string;
+  endDate: string | null;
   localeCode: 'en-US' | 'es-ES';
   presentText: string;
   class?: string;
@@ -11,10 +11,10 @@ interface Props {
 
 const { startDate, endDate, localeCode, presentText, class: className } = Astro.props;
 
-const formattedStartDate = getFormattedDate(startDate, localeCode, {
+const formattedStartDate = getFormattedDate(new Date(startDate), localeCode, {
   year: 'numeric',
 });
-const formattedEndDate = getFormattedDate(endDate, localeCode, { year: 'numeric' }, presentText);
+const formattedEndDate = getFormattedDate(new Date(startDate), localeCode, { year: 'numeric' }, presentText);
 ---
 
 <div class:list={['text-right text-neutral-500', className]}>

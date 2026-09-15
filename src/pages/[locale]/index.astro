@@ -1,14 +1,12 @@
 ---
-import AboutMe from '@components/sections/about-me/AboutMe.astro';
-import Certificates from '@components/sections/certificates/Certificates.astro';
-import Education from '@components/sections/education/Education.astro';
-import Experience from '@components/sections/experience/Experience.astro';
-import Hero from '@components/sections/hero/Hero.astro';
-import Projects from '@components/sections/projects/Projects.astro';
-import Skills from '@components/sections/skills/Skills.astro';
+import AboutMe from '@components/sections/AboutMe.astro';
+import Education from '@components/sections/Education.astro';
+import Experience from '@components/sections/Experience.astro';
+import Hero from '@components/sections/Hero.astro';
+import Projects from '@components/sections/Projects.astro';
+import Skills from '@components/sections/Skills.astro';
 import { getCurrentLocale, useTranslations } from '@i18n/utils.ts';
 import Layout from '@layouts/Layout.astro';
-
 export const getStaticPaths = async () => [{ params: { locale: 'en' } }, { params: { locale: 'es' } }];
 
 const currentLocale = getCurrentLocale(Astro.currentLocale);
@@ -17,12 +15,15 @@ const { sections, meta } = useTranslations(currentLocale);
 
 <Layout title={sections.hero.title} description={meta.description}>
   <Hero />
-  <!-- <main class="flex flex-col gap-8">
+  <main class="flex flex-col gap-8">
     <AboutMe />
     <Experience />
     <Projects />
     <Education />
-    <Certificates />
     <Skills />
-  </main> -->
+  </main>
+  <!--
+    <Education />
+    <Certificates />
+   -->
 </Layout>
