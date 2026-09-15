@@ -1,4 +1,4 @@
-# Minimalist Portfolio
+# Resume
 
 Este repositorio contiene el código fuente de mi portafolio personal y currículum web. Es un proyecto diseñado bajo una filosofía minimalista, enfocado en el rendimiento, la accesibilidad y una arquitectura de código limpia.
 
