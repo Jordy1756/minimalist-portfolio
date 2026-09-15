@@ -32,13 +32,10 @@ export const useTranslations = (locale: Locale) => {
   const fallback = translations[defaultLocale];
 
   return {
-    t: <K extends keyof typeof tr.ui & string>(key: K): string =>
-      tr.ui[key] ?? fallback.ui[key] ?? key,
+    t: <K extends keyof typeof tr.ui & string>(key: K): string => tr.ui[key] ?? fallback.ui[key] ?? key,
 
-    aria: <K extends keyof typeof tr.aria & string>(
-      key: K,
-      vars: Record<string, string | number> = {},
-    ): string => format(tr.aria[key] ?? fallback.aria[key] ?? key, vars),
+    aria: <K extends keyof typeof tr.aria & string>(key: K, vars: Record<string, string | number> = {}): string =>
+      format(tr.aria[key] ?? fallback.aria[key] ?? key, vars),
 
     sections: tr.sections,
     meta: tr.meta,

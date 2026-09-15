@@ -39,16 +39,14 @@ const sections = {
 const meta = {
   en: {
     siteName: 'Jordy Castro | Portfolio',
-    ogImage:
-      'https://res.cloudinary.com/dygwpgeq9/image/upload/v1772054096/minimalist_portfolio_en_og_img_ow7ugd.webp',
+    ogImage: 'https://res.cloudinary.com/dygwpgeq9/image/upload/v1772054096/minimalist_portfolio_en_og_img_ow7ugd.webp',
     ogLocale: 'en_US',
     twitterCard: 'summary_large_image',
     description: 'Full Stack Developer portfolio showcasing experience, projects, and certifications.',
   },
   es: {
     siteName: 'Jordy Castro | Portafolio',
-    ogImage:
-      'https://res.cloudinary.com/dygwpgeq9/image/upload/v1772054097/minimalist_portfolio_es_og_img_epye2p.webp',
+    ogImage: 'https://res.cloudinary.com/dygwpgeq9/image/upload/v1772054097/minimalist_portfolio_es_og_img_epye2p.webp',
     ogLocale: 'es_ES',
     twitterCard: 'summary_large_image',
     description: 'Portafolio de Desarrollador Full Stack con experiencia, proyectos y certificaciones.',
