@@ -6,15 +6,12 @@ export type Locale = (typeof locales)[number];
 
 export const getCurrentLocale = (locale: string | undefined): Locale => (locale ?? defaultLocale) as Locale;
 
-const format = (template: string, vars: Record<string, string | number> = {}): string =>
-  template.replace(/\{\{(\w+)\}\}/g, (_, key) => String(vars[key] ?? `{{${key}}}`));
-
 export const useTranslations = (locale: keyof typeof ui) => {
   const localizedUI: Record<string, string> = ui[locale];
 
   return function t(key: keyof (typeof ui)[typeof defaultLocale], vars: Record<string, string | number> = {}): string {
     const template = key in localizedUI ? localizedUI[key] : ui[defaultLocale][key];
-    return format(template, vars);
+    return template.replace(/\{\{(\w+)\}\}/g, (_, key) => String(vars[key] ?? `{{${key}}}`));
   };
 };
 

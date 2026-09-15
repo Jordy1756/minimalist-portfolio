@@ -8,11 +8,7 @@
       "city": "Turrialba",
       "countryCode": "CR",
       "region": "Costa Rica"
-    },
-    "profiles": [
-      { "network": "LinkedIn", "url": "https://linkedin.com/in/yordicastro" },
-      { "network": "GitHub", "url": "https://github.com/Jordy756" }
-    ]
+    }
   },
   "experience": [
     {

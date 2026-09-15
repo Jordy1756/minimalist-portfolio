@@ -13,10 +13,9 @@ export const getStaticPaths = () => locales.map((locale) => ({ params: { locale 
 
 const currentLocale = getCurrentLocale(Astro.currentLocale);
 const { basics } = useResume(currentLocale);
-const t = useTranslations(currentLocale);
 ---
 
-<Layout title={basics.label} locale={currentLocale}>
+<Layout title={basics.label} description="">
   <Hero />
   <main class="flex flex-col gap-8">
     <AboutMe />

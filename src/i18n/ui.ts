@@ -80,26 +80,22 @@ const notFound = {
 
 const aria = {
   en: {
-    'aria.heroEmail': 'Send an email to {{name}}',
-    'aria.heroProfile': 'View my {{network}} profile',
-    'aria.heroResume': "Download {{name}}'s resume in PDF",
-    'aria.projectLive': 'View {{name}} live demo in a new tab',
-    'aria.projectRepo': 'View {{name}} repository on GitHub in a new tab',
+    'aria.hero.email': 'Send an email to {{name}}',
+    'aria.hero.network': "View {{name}}'s {{network}} profile",
+    'aria.hero.resume': "Download {{name}}'s resume in PDF",
+    'aria.project.demo': 'View {{name}} live demo in a new tab',
+    'aria.project.repo': 'View {{name}} repository on GitHub in a new tab',
     'aria.certificate': 'View {{name}} certificate issued by {{issuer}}',
-    'aria.socialProfile': 'Visit my {{network}} profile',
     'aria.home': "Go to {{name}}'s portfolio home",
-    'aria.notFound': 'Page not found',
   },
   es: {
-    'aria.heroEmail': 'Enviar un correo electrónico a {{name}}',
-    'aria.heroProfile': 'Ver mi perfil de {{network}}',
-    'aria.heroResume': 'Descargar el currículum de {{name}} en PDF',
-    'aria.projectLive': 'Ver demo en vivo del proyecto {{name}} en una nueva pestaña',
-    'aria.projectRepo': 'Ver repositorio de {{name}} en GitHub en una nueva pestaña',
+    'aria.hero.email': 'Enviar un correo electrónico a {{name}}',
+    'aria.hero.network': "Ver el perfil de {{name}} en {{network}}",
+    'aria.hero.resume': 'Descargar el currículum de {{name}} en PDF',
+    'aria.project.demo': 'Ver demo en vivo del proyecto {{name}} en una nueva pestaña',
+    'aria.project.repo': 'Ver repositorio de {{name}} en GitHub en una nueva pestaña',
     'aria.certificate': 'Ver el certificado de {{name}} emitido por {{issuer}}',
-    'aria.socialProfile': 'Visitar mi perfil de {{network}}',
     'aria.home': 'Ir al inicio del portafolio de {{name}}',
-    'aria.notFound': 'Página no encontrada',
   },
 } as const;
 
