@@ -1,20 +1,19 @@
 {
   "basics": {
     "name": "Yordi Castro Rojas",
-    "label": "Full Stack Developer | Clean Architecture, Microservices, React, Astro, .NET, Node.js",
+    "label": "Desarrollador Full Stack | Clean Architecture, Microservicios, React, Astro, .NET y Node.js",
     "email": "jordycastro1756@gmail.com",
-    "ogImage": "https://res.cloudinary.com/dygwpgeq9/image/upload/v1772054096/minimalist_portfolio_en_og_img_ow7ugd.webp",
+    "ogImage": "https://res.cloudinary.com/dygwpgeq9/image/upload/v1772054097/minimalist_portfolio_es_og_img_epye2p.webp",
     "avatar": {
       "src": "/images/me.webp",
-      "alt": "Black and white portrait of Yordi Castro Rojas posing in a dark overcoat against a wall with geometric shadows from natural light."
+      "alt": "Retrato en blanco y negro de Yordi Castro Rojas posando con un abrigo oscuro frente a una pared con sombras geométricas de luz natural."
     },
-    "summary": "Full Stack Developer with over 1 year of professional experience in building web applications and digital solutions. Specialized in modern technologies, clean architectures, microservices, and SOLID principles. Adaptable, self-taught, and passionate about continuous learning, I bring strong analytical abilities, collaborative teamwork in agile environments, and effective technical communication. Committed to delivering robust and efficient solutions that integrate business requirements and end-user experience.",
+    "summary": "Desarrollador Full Stack con más de 1 año de experiencia profesional en la creación de aplicaciones web y soluciones digitales. Especializado en tecnologías modernas, arquitecturas limpias, microservicios y principios SOLID. Adaptable, autodidacta y entusiasta del aprendizaje continuo, aporto fuerte capacidad de análisis, trabajo colaborativo en entornos ágiles y comunicación técnica efectiva. Comprometido con la entrega de soluciones robustas y eficientes que integran requisitos de negocio y experiencia de usuario final.",
     "location": {
       "city": "Turrialba",
       "countryCode": "CR",
       "region": "Costa Rica"
     },
-    "resume": "/docs/Yordi_Castro_CV_EN.pdf",
     "profiles": [
       {
         "network": "LinkedIn",
@@ -31,45 +30,45 @@
   "experience": [
     {
       "name": "4Geeks",
-      "position": "Full Stack Developer Intern",
+      "position": "Desarrollador Full Stack",
       "startDate": "2025-07-01",
       "endDate": "2025-12-01",
       "highlights": [
-        "Led the end-to-end development of the first official mobile application (Flutter) from scratch, extending the company's digital reach by migrating core web services into a high-performance mobile experience.",
-        "Spearheaded the refactoring and UI/UX redesign of the MARKET-APP (Electron + React), transforming a legacy codebase into a functional, accessible, and production-ready self-service solution with full i18n support.",
-        "Developed a real-time messaging system (Angular + Firebase), increasing communication efficiency between candidates and recruiters through instant notifications and intuitive chat management.",
-        "Refactored backend middlewares in Python to support a new API Key authentication system, enhancing security and enabling concurrent validation of OAuth and JWT tokens."
+        "Lideré el desarrollo integral de la primera aplicación móvil oficial (Flutter) desde cero, expandiendo el alcance digital de la empresa al migrar los servicios web a una experiencia móvil de alto rendimiento.",
+        "Lideré la refactorización y el rediseño de UI/UX de MARKET-APP (Electron + React), transformando un proyecto inicial en una solución de autoservicio funcional, accesible y lista para producción con soporte i18n.",
+        "Desarrollé un sistema de mensajería en tiempo real (Angular + Firebase), incrementando la eficiencia en la comunicación entre candidatos y reclutadores mediante notificaciones instantáneas y gestión de chats.",
+        "Refactoricé middlewares de backend en Python para integrar un nuevo sistema de autenticación por API Key, reforzando la seguridad y permitiendo la validación concurrente de tokens OAuth y JWT."
       ]
     },
     {
       "name": "Lácteos El Torito",
-      "position": "Web Designer and Developer",
+      "position": "Diseñador Web y Desarrollador",
       "startDate": "2024-01-16",
       "endDate": "2024-03-01",
       "highlights": [
-        "Managed the full SDLC for the company's first web platform, resulting in a 100% increase in digital reach and a professionalized brand presence.",
-        "Developed and launched a high-performance website using Astro, achieving near-perfect Google Lighthouse scores (95+) in performance, SEO, and accessibility.",
-        "Enabled omni-channel communication by integrating automated contact forms, direct email, and WhatsApp, streamlining the customer acquisition process.",
-        "Designed a comprehensive visual identity system from scratch, ensuring 100% consistency across all digital touchpoints and mobile devices."
+        "Gestioné el ciclo de vida completo (SDLC) para la primera plataforma web de la empresa, logrando un incremento del 100% en el alcance digital y una presencia de marca profesionalizada.",
+        "Desarrollé y lancé un sitio web de alto rendimiento utilizando Astro, alcanzando puntuaciones casi perfectas en Google Lighthouse (95+) en rendimiento, SEO y accesibilidad.",
+        "Habilité la comunicación omnicanal mediante la integración de formularios automatizados, correo directo y WhatsApp, agilizando el proceso de adquisición de clientes.",
+        "Diseñé un sistema de identidad visual completo desde cero, garantizando una consistencia del 100% en todos los puntos de contacto digitales y dispositivos móviles."
       ]
     },
     {
       "name": "INTA Costa Rica",
-      "position": "Full Stack Developer",
+      "position": "Desarrollador Full Stack",
       "startDate": "2023-08-12",
       "endDate": "2023-12-04",
       "highlights": [
-        "Managed the full SDLC using RUP methodology to design and develop a custom ERP from scratch, centralizing the inventory management of multiple warehouses across the country.",
-        "Digitized and automated the stock procurement process, replacing manual physical letters and Excel sheets with a real-time SQL Server system, reducing request processing time by 80%.",
-        "Engineered an automated reporting module for quarterly audits, enabling one-click PDF/Excel generation and eliminating human error in high-stakes agricultural data.",
-        "Orchestrated the architectural design and deployment of the system using Blazor and C#, ensuring 100% data integrity during the migration from legacy manual records to a scalable database."
+        "Gestioné el ciclo de vida completo (SDLC) bajo la metodología RUP para diseñar y desarrollar un ERP desde cero, centralizando la gestión de inventarios de múltiples bodegas a nivel nacional.",
+        "Digitalicé y automaticé el proceso de gestión de stock, sustituyendo cartas físicas y hojas de Excel por un sistema en tiempo real con SQL Server, reduciendo el tiempo de procesamiento de solicitudes en un 80%.",
+        "Desarrollé un módulo de reportes automatizados para auditorías trimestrales, permitiendo la generación de archivos PDF y Excel con un solo clic y eliminando errores humanos en el manejo de datos críticos.",
+        "Orquesté el diseño arquitectónico y despliegue del sistema utilizando Blazor y C#, garantizando la integridad del 100% de los datos durante la migración de registros manuales a una base de datos escalable."
       ]
     }
   ],
   "education": [
     {
       "institution": "Universidad de Costa Rica",
-      "area": "Bachelor's Degree in Business Computing",
+      "area": "Bachillerato en Informática Empresarial",
       "startDate": "2020-03-10",
       "endDate": "2026-02-01"
     }
@@ -77,13 +76,13 @@
   "certificates": {
     "2026": [
       {
-        "name": "AI Development: From 0 to Production",
+        "name": "Desarrollo con IA: de 0 a Producción",
         "date": "2026-03-14",
         "issuer": "BIG school",
         "url": "https://res.cloudinary.com/dd3hdnfqi/image/upload/v1773963091/Certificado-Yordi-Castro-Rojas_md7vg4.webp"
       },
       {
-        "name": "Building AI Agents with n8n",
+        "name": "Creación de agentes de IA con n8n",
         "date": "2026-03-10",
         "issuer": "LinkedIn Learning",
         "url": "https://www.linkedin.com/learning/certificates/400042e01ae5214fc9c9698d009c7c7ae55f31297785670df979e779cd5158e6"
@@ -91,7 +90,7 @@
     ],
     "2025": [
       {
-        "name": "AI Immersion – Google Gemini",
+        "name": "Inmersión IA - Google Gemini",
         "date": "2025-09-04",
         "issuer": "Alura Latam",
         "url": "https://credsverse.com/credentials/9866ddd9-de2b-4355-b2bd-9597724cebb8"
@@ -99,31 +98,31 @@
     ],
     "2024": [
       {
-        "name": "Oracle Next Education (Full Program)",
+        "name": "Oracle Next Education Completo",
         "date": "2024-02-12",
         "issuer": "Oracle + Alura Latam",
         "url": "https://app.aluracursos.com/user/jordycastro1756/fullCertificate/fb6c4059144a90dd07315ca00c5512cb"
       },
       {
-        "name": "Oracle Cloud Infrastructure – ONE",
+        "name": "Oracle Cloud Infrastructure - ONE",
         "date": "2024-02-12",
         "issuer": "Oracle + Alura Latam",
         "url": "https://app.aluracursos.com/degree/certificate/ea298e54-1895-4417-8584-d2c5427d00a1?lang"
       },
       {
-        "name": "Python, Data Science in OCI and Oracle Analytics – ONE",
+        "name": "Python, Data Science en OCI y Oracle Analytics - ONE",
         "date": "2024-02-11",
         "issuer": "Oracle + Alura Latam",
         "url": "https://app.aluracursos.com/degree/certificate/04a9391f-9659-4e90-957f-bb92590932b1?lang"
       },
       {
-        "name": "My career – ONE",
+        "name": "Mi carrera - ONE",
         "date": "2024-01-28",
         "issuer": "Oracle + Alura Latam",
         "url": "https://app.aluracursos.com/degree/certificate/eadefe33-7bc7-448a-ab08-52940c46a340?lang"
       },
       {
-        "name": "SQL with Oracle MySQL Server – ONE",
+        "name": "SQL con MySQL Server de Oracle - ONE",
         "date": "2024-01-28",
         "issuer": "Oracle + Alura Latam",
         "url": "https://app.aluracursos.com/degree/certificate/64022822-52a8-4650-a452-dbdba2a1974d?lang"
@@ -137,25 +136,25 @@
         "url": "https://www.scrumstudy.com/certification/verify?type=SFC&number=1003121"
       },
       {
-        "name": "Entrepreneurship G5 – ONE",
+        "name": "Emprendimiento G5 - ONE",
         "date": "2023-09-21",
         "issuer": "Oracle + Alura Latam",
         "url": "https://app.aluracursos.com/degree/certificate/6133f90d-70b9-4d00-b882-801095e4be21?lang"
       },
       {
-        "name": "Business Agility G5 – ONE",
+        "name": "Business Agility G5 - ONE",
         "date": "2023-09-18",
         "issuer": "Oracle + Alura Latam",
         "url": "https://app.aluracursos.com/degree/certificate/1d84630a-49b9-449c-bcfb-9ddde23445e0?lang"
       },
       {
-        "name": "React G5 – ONE",
+        "name": "React G5 - ONE",
         "date": "2023-08-13",
         "issuer": "Oracle + Alura Latam",
         "url": "https://app.aluracursos.com/degree/certificate/49c0491b-db89-4608-aabf-afa4abf7e4db?lang"
       },
       {
-        "name": "Front End G5 – ONE",
+        "name": "Front End G5 - ONE",
         "date": "2023-07-21",
         "issuer": "Oracle + Alura Latam",
         "url": "https://app.aluracursos.com/degree/certificate/5a11a5fa-18d3-4798-bec5-2362bc471acd?lang"
@@ -167,13 +166,13 @@
         "url": "https://app.aluracursos.com/degree/certificate/26863581-ab8c-4bf6-bf67-87645f598c44?lang"
       },
       {
-        "name": "Personal Development G5 – ONE",
+        "name": "Desarrollo Personal G5 - ONE",
         "date": "2023-05-27",
         "issuer": "Oracle + Alura Latam",
         "url": "https://app.aluracursos.com/degree/certificate/a69c6240-19c9-4be7-a5de-5e3a1a0bdfd7?lang"
       },
       {
-        "name": "Programming Beginner G5 – ONE",
+        "name": "Principiante en Programación G5 - ONE",
         "date": "2023-04-17",
         "issuer": "Oracle + Alura Latam",
         "url": "https://app.aluracursos.com/degree/certificate/e55e6770-5e3c-472e-b079-145720c43ee4?lang"
@@ -189,8 +188,8 @@
     "HTML5",
     "CSS3",
     "Tailwind CSS",
-    "Responsive Design",
-    "Design Systems",
+    "Diseño Responsivo",
+    "Sistemas de Diseño",
     "Figma",
     "Node.js",
     "Express",
@@ -203,25 +202,25 @@
     "MySQL",
     "MongoDB",
     "Flutter",
-    "RESTful APIs",
+    "APIs RESTful",
     "Clean Architecture",
     "DDD",
     "Screaming Architecture",
-    "SOLID Principles",
-    "Microservices",
+    "SOLID",
+    "Microservicios",
     "Git",
     "GitHub",
     "Scrum",
-    "Generative AI",
-    "AI Agents",
+    "IA Generativa",
+    "Agentes de IA",
     "n8n",
-    "Spanish (Native)",
-    "English (Intermediate - B1/B2)"
+    "Español (Nativo)",
+    "Inglés (Intermedio - B1/B2)"
   ],
   "projects": [
     {
       "name": "Nexo Flow CRM",
-      "description": "CRM landing page for sales teams with WhatsApp, email, automation, and analytics.",
+      "description": "Landing de CRM para equipos comerciales con WhatsApp, correo, automatización y analítica.",
       "highlights": ["Astro", "TypeScript", "Tailwind CSS"],
       "url": "https://nexo-flow-crm.vercel.app/",
       "github": "https://github.com/Jordy756/nexo-flow-crm",
@@ -230,14 +229,14 @@
     {
       "name": "Lácteos El Torito",
       "highlights": ["Astro", "TypeScript", "CSS", "Figma"],
-      "description": "Website for a dairy products company.",
+      "description": "Sitio web para una empresa de productos lácteos.",
       "url": "https://lacteos-el-torito.vercel.app/",
-      "github": "https://github.com/Jordy1756/el-torito-dairy-products",
+      "github": "https://github.com/Jordy1756/el-torito-dairy-products.git",
       "priority": true
     },
     {
       "name": "Silk Tree",
-      "description": "Web application for managing medical appointments, users, and hospital services.",
+      "description": "Aplicación web para la gestión de citas médicas, usuarios y servicios del hospital.",
       "highlights": ["React", "Screaming Architecture", "TypeScript"],
       "url": "https://silk-tree.vercel.app/",
       "github": "https://github.com/Jordy1756/silk-tree",
@@ -245,23 +244,23 @@
     },
     {
       "name": "AluraGeek",
-      "description": "Product e-commerce developed as a challenge for Oracle Next Education.",
+      "description": "E-commerce de productos desarrollado como desafío para Oracle Next Education.",
       "highlights": ["HTML", "CSS", "Vanilla JS"],
       "url": "https://jordy1756.github.io/alura-geek/",
-      "github": "https://github.com/Jordy1756/alura-geek",
+      "github": "https://github.com/Jordy1756/alura-geek.git",
       "priority": true
     },
     {
       "name": "Turríka",
-      "description": "Interactive landing page showcasing the history and making of Turrialba cheese chicharrones.",
+      "description": "Landing page interactiva que presenta la historia y preparación de los chicharrones de queso, receta típica de Turrialba.",
       "highlights": ["Astro JS", "GSAP", "Lenis"],
       "url": "https://turrika.vercel.app/",
-      "github": "https://github.com/Jordy1756/turrika",
+      "github": "https://github.com/Jordy1756/turrika.git",
       "priority": true
     },
     {
       "name": "Alura Encryptor",
-      "description": "Text encryptor and decryptor developed as a challenge for Oracle Next Education.",
+      "description": "Encriptador y desencriptador de texto desarrollado como desafío para Oracle Next Education.",
       "highlights": ["Astro JS", "TypeScript", "Tailwind CSS"],
       "url": "https://alura-encryptor.vercel.app/",
       "github": "https://github.com/Jordy756/alura-encryptor",
@@ -269,29 +268,29 @@
     },
     {
       "name": "Silk Tree RESTful API",
-      "description": "RESTful API for managing medical appointments, users, and hospital services.",
+      "description": "RESTful API para la gestión de citas médicas, usuarios y servicios del hospital.",
       "highlights": ["Node JS", "Express", "JWT", "MySQL"],
-      "github": "https://github.com/Jordy1756/silk-tree-api",
+      "github": "https://github.com/Jordy1756/silk-tree-api.git",
       "priority": true
     },
     {
       "name": "AluraGeek RESTful API",
-      "description": "RESTful API for managing articles, users, and comments.",
+      "description": "RESTful API para la gestión de artículos, usuarios y comentarios.",
       "highlights": ["Node JS", "Express", "JWT", "Mongo DB"],
       "url": "https://alura-geek-api-one.vercel.app/",
-      "github": "https://github.com/Jordy1756/alura-geek-api",
+      "github": "https://github.com/Jordy1756/alura-geek-api.git",
       "priority": true
     },
     {
       "name": "Hi Cupon RESTful API",
-      "description": "RESTful API for coupons and promotions with discount management.",
+      "description": "RESTful API para gestionar cupones, promociones y descuentos.",
       "highlights": ["C#", "Clean Architecture", "SQL Server"],
-      "github": "https://github.com/Jordy1756/HiCupon_API_NET",
+      "github": "https://github.com/Jordy1756/HiCupon_API_NET.git",
       "priority": true
     },
     {
       "name": "Mockit",
-      "description": "Hackathon app that generates mock REST APIs from JSON templates.",
+      "description": "Proyecto de hackatón que genera APIs REST mock desde plantillas JSON.",
       "highlights": ["Astro", "Tailwind CSS", "TypeScript"],
       "url": "http://mocktit-app-frontend-3nxh5g-612650-144-225-147-108.traefik.me/",
       "github": "https://github.com/Jordy756/mockit-app",
@@ -299,8 +298,8 @@
     },
     {
       "name": "Mockit RESTful API",
-      "description": "Backend API that creates dynamic mock REST endpoints from JSON templates.",
-      "highlights": ["Express", "Generative AI", "TypeScript"],
+      "description": "Backend API que crea endpoints REST mock dinámicos desde JSON.",
+      "highlights": ["Express", "IA Generativa", "TypeScript"],
       "github": "https://github.com/Jordy756/mockit-api",
       "priority": true
     }

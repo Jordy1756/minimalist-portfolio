@@ -1,18 +1,19 @@
 ---
-import GithubIcon from '@components/icons/Github.astro';
+import GithubIcon from '@components/icons/GithubIcon.astro';
 import Link from '@components/ui/Link.astro';
-import { getLangFromUrl, useTranslations } from '@i18n/utils';
-import type { Project } from '@scripts/entities/project';
+import { getCurrentLocale, useTranslations } from '@i18n/utils';
 
 interface Props {
-  project: Project;
+  name: string;
+  description: string;
+  url?: string;
+  github?: string;
 }
 
-const { project } = Astro.props;
-const { name, description, highlights, url, github } = project;
+const { name, description, url, github } = Astro.props;
 
-const lang = getLangFromUrl(Astro.url);
-const t = useTranslations(lang);
+const currentLocale = getCurrentLocale(Astro.currentLocale);
+const t = useTranslations(currentLocale);
 ---
 
 <article class="flex min-h-43.75 flex-col gap-1 rounded-lg border border-neutral-200 p-4">

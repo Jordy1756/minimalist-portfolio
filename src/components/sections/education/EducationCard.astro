@@ -1,19 +1,20 @@
 ---
 import TimePeriod from '@components/ui/TimePeriod.astro';
-import { getLangFromUrl } from '@i18n/utils';
-import type { Education } from '@scripts/entities/education';
+import { getCurrentLocale } from '@i18n/utils';
 
 interface Props {
-  education: Education;
+  institution: string;
+  area: string;
+  startDate: Date | null;
+  endDate: Date | null;
 }
 
-const { education } = Astro.props;
-const { institution, area, startDate, endDate } = education;
+const { institution, area, startDate, endDate } = Astro.props;
 
-const lang = getLangFromUrl(Astro.url);
+const currentLocale = getCurrentLocale(Astro.currentLocale);
 
-const localeCode = lang === 'es' ? 'es-ES' : 'en-US';
-const presentText = lang === 'es' ? 'Presente' : 'Present';
+const localeCode = currentLocale === 'es' ? 'es-ES' : 'en-US';
+const presentText = currentLocale === 'es' ? 'Presente' : 'Present';
 ---
 
 <article>

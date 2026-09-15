@@ -1,15 +1,20 @@
-import { defaultLang, ui } from '@i18n/ui.ts';
+import { ui, content } from '@i18n/ui.ts';
 
-export const getLangFromUrl = (url: URL) => {
-  const [, lang] = url.pathname.split('/');
+export const defaultLocale = 'en';
+export const locales = ['en', 'es'] as const;
 
-  return lang in ui ? (lang as keyof typeof ui) : defaultLang;
+export type Locale = (typeof locales)[number];
+
+export const getCurrentLocale = (locale: string | undefined): Locale => {
+  return (locale ?? defaultLocale) as Locale;
 };
 
-export const useTranslations = (lang: keyof typeof ui) => {
-  return function t(key: keyof (typeof ui)[typeof defaultLang], ...args: any[]) {
-    const translation = ui[lang][key] || ui[defaultLang][key];
+export const useTranslations = (locale: keyof typeof ui) => {
+  const localizedUI: Record<string, string> = ui[locale];
 
-    return typeof translation === 'function' ? (translation as (...args: any[]) => string)(...args) : translation;
+  return function t(key: keyof (typeof ui)[typeof defaultLocale]) {
+    return key in localizedUI ? localizedUI[key] : ui[defaultLocale][key];
   };
 };
+
+export const useContentTranslations = (locale: Locale) => content[locale];

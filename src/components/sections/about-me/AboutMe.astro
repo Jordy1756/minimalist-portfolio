@@ -1,17 +1,11 @@
 ---
 import Section from '@components/chrome/Section.astro';
-import { getLangFromUrl, useTranslations } from '@i18n/utils.ts';
-import type { Basics } from '@scripts/entities/basics.ts';
+import { getCurrentLocale, useContentTranslations, useTranslations } from '@i18n/utils.ts';
 
-interface Props {
-  about: Basics;
-}
-
-const { about } = Astro.props;
-const { summary } = about;
-
-const lang = getLangFromUrl(Astro.url);
-const t = useTranslations(lang);
+const currentLocale = getCurrentLocale(Astro.currentLocale);
+const { basics } = useContentTranslations(currentLocale);
+const { summary } = basics;
+// Me falta el title en el contenido
 ---
 
 <Section title={t('aboutMe.title')}>

@@ -1,28 +1,18 @@
 ---
-import EmailIcon from '@components/icons/Email.astro';
-import GithubIcon from '@components/icons/Github.astro';
-import LinkedInIcon from '@components/icons/LinkedIn.astro';
-import ResumeIcon from '@components/icons/Resume.astro';
-import WorldIcon from '@components/icons/World.astro';
+import EmailIcon from '@components/icons/EmailIcon.astro';
+import GithubIcon from '@components/icons/GithubIcon.astro';
+import LinkedInIcon from '@components/icons/LinkedInIcon.astro';
+import ResumeIcon from '@components/icons/ResumeIcon.astro';
+import WorldIcon from '@components/icons/WorldIcon.astro';
 import Link from '@components/ui/Link.astro';
-import { getLangFromUrl, useTranslations } from '@i18n/utils.ts';
-import type { Basics } from '@scripts/entities/basics.ts';
+import { getCurrentLocale, useTranslations } from '@i18n/utils.ts';
 import { Image } from 'astro:assets';
-
-interface Props {
-  basics: Basics;
-}
 
 const { basics } = Astro.props;
 const { name, label, email, location, avatar, profiles, resume } = basics;
 
-const SOCIAL_ICONS = {
-  GitHub: GithubIcon,
-  LinkedIn: LinkedInIcon,
-};
-
-const lang = getLangFromUrl(Astro.url);
-const t = useTranslations(lang);
+const currentLocale = getCurrentLocale(Astro.currentLocale);
+const t = useTranslations(currentLocale);
 
 const heroLinks = [
   {

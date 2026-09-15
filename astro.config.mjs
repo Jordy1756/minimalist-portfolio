@@ -2,13 +2,10 @@
 import { defineConfig, fontProviders } from 'astro/config';
 
 import tailwindcss from '@tailwindcss/vite';
-import vercel from '@astrojs/vercel';
 
 // https://astro.build/config
 export default defineConfig({
   site: 'https://jordy756-minimalist-portfolio.vercel.app',
-
-  adapter: vercel(),
 
   i18n: {
     defaultLocale: 'en',
@@ -20,6 +17,7 @@ export default defineConfig({
       fallbackType: 'rewrite',
     },
   },
+
   fonts: [
     {
       provider: fontProviders.google(),
@@ -34,6 +32,7 @@ export default defineConfig({
       unicodeRange: ['U+0020-007F', 'U+00A0-017F'],
     },
   ],
+
   vite: {
     plugins: [tailwindcss()],
   },

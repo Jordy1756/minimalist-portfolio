@@ -1,23 +1,17 @@
 ---
 import Section from '@components/chrome/Section.astro';
 import ExperienceCard from '@components/sections/experience/ExperienceCard.astro';
-import { getLangFromUrl, useTranslations } from '@i18n/utils.ts';
-import type { Experience } from '@scripts/entities/experience.ts';
+import { getCurrentLocale, useContentTranslations, useTranslations } from '@i18n/utils.ts';
 
-interface Props {
-  experience: Experience[];
-}
-
-const { experience } = Astro.props;
-
-const lang = getLangFromUrl(Astro.url);
-const t = useTranslations(lang);
+const currentLocale = getCurrentLocale(Astro.currentLocale);
+const t = useTranslations(currentLocale);
+const { experience } = useContentTranslations(currentLocale);
 ---
 
 <Section title={t('experience.title')}>
   <div class="flex flex-col gap-4">
-    {experience.map((experience) => (
-      <ExperienceCard experience={experience} />
+    {experience.map(({ name, position, startDate, endDate, highlights }) => (
+      <ExperienceCard name={name} position={position} startDate={startDate} endDate={endDate} highlights={highlights} />
     ))}
   </div>
 </Section>
