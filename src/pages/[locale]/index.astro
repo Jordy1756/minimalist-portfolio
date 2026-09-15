@@ -6,15 +6,17 @@ import Experience from '@components/sections/Experience.astro';
 import Hero from '@components/sections/Hero.astro';
 import Projects from '@components/sections/Projects.astro';
 import Skills from '@components/sections/Skills.astro';
-import { getCurrentLocale, useTranslations } from '@i18n/utils.ts';
+import { getCurrentLocale, locales, useResume, useTranslations } from '@i18n/utils';
 import Layout from '@layouts/Layout.astro';
-export const getStaticPaths = async () => [{ params: { locale: 'en' } }, { params: { locale: 'es' } }];
+
+export const getStaticPaths = () => locales.map((locale) => ({ params: { locale } }));
 
 const currentLocale = getCurrentLocale(Astro.currentLocale);
-const { sections, meta } = useTranslations(currentLocale);
+const { basics } = useResume(currentLocale);
+const t = useTranslations(currentLocale);
 ---
 
-<Layout title={sections.hero.title} description={meta.description}>
+<Layout title={basics.label} locale={currentLocale}>
   <Hero />
   <main class="flex flex-col gap-8">
     <AboutMe />

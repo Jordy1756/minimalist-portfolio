@@ -1,13 +1,13 @@
 ---
 import Section from '@components/chrome/Section.astro';
-import { getCurrentLocale, useContent, useTranslations } from '@i18n/utils.ts';
+import { getCurrentLocale, useResume, useTranslations } from '@i18n/utils';
 
 const currentLocale = getCurrentLocale(Astro.currentLocale);
-const { sections } = useTranslations(currentLocale);
-const { skills } = useContent(currentLocale);
+const t = useTranslations(currentLocale);
+const { skills } = useResume(currentLocale);
 ---
 
-<Section title={sections.skills.title}>
+<Section title={t('sections.skills.title')}>
   <ul class="flex flex-wrap gap-2">
     {skills.map((skill) => (
       <li class="rounded-sm bg-neutral-800 px-4 py-1 text-center text-sm font-semibold text-neutral-50">{skill}</li>

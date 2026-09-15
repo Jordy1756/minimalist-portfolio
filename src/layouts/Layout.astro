@@ -1,25 +1,23 @@
 ---
-import { getCurrentLocale, useTranslations } from '@i18n/utils';
 import '@styles/global.css';
 import { Font } from 'astro:assets';
+import { useTranslations, type Locale } from '@i18n/utils';
 
 interface Props {
   title: string;
-  description: string;
+  locale: Locale;
 }
 
-const { title, description } = Astro.props;
+const { title, locale } = Astro.props;
+const t = useTranslations(locale);
 const url = Astro.url;
 const hostname = url.hostname;
-const ogImage =
-  'https://res.cloudinary.com/dygwpgeq9/image/upload/v1772054096/minimalist_portfolio_en_og_img_ow7ugd.webp';
-
-const currentLocale = getCurrentLocale(Astro.currentLocale);
-const t = useTranslations(currentLocale);
+const description = t('meta.description');
+const ogImage = t('meta.ogImage');
 ---
 
 <!doctype html>
-<html lang={currentLocale}>
+<html lang={locale}>
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />

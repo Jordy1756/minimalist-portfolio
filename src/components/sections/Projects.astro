@@ -1,44 +1,35 @@
 ---
 import Section from '@components/chrome/Section.astro';
+import ExternalIcon from '@components/icons/ExternalIcon.astro';
 import GithubIcon from '@components/icons/GithubIcon.astro';
 import Link from '@components/ui/Link.astro';
-import { getCurrentLocale, useContent, useTranslations } from '@i18n/utils.ts';
+import { getCurrentLocale, useResume, useTranslations } from '@i18n/utils';
 
 const currentLocale = getCurrentLocale(Astro.currentLocale);
-const { sections, aria } = useTranslations(currentLocale);
-const { projects } = useContent(currentLocale);
+const t = useTranslations(currentLocale);
+const { projects } = useResume(currentLocale);
 ---
 
-<Section title={sections.projects.title}>
+<Section title={t('sections.projects.title')}>
   <div class="grid grid-cols-[repeat(auto-fit,minmax(250px,1fr))] gap-4">
     {projects.map(({ name, description, url, github, stack }) => (
       <article class="flex min-h-43.75 flex-col gap-1 rounded-lg border border-neutral-200 p-4">
         <header class="flex items-center justify-between">
-          <!-- <h3 class="flex text-lg font-bold text-neutral-800">
-            {url ? (
-              <Link
-                href={url}
-                class="flex items-center gap-2 hover:underline"
-                title={aria('projects.card.project.aria', { name })}
-                aria-label={t('projects.card.project.aria', name)}
-              >
-                {name}
-              </Link>
-            ) : (
-              name
-            )}
-          </h3>
-          <Link
-            href={github}
-            title={t('projects.card.github.aria', name)}
-            aria-label={t('projects.card.github.aria', name)}
-          >
-            <GithubIcon
-              width={20}
-              height={20}
-              class="flex items-center gap-2 text-neutral-700 transition-colors hover:text-neutral-900"
-            />
-          </Link> -->
+          {url ? (
+            <Link
+              href={url}
+              class="flex items-center gap-2 text-lg font-bold text-neutral-800 hover:underline"
+              aria-label={t('aria.projectLive', { name })}
+            >
+              {name}
+              <ExternalIcon width={16} height={16} class="text-neutral-700" />
+            </Link>
+          ) : (
+            <h3 class="text-lg font-bold text-neutral-800">{name}</h3>
+          )}
+          <Link href={github} aria-label={t('aria.projectRepo', { name })}>
+            <GithubIcon width={20} height={20} class="text-neutral-700 transition-colors hover:text-neutral-900" />
+          </Link>
         </header>
         <div class="mb-4 flex flex-1 flex-col gap-2">
           <p>{description}</p>

@@ -27,13 +27,9 @@ const formattedDate = getFormattedDate(date, currentLocale === 'es' ? 'es-ES' : 
   </aside>
   <header class="flex items-start justify-between gap-2">
     <h3 class="text-base font-semibold text-neutral-900">{name}</h3>
-    <!-- <Link
-      href={url}
-      title={t('certificates.card.aria', name, issuer)}
-      aria-label={t('certificates.card.aria', name, issuer)}
-    >
+    <Link href={url} aria-label={t('aria.certificate', { name, issuer })} target="_blank" rel="noopener noreferrer">
       <ExternalIcon width={20} height={20} class="text-neutral-700 transition-colors hover:text-neutral-900" />
-    </Link> -->
+    </Link>
   </header>
   <div class="flex items-center justify-between gap-2">
     <p>{issuer}</p>

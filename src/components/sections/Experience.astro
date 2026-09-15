@@ -1,17 +1,17 @@
 ---
 import Section from '@components/chrome/Section.astro';
 import TimePeriod from '@components/ui/TimePeriod.astro';
-import { getCurrentLocale, useContent, useTranslations } from '@i18n/utils.ts';
+import { getCurrentLocale, useResume, useTranslations } from '@i18n/utils';
 
 const currentLocale = getCurrentLocale(Astro.currentLocale);
-const { sections } = useTranslations(currentLocale);
-const { experience } = useContent(currentLocale);
+const t = useTranslations(currentLocale);
+const { experience } = useResume(currentLocale);
 
 const localeCode = currentLocale === 'es' ? 'es-ES' : 'en-US';
-const presentText = currentLocale === 'es' ? 'Presente' : 'Present';
+const presentText = t('labels.present');
 ---
 
-<Section title={sections.experience.title}>
+<Section title={t('sections.experience.title')}>
   <div class="flex flex-col gap-4">
     {experience.map(({ name, position, startDate, endDate, highlights }) => (
       <article class="flex flex-col gap-3">

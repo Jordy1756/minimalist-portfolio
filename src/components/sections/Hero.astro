@@ -5,34 +5,31 @@ import LinkedInIcon from '@components/icons/LinkedInIcon.astro';
 import ResumeIcon from '@components/icons/ResumeIcon.astro';
 import WorldIcon from '@components/icons/WorldIcon.astro';
 import Link from '@components/ui/Link.astro';
-import { getCurrentLocale, useContent, useTranslations } from '@i18n/utils.ts';
+import { getCurrentLocale, useResume, useTranslations } from '@i18n/utils';
 import { Image } from 'astro:assets';
 
 const currentLocale = getCurrentLocale(Astro.currentLocale);
-const { sections, aria } = useTranslations(currentLocale);
-const { basics } = useContent(currentLocale);
+const t = useTranslations(currentLocale);
+const { basics } = useResume(currentLocale);
 const { name, label, email, location, profiles } = basics;
 
-// const heroLinks = [
-//   {
-//     href: `mailto:${email}`,
-//     icon: EmailIcon,
-//     title: aria,
-//     ariaLabel: aria.heroEmail,
-//   },
-//   ...profiles.map(({ network, url }) => ({
-//     href: url,
-//     icon: SOCIAL_ICONS[network as keyof typeof SOCIAL_ICONS],
-//     title: t('hero.profile.aria', name, network),
-//     ariaLabel: t('hero.profile.aria', name, network),
-//   })),
-//   {
-//     href: resume,
-//     icon: ResumeIcon,
-//     title: t('hero.resume.aria', name),
-//     ariaLabel: t('hero.resume.aria', name),
-//   },
-// ];
+const heroLinks = [
+  {
+    href: `mailto:${email}`,
+    icon: EmailIcon,
+    ariaLabel: t('aria.heroEmail', { name }),
+  },
+  ...profiles.map(({ network, url }) => ({
+    href: url,
+    icon: network === 'LinkedIn' ? LinkedInIcon : GithubIcon,
+    ariaLabel: t('aria.heroProfile', { network }),
+  })),
+  {
+    href: `/docs/Yordi_Castro_CV_${currentLocale.toUpperCase()}.pdf`,
+    icon: ResumeIcon,
+    ariaLabel: t('aria.heroResume', { name }),
+  },
+];
 ---
 
 <header class="flex flex-col-reverse items-center justify-center gap-8 md:flex-row md:justify-between">
@@ -45,20 +42,20 @@ const { name, label, email, location, profiles } = basics;
         <p class="not-italic">{`${location.city}, ${location.region}`}</p>
       </address>
     </div>
-    <!-- <ul class="flex items-center justify-center gap-2 md:justify-start">
-      {heroLinks.map(({ href, icon: Icon, title, ariaLabel }) => (
+    <ul class="flex items-center justify-center gap-2 md:justify-start">
+      {heroLinks.map(({ href, icon: Icon, ariaLabel }) => (
         <li class="rounded-sm border border-neutral-200 p-1">
-          <Link href={href} title={title} aria-label={ariaLabel}>
+          <Link href={href} aria-label={ariaLabel} title={ariaLabel} target="_blank" rel="noopener noreferrer">
             <Icon width={20} height={20} class="text-neutral-700 transition-colors hover:text-neutral-900" />
           </Link>
         </li>
       ))}
-    </ul> -->
+    </ul>
   </section>
   <figure class="flex min-w-35">
     <Image
       src="/images/me.webp"
-      alt={sections.hero.imageAlt}
+      alt={t('sections.hero.imageAlt')}
       class="aspect-auto h-62.5 w-auto rounded-sm object-cover md:max-h-43.5 md:flex-1"
       width={140}
       height={174}

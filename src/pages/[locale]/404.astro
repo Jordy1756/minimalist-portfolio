@@ -1,19 +1,27 @@
 ---
-import { getCurrentLocale, useTranslations } from '@i18n/utils.ts';
+import { getRelativeLocaleUrl } from 'astro:i18n';
+import { getCurrentLocale, locales, useTranslations } from '@i18n/utils';
 import Layout from '@layouts/Layout.astro';
 
-const currentLocale = getCurrentLocale(Astro.currentLocale);
-const { t } = useTranslations(currentLocale);
+export const getStaticPaths = () =>
+  locales.map((locale) => ({
+    params: { locale },
+    props: { locale },
+  }));
+
+const currentLocale = getCurrentLocale(Astro.props.locale);
+const t = useTranslations(currentLocale);
+const homeHref = getRelativeLocaleUrl(currentLocale, '');
 ---
 
-<Layout title={t('notFound.title')} description="">
+<Layout title={t('notFound.title')} locale={currentLocale}>
   <main class="flex flex-1 flex-col items-center justify-center text-center">
     <h1 class="text-8xl font-bold text-neutral-300 md:text-9xl">404</h1>
     <div class="flex flex-col items-center gap-2">
       <h2 class="text-2xl font-bold text-neutral-950">{t('notFound.title')}</h2>
       <p class="max-w-xs text-sm text-neutral-700">{t('notFound.description')}</p>
       <a
-        href={`/${currentLocale}/`}
+        href={homeHref}
         class="rounded-sm border border-neutral-200 px-4 py-2 text-sm font-semibold transition-colors hover:bg-neutral-100 hover:text-neutral-950"
       >
         {t('notFound.back')}

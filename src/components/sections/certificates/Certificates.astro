@@ -1,18 +1,18 @@
 ---
 import Section from '@components/chrome/Section.astro';
 import CertificateCard from '@components/sections/certificates/CertificateCard.astro';
-import { getCurrentLocale, useContent, useTranslations } from '@i18n/utils.ts';
+import { getCurrentLocale, useResume, useTranslations } from '@i18n/utils';
 
 const currentLocale = getCurrentLocale(Astro.currentLocale);
-const { sections } = useTranslations(currentLocale);
-const { certificates } = useContent(currentLocale);
+const t = useTranslations(currentLocale);
+const { certificates } = useResume(currentLocale);
 
 const sortedYears = Object.keys(certificates)
   .map(Number)
   .sort((a, b) => b - a);
 ---
 
-<Section title={sections.certificates.title}>
+<Section title={t('sections.certificates.title')}>
   <div class="flex flex-col gap-8">
     {sortedYears.map((year) => (
       <div class="flex flex-col gap-2">
