@@ -1,5 +1,6 @@
 ---
 import AboutMe from '@components/sections/AboutMe.astro';
+import Certificates from '@components/sections/certificates/Certificates.astro';
 import Education from '@components/sections/Education.astro';
 import Experience from '@components/sections/Experience.astro';
 import Hero from '@components/sections/Hero.astro';
@@ -20,10 +21,7 @@ const { sections, meta } = useTranslations(currentLocale);
     <Experience />
     <Projects />
     <Education />
+    <Certificates />
     <Skills />
   </main>
-  <!--
-    <Education />
-    <Certificates />
-   -->
 </Layout>

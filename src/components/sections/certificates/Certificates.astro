@@ -4,7 +4,7 @@ import CertificateCard from '@components/sections/certificates/CertificateCard.a
 import { getCurrentLocale, useContent, useTranslations } from '@i18n/utils.ts';
 
 const currentLocale = getCurrentLocale(Astro.currentLocale);
-const { sections, aria } = useTranslations(currentLocale);
+const { sections } = useTranslations(currentLocale);
 const { certificates } = useContent(currentLocale);
 
 const sortedYears = Object.keys(certificates)
@@ -18,7 +18,7 @@ const sortedYears = Object.keys(certificates)
       <div class="flex flex-col gap-2">
         <span class="font-bold text-neutral-900">{year}</span>
         <ul class="ml-4 flex flex-col gap-4">
-          {certificates[year].map(({ name, url, issuer, date }) => (
+          {certificates[year + ''].map(({ name, url, issuer, date }) => (
             <li class="relative gap-y-1 pl-4 before:absolute before:top-0 before:left-0 before:h-[calc(100%+16px)] before:w-px before:bg-neutral-200 after:absolute after:top-1/2 after:left-0 after:h-px after:w-3 after:bg-neutral-200 last:before:h-1/2">
               <CertificateCard name={name} url={url} issuer={issuer} date={date} />
             </li>
