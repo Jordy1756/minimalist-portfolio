@@ -59,6 +59,30 @@
   "certificates": {
     "2026": [
       {
+        "name": "Claude Code en Acción",
+        "date": "2026-06-15",
+        "issuer": "Anthropic Education",
+        "url": "https://verify.skilljar.com/c/zx9tdpi6msm4"
+      },
+      {
+        "name": "Construyendo con la API de Claude",
+        "date": "2026-06-15",
+        "issuer": "Anthropic Education",
+        "url": "https://verify.skilljar.com/c/pfh4ybgoh8k5"
+      },
+      {
+        "name": "Introducción al Model Context Protocol",
+        "date": "2026-06-14",
+        "issuer": "Anthropic Education",
+        "url": "https://verify.skilljar.com/c/2zabojceq7p9"
+      },
+      {
+        "name": "Introducción a las agent skills",
+        "date": "2026-05-20",
+        "issuer": "Anthropic Education",
+        "url": "https://verify.skilljar.com/c/fi8kduek4v34"
+      },
+      {
         "name": "Desarrollo con IA: de 0 a Producción",
         "date": "2026-03-14",
         "issuer": "BIG school",
@@ -257,12 +281,11 @@
     "Express",
     ".NET",
     "Entity Framework",
-    "Python",
-    "Django",
     "Java",
     "SQL Server",
     "MySQL",
     "MongoDB",
+    "React Native",
     "Flutter",
     "APIs RESTful",
     "Clean Architecture",
@@ -276,6 +299,8 @@
     "IA Generativa",
     "Agentes de IA",
     "n8n",
+    "OpenCode",
+    "Claude Code",
     "Español (Nativo)",
     "Inglés (Intermedio - B1/B2)"
   ]

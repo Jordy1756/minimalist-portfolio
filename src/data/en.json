@@ -13,7 +13,7 @@
   "experience": [
     {
       "name": "4Geeks",
-      "position": "Full Stack Developer Intern",
+      "position": "Full Stack Developer",
       "startDate": "2025-07-01",
       "endDate": "2025-12-01",
       "highlights": [
@@ -58,6 +58,30 @@
   ],
   "certificates": {
     "2026": [
+      {
+        "name": "Claude Code in Action",
+        "date": "2026-06-15",
+        "issuer": "Anthropic Education",
+        "url": "https://verify.skilljar.com/c/zx9tdpi6msm4"
+      },
+      {
+        "name": "Building with the Claude API",
+        "date": "2026-06-15",
+        "issuer": "Anthropic Education",
+        "url": "https://verify.skilljar.com/c/pfh4ybgoh8k5"
+      },
+      {
+        "name": "Introduction to Model Context Protocol",
+        "date": "2026-06-14",
+        "issuer": "Anthropic Education",
+        "url": "https://verify.skilljar.com/c/2zabojceq7p9"
+      },
+      {
+        "name": "Introduction to agent skills",
+        "date": "2026-05-20",
+        "issuer": "Anthropic Education",
+        "url": "https://verify.skilljar.com/c/fi8kduek4v34"
+      },
       {
         "name": "AI Development: From 0 to Production",
         "date": "2026-03-14",
@@ -257,12 +281,11 @@
     "Express",
     ".NET",
     "Entity Framework",
-    "Python",
-    "Django",
     "Java",
     "SQL Server",
     "MySQL",
     "MongoDB",
+    "React Native",
     "Flutter",
     "RESTful APIs",
     "Clean Architecture",
@@ -276,6 +299,8 @@
     "Generative AI",
     "AI Agents",
     "n8n",
+    "OpenCode",
+    "Claude Code",
     "Spanish (Native)",
     "English (Intermediate - B1/B2)"
   ]

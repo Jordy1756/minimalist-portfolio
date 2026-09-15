@@ -24,16 +24,14 @@ const sections = {
   },
 } as const;
 
-const meta = {
+const home = {
   en: {
-    'meta.description': 'Full Stack Developer portfolio showcasing experience, projects, and certifications.',
-    'meta.ogImage':
-      'https://res.cloudinary.com/dygwpgeq9/image/upload/v1772054096/minimalist_portfolio_en_og_img_ow7ugd.webp',
+    'home.meta.title': 'Yordi Castro Rojas | Full Stack Developer Portfolio',
+    'home.meta.description': 'Full Stack Developer Portfolio by Yordi Castro Rojas',
   },
   es: {
-    'meta.description': 'Portafolio de Desarrollador Full Stack con experiencia, proyectos y certificaciones.',
-    'meta.ogImage':
-      'https://res.cloudinary.com/dygwpgeq9/image/upload/v1772054097/minimalist_portfolio_es_og_img_epye2p.webp',
+    'home.meta.title': 'Yordi Castro Rojas | Portafolio de Desarrollador Full Stack',
+    'home.meta.description': 'Portafolio de Desarrollador Full Stack de Yordi Castro Rojas',
   },
 } as const;
 
@@ -70,11 +68,17 @@ const notFound = {
     'notFound.title': '404 — Not Found',
     'notFound.description': 'The page you are looking for does not exist.',
     'notFound.back': 'Go back',
+    'notFound.meta.title': '404 — Page Not Found | Yordi Castro',
+    'notFound.meta.description':
+      "The page you're looking for doesn't exist. Return home to see experience, projects, and certifications.",
   },
   es: {
     'notFound.title': '404 — No Encontrado',
     'notFound.description': 'La página que estás buscando no existe.',
     'notFound.back': 'Volver',
+    'notFound.meta.title': '404 — Página No Encontrada | Yordi Castro',
+    'notFound.meta.description':
+      'La página que buscas no existe. Vuelve al inicio para ver experiencia, proyectos y certificaciones.',
   },
 } as const;
 
@@ -90,19 +94,21 @@ const aria = {
   },
   es: {
     'aria.hero.email': 'Enviar un correo electrónico a {{name}}',
-    'aria.hero.network': "Ver el perfil de {{name}} en {{network}}",
+    'aria.hero.network': 'Ver el perfil de {{name}} en {{network}}',
     'aria.hero.resume': 'Descargar el currículum de {{name}} en PDF',
     'aria.project.demo': 'Ver demo en vivo del proyecto {{name}} en una nueva pestaña',
     'aria.project.repo': 'Ver repositorio de {{name}} en GitHub en una nueva pestaña',
     'aria.certificate': 'Ver el certificado de {{name}} emitido por {{issuer}}',
+    'aria.socialProfile': 'Visitar mi perfil de {{network}}',
     'aria.home': 'Ir al inicio del portafolio de {{name}}',
+    'aria.notFound': 'Página no encontrada',
   },
 } as const;
 
 export const ui = {
   en: {
     ...sections.en,
-    ...meta.en,
+    ...home.en,
     ...actions.en,
     ...labels.en,
     ...notFound.en,
@@ -110,7 +116,7 @@ export const ui = {
   },
   es: {
     ...sections.es,
-    ...meta.es,
+    ...home.es,
     ...actions.es,
     ...labels.es,
     ...notFound.es,

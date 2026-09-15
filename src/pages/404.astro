@@ -1,13 +1,13 @@
 ---
 import { getRelativeLocaleUrl } from 'astro:i18n';
-import { getCurrentLocale, locales, useTranslations } from '@i18n/utils';
+import { getCurrentLocale, useTranslations } from '@i18n/utils';
 import Layout from '@layouts/Layout.astro';
 
 const currentLocale = getCurrentLocale(Astro.currentLocale);
 const t = useTranslations(currentLocale);
 ---
 
-<Layout title={t('notFound.title')} description="">
+<Layout title={t('notFound.meta.title')} description={t('notFound.meta.description')}>
   <main class="flex flex-1 flex-col items-center justify-center text-center">
     <h1 class="text-8xl font-bold text-neutral-300 md:text-9xl">404</h1>
     <div class="flex flex-col items-center gap-2">

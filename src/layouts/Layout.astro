@@ -1,7 +1,7 @@
 ---
 import '@styles/global.css';
 import { Font } from 'astro:assets';
-import { getCurrentLocale, useTranslations } from '@i18n/utils';
+import { getCurrentLocale, useResume, useTranslations } from '@i18n/utils';
 
 interface Props {
   title: string;
@@ -12,14 +12,21 @@ const { title, description } = Astro.props;
 
 const currentLocale = getCurrentLocale(Astro.currentLocale);
 const t = useTranslations(currentLocale);
+const { basics } = useResume(currentLocale);
+const { summary } = basics;
 
 const url = Astro.url;
 const hostname = url.hostname;
-const ogImage = t('meta.ogImage');
+
+const ogImage =
+  'https://res.cloudinary.com/dygwpgeq9/image/upload/v1772054096/minimalist_portfolio_en_og_img_ow7ugd.webp';
 ---
 
 <!doctype html>
-<html lang={currentLocale}>
+<html
+  lang={currentLocale}
+  class="scrollbar-gutter-stable scrollbar-thumb-neutral-500 scrollbar-track-transparent scrollbar-thin"
+>
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
@@ -33,18 +40,20 @@ const ogImage = t('meta.ogImage');
     <meta property="og:url" content={url} />
     <meta property="og:type" content="website" />
     <meta property="og:title" content={title} />
-    <meta property="og:description" content={description} />
+    <meta property="og:description" content={summary} />
     <meta property="og:image" content={ogImage} />
 
     <meta name="twitter:card" content="summary_large_image" />
     <meta property="twitter:domain" content={hostname} />
     <meta property="twitter:url" content={url} />
     <meta name="twitter:title" content={title} />
-    <meta name="twitter:description" content={description} />
+    <meta name="twitter:description" content={summary} />
     <meta name="twitter:image" content={ogImage} />
+
+    <script src="../scripts/config/lenis.ts"></script>
   </head>
-  <body class="bg-neutral-50 text-sm text-neutral-700 overflow-x-clip print:bg-white">
-    <div class="mx-auto flex min-h-dvh w-page flex-col gap-8 p-4 md:py-12">
+  <body class="bg-neutral-50 text-sm text-pretty text-neutral-700 min-h-dvh overflow-x-clip print:bg-white">
+    <div class="mx-auto flex w-page flex-col gap-8 p-4 md:py-12">
       <slot />
     </div>
   </body>
